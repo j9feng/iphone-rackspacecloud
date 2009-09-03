@@ -7,5 +7,7 @@ This is the Rackspace Cloud iPhone available in the Apple App Store.  It support
 == Author
 
 Mike Mayo - greenisus@gmail.com or mike.mayo@rackspace.com
+
 Blog - overhrd.com
+
 twitter.com/greenisus
