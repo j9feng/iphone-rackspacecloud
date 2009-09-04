@@ -11,7 +11,6 @@
 #import "CloudFilesObject.h"
 #import "SpinnerCell.h"
 #import "RackspaceAppDelegate.h"
-#import "ImageViewController.h"
 #import "Account.h"
 #import "AddObjectViewController.h"
 #import "ObjectViewController.h"
@@ -127,7 +126,7 @@ BOOL objectsLoaded = NO;
 		self.container.cdnEnabled = @"False";
 	}
 	Response *response = [self.container save];
-	NSLog([NSString stringWithFormat:@"Container save response code: %i", response.statusCode]);
+	//NSLog([NSString stringWithFormat:@"Container save response code: %i", response.statusCode]);
 	[self hideSpinnerView];
 	if (![response isSuccess]) {
 		[self showSaveError:response];

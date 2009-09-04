@@ -1,16 +1,15 @@
 //
 //  LoginViewController.h
-//  Overhrd
+//  Rackspace Cloud
 //
 //  Created by Michael Mayo on 4/11/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Rackspace Hosting. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @class EditableLoginCell, SecureEditableLoginCell;
 
-//@interface LoginViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
 @interface LoginViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate> {
 	IBOutlet UITableView *tableView;
 	NSString *secondLabel;

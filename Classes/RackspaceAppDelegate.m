@@ -3,14 +3,13 @@
 //  Rackspace
 //
 //  Created by Michael Mayo on 5/25/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//  Copyright Rackspace Hosting 2009. All rights reserved.
 //
 
 #import "RackspaceAppDelegate.h"
 #import "LoginViewController.h"
 #import "ObjectiveResource.h"
 #import "ServersRootViewController.h"
-#import "TapDetectingImageView.h"
 
 @implementation RackspaceAppDelegate
 
@@ -24,7 +23,6 @@
 @synthesize authToken;
 @synthesize serversRootViewController;
 @synthesize flavors, images, servers;
-@synthesize tapDetectingImageView;
 @synthesize imageScrollView;
 
 
@@ -71,7 +69,6 @@
 	[flavors release];
 	[images release];
 	[servers release];
-	[tapDetectingImageView release];
 	[imageScrollView release];
     [super dealloc];
 }

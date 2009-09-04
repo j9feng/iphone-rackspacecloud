@@ -1,9 +1,9 @@
 //
 //  LoginViewController.m
-//  Overhrd
+//  Rackspace Cloud
 //
 //  Created by Michael Mayo on 4/11/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Rackspace Cloud. All rights reserved.
 //
 
 #import "LoginViewController.h"

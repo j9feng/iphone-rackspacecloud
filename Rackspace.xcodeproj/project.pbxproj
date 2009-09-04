@@ -35,8 +35,6 @@
 		2786B6710FFEC75B002B852B /* IPGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2786B6700FFEC75B002B852B /* IPGroupViewController.m */; };
 		2786B6760FFEC7A1002B852B /* IPGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2786B6750FFEC7A1002B852B /* IPGroupView.xib */; };
 		278D846D1011731A0060DBA1 /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278D846C1011731A0060DBA1 /* ImageView.xib */; };
-		278D8473101173500060DBA1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278D8472101173500060DBA1 /* ImageViewController.m */; };
-		278D89331013BD3E0060DBA1 /* TapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 278D89321013BD3E0060DBA1 /* TapDetectingImageView.m */; };
 		278D8B581013E56F0060DBA1 /* AddObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278D8B571013E56F0060DBA1 /* AddObjectViewController.m */; };
 		278D8B5A1013E5820060DBA1 /* AddObject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278D8B591013E5820060DBA1 /* AddObject.xib */; };
 		2793CA5A1016D5BD009EB8C3 /* ResizeServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2793CA581016D5BD009EB8C3 /* ResizeServerController.m */; };
@@ -162,10 +160,6 @@
 		2786B6700FFEC75B002B852B /* IPGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPGroupViewController.m; sourceTree = "<group>"; };
 		2786B6750FFEC7A1002B852B /* IPGroupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPGroupView.xib; sourceTree = "<group>"; };
 		278D846C1011731A0060DBA1 /* ImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
-		278D8471101173500060DBA1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		278D8472101173500060DBA1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		278D89311013BD3E0060DBA1 /* TapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapDetectingImageView.h; sourceTree = "<group>"; };
-		278D89321013BD3E0060DBA1 /* TapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapDetectingImageView.m; sourceTree = "<group>"; };
 		278D8B561013E56F0060DBA1 /* AddObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddObjectViewController.h; sourceTree = "<group>"; };
 		278D8B571013E56F0060DBA1 /* AddObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddObjectViewController.m; sourceTree = "<group>"; };
 		278D8B591013E5820060DBA1 /* AddObject.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddObject.xib; sourceTree = "<group>"; };
@@ -434,8 +428,6 @@
 		278D8470101173430060DBA1 /* File Viewers */ = {
 			isa = PBXGroup;
 			children = (
-				278D8471101173500060DBA1 /* ImageViewController.h */,
-				278D8472101173500060DBA1 /* ImageViewController.m */,
 				27FEADA6104A06470042BBFC /* WebFileViewController.h */,
 				27FEADA7104A06470042BBFC /* WebFileViewController.m */,
 				27FEADA8104A06470042BBFC /* WebFileViewController.xib */,
@@ -446,8 +438,6 @@
 		278D89301013BD330060DBA1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				278D89311013BD3E0060DBA1 /* TapDetectingImageView.h */,
-				278D89321013BD3E0060DBA1 /* TapDetectingImageView.m */,
 				2777B722101C15D00043D3C1 /* RoundedRectView.h */,
 				2777B723101C15D00043D3C1 /* RoundedRectView.m */,
 			);
@@ -955,8 +945,6 @@
 				2786B0670FFC6B5D002B852B /* ServerViewController.m in Sources */,
 				2786B6710FFEC75B002B852B /* IPGroupViewController.m in Sources */,
 				275ACB480FFEFDE200EEB366 /* ObjectViewController.m in Sources */,
-				278D8473101173500060DBA1 /* ImageViewController.m in Sources */,
-				278D89331013BD3E0060DBA1 /* TapDetectingImageView.m in Sources */,
 				278D8B581013E56F0060DBA1 /* AddObjectViewController.m in Sources */,
 				272EF03D101593DD00DB17A1 /* AddServerViewController.m in Sources */,
 				272EF0AE1015999800DB17A1 /* ServerNameController.m in Sources */,

@@ -21,7 +21,7 @@
 
 + (id)fromJSONData:(NSData *)data {
 	NSString *jsonString = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
-	NSLog([NSString stringWithFormat:@"JSON String: %@", jsonString]);
+	//NSLog([NSString stringWithFormat:@"JSON String: %@", jsonString]);
 	id jsonObject = [jsonString JSONValue];
 	return [self deserializeJSON:jsonObject];
 

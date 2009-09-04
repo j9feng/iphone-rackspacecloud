@@ -3,12 +3,12 @@
 //  Rackspace
 //
 //  Created by Michael Mayo on 5/25/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//  Copyright Rackspace Hosting 2009. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class LoginViewController, ServersRootViewController, TapDetectingImageView;
+@class LoginViewController, ServersRootViewController;
 
 @interface RackspaceAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;
@@ -28,7 +28,6 @@
 	NSString *usernamePreference;
 	NSString *apiKeyPreference;
 	
-	TapDetectingImageView *tapDetectingImageView;
 	UIScrollView *imageScrollView;
 }
 
@@ -49,7 +48,6 @@
 @property (nonatomic, retain) NSString *usernamePreference;
 @property (nonatomic, retain) NSString *apiKeyPreference;
 
-@property (nonatomic, retain) TapDetectingImageView *tapDetectingImageView;
 @property (nonatomic, retain) UIScrollView *imageScrollView;
 
 @end
