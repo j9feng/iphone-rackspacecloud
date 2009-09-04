@@ -332,13 +332,10 @@
 			isa = PBXGroup;
 			children = (
 				278D89301013BD330060DBA1 /* Custom Views */,
-				2786B0640FFC6B46002B852B /* Record View Controllers */,
-				4C9982500FEE0BD2005D12B7 /* List View Controllers */,
+				2786B0640FFC6B46002B852B /* View Controllers */,
 				4C3B1EAD0FDC3D9F00AE2133 /* Models */,
 				4C3B1E830FDC3D7500AE2133 /* ObjectiveResource */,
 				4C3B1E2F0FDC3D5300AE2133 /* lib */,
-				4C3B1D260FDA14DA00AE2133 /* Login and Settings */,
-				4C3B1D1B0FDA14CA00AE2133 /* Table Cells */,
 				28216C950DB411BC00E5133A /* FirstViewController.h */,
 				28216C960DB411BC00E5133A /* FirstViewController.m */,
 				1D3623240D0F684500981E51 /* RackspaceAppDelegate.h */,
@@ -358,10 +355,10 @@
 		272EF02E1015937A00DB17A1 /* Servers */ = {
 			isa = PBXGroup;
 			children = (
+				2738C38B1050B1B8007D6C85 /* List Servers */,
+				2738C38A1050B1A9007D6C85 /* View Server */,
 				2793CA541016D55B009EB8C3 /* Edit Server */,
 				272EF090101598A300DB17A1 /* Add Server */,
-				2786B0650FFC6B5D002B852B /* ServerViewController.h */,
-				2786B0660FFC6B5D002B852B /* ServerViewController.m */,
 			);
 			name = Servers;
 			sourceTree = "<group>";
@@ -392,19 +389,116 @@
 			name = "Add Server";
 			sourceTree = "<group>";
 		};
-		2786B0640FFC6B46002B852B /* Record View Controllers */ = {
+		2738C3881050B17E007D6C85 /* Cloud Servers */ = {
 			isa = PBXGroup;
 			children = (
 				272EF02E1015937A00DB17A1 /* Servers */,
-				278D8470101173430060DBA1 /* File Viewers */,
+				2738C38E1050B223007D6C85 /* IP Groups */,
+			);
+			name = "Cloud Servers";
+			sourceTree = "<group>";
+		};
+		2738C3891050B184007D6C85 /* Cloud Files */ = {
+			isa = PBXGroup;
+			children = (
+				2738C3911050B271007D6C85 /* Containers */,
+				2738C3921050B276007D6C85 /* Objects */,
+			);
+			name = "Cloud Files";
+			sourceTree = "<group>";
+		};
+		2738C38A1050B1A9007D6C85 /* View Server */ = {
+			isa = PBXGroup;
+			children = (
+				2786B0650FFC6B5D002B852B /* ServerViewController.h */,
+				2786B0660FFC6B5D002B852B /* ServerViewController.m */,
+			);
+			name = "View Server";
+			sourceTree = "<group>";
+		};
+		2738C38B1050B1B8007D6C85 /* List Servers */ = {
+			isa = PBXGroup;
+			children = (
+				4C9982B30FEE0EFB005D12B7 /* ServersRootViewController.h */,
+				4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */,
+			);
+			name = "List Servers";
+			sourceTree = "<group>";
+		};
+		2738C38E1050B223007D6C85 /* IP Groups */ = {
+			isa = PBXGroup;
+			children = (
+				2738C3901050B244007D6C85 /* View IP Group */,
+				2738C38F1050B22F007D6C85 /* List IP Groups */,
+			);
+			name = "IP Groups";
+			sourceTree = "<group>";
+		};
+		2738C38F1050B22F007D6C85 /* List IP Groups */ = {
+			isa = PBXGroup;
+			children = (
+				4C9982B70FEE0F23005D12B7 /* IPGroupsRootViewController.h */,
+				4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */,
+			);
+			name = "List IP Groups";
+			sourceTree = "<group>";
+		};
+		2738C3901050B244007D6C85 /* View IP Group */ = {
+			isa = PBXGroup;
+			children = (
 				2786B66F0FFEC75B002B852B /* IPGroupViewController.h */,
 				2786B6700FFEC75B002B852B /* IPGroupViewController.m */,
+			);
+			name = "View IP Group";
+			sourceTree = "<group>";
+		};
+		2738C3911050B271007D6C85 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				2738C3931050B289007D6C85 /* List Containers */,
+			);
+			name = Containers;
+			sourceTree = "<group>";
+		};
+		2738C3921050B276007D6C85 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2738C3941050B299007D6C85 /* List Objects */,
+				278D8470101173430060DBA1 /* File Viewers */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		2738C3931050B289007D6C85 /* List Containers */ = {
+			isa = PBXGroup;
+			children = (
+				4C9985FB0FEEE1F2005D12B7 /* ContainersRootViewController.h */,
+				4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */,
+			);
+			name = "List Containers";
+			sourceTree = "<group>";
+		};
+		2738C3941050B299007D6C85 /* List Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4C9989950FEF48AA005D12B7 /* ListObjectsViewController.h */,
+				4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */,
+			);
+			name = "List Objects";
+			sourceTree = "<group>";
+		};
+		2786B0640FFC6B46002B852B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B1D260FDA14DA00AE2133 /* Login and Settings */,
+				2738C3881050B17E007D6C85 /* Cloud Servers */,
+				2738C3891050B184007D6C85 /* Cloud Files */,
 				275ACB460FFEFDE200EEB366 /* ObjectViewController.h */,
 				275ACB470FFEFDE200EEB366 /* ObjectViewController.m */,
 				278D8B561013E56F0060DBA1 /* AddObjectViewController.h */,
 				278D8B571013E56F0060DBA1 /* AddObjectViewController.m */,
 			);
-			name = "Record View Controllers";
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		2786B0680FFC6B6D002B852B /* User Interfaces */ = {
@@ -438,6 +532,7 @@
 		278D89301013BD330060DBA1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C3B1D1B0FDA14CA00AE2133 /* Table Cells */,
 				2777B722101C15D00043D3C1 /* RoundedRectView.h */,
 				2777B723101C15D00043D3C1 /* RoundedRectView.m */,
 			);
@@ -705,45 +800,6 @@
 				4C9984260FEEB502005D12B7 /* Auth.m */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		4C9982500FEE0BD2005D12B7 /* List View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4C9982AE0FEE0E65005D12B7 /* Servers */,
-				4C9982AF0FEE0E6A005D12B7 /* IP Groups */,
-				4C9982B00FEE0E6F005D12B7 /* Cloud Files */,
-			);
-			name = "List View Controllers";
-			sourceTree = "<group>";
-		};
-		4C9982AE0FEE0E65005D12B7 /* Servers */ = {
-			isa = PBXGroup;
-			children = (
-				4C9982B30FEE0EFB005D12B7 /* ServersRootViewController.h */,
-				4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */,
-			);
-			name = Servers;
-			sourceTree = "<group>";
-		};
-		4C9982AF0FEE0E6A005D12B7 /* IP Groups */ = {
-			isa = PBXGroup;
-			children = (
-				4C9982B70FEE0F23005D12B7 /* IPGroupsRootViewController.h */,
-				4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */,
-			);
-			name = "IP Groups";
-			sourceTree = "<group>";
-		};
-		4C9982B00FEE0E6F005D12B7 /* Cloud Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C9985FB0FEEE1F2005D12B7 /* ContainersRootViewController.h */,
-				4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */,
-				4C9989950FEF48AA005D12B7 /* ListObjectsViewController.h */,
-				4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */,
-			);
-			name = "Cloud Files";
 			sourceTree = "<group>";
 		};
 		4C9982EA0FEE132F005D12B7 /* OS Icons */ = {
