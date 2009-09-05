@@ -13,6 +13,7 @@
 @interface ListObjectsViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAccelerometerDelegate> {
 	NSString *containerName;
 	Container *container;
+	Container *objectsContainer;
 	Account *account;
 	UIAccelerationValue	myAccelerometer[3];
 	UISwitch *cdnSwitch;
@@ -22,6 +23,7 @@
 
 @property (nonatomic, retain) NSString *containerName;
 @property (nonatomic, retain) Container *container;
+@property (nonatomic, retain) Container *objectsContainer;
 @property (nonatomic, retain) Account *account;
 @property (nonatomic, retain) UISwitch *cdnSwitch;
 @property (nonatomic, retain) UISwitch *logSwitch;

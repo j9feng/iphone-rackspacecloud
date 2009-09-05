@@ -23,7 +23,7 @@
 
 @implementation ListObjectsViewController
 
-@synthesize account, container, containerName, cdnSwitch, logSwitch, spinnerView;
+@synthesize account, container, containerName, cdnSwitch, logSwitch, spinnerView, objectsContainer;
 
 BOOL objectsLoaded = NO;
 
@@ -36,63 +36,10 @@ BOOL objectsLoaded = NO;
 		[ObjectiveResourceConfig setAuthToken:app.authToken];
 		[ObjectiveResourceConfig setResponseType:XmlResponse];	
 		
-		// get the container, but first back up attributes
-		NSString *name = nil;
-		NSString *bytes = nil;
-		NSString *count = nil;
-		NSString *cdnEnabled = nil;
-		NSString *ttl = nil;
-		NSString *logRetention = nil;
-		NSString *cdnUrl = nil;
+		// the objectsContainer is a temporary holder for the files list
+		self.objectsContainer = [Container findRemote:self.containerName withResponse:nil];
+		self.container.objects = self.objectsContainer.objects;
 		
-		if (self.container.name) {
-			name = [NSString stringWithString:self.container.name];
-		}
-		if (self.container.bytes) {
-			bytes = [NSString stringWithString:self.container.bytes];
-		}
-		if (self.container.count) {
-			count = [NSString stringWithString:self.container.count];
-		}
-		if (self.container.cdnEnabled) {
-			cdnEnabled = [NSString stringWithString:self.container.cdnEnabled];
-		}
-		if (self.container.ttl) {
-			ttl = [NSString stringWithString:self.container.ttl];
-		}
-		if (self.container.logRetention) {
-			logRetention = [NSString stringWithString:self.container.logRetention];
-		}
-		if (self.container.cdnUrl) {
-			cdnUrl = [NSString stringWithString:self.container.cdnUrl];
-		}
-		
-		self.container = [Container findRemote:self.containerName withResponse:nil];
-		
-		if (name) {
-			self.container.name = name;
-		}
-		if (bytes) {
-			self.container.bytes = bytes;
-		}
-		if (count) {
-			self.container.count = count;
-		}
-		if (cdnEnabled) {
-			self.container.cdnEnabled = cdnEnabled;
-		}
-		if (ttl) {
-			self.container.ttl = ttl;
-		}
-		if (logRetention) {
-			self.container.logRetention = logRetention;
-		}
-		if (cdnUrl) {
-			self.container.cdnUrl = cdnUrl;
-		}
-		
-		// https://storage.clouddrive.com/v1/MossoCloudFS_56ad0327-43d6-4ac4-9883-797f5690238econtainers/personal.xml
-		// https://storage.clouddrive.com/v1/MossoCloudFS_56ad0327-43d6-4ac4-9883-797f5690238e/personal.xml
 		objectsLoaded = YES;
 		self.tableView.userInteractionEnabled = YES;
 		[self.tableView reloadData];		
@@ -126,7 +73,6 @@ BOOL objectsLoaded = NO;
 		self.container.cdnEnabled = @"False";
 	}
 	Response *response = [self.container save];
-	//NSLog([NSString stringWithFormat:@"Container save response code: %i", response.statusCode]);
 	[self hideSpinnerView];
 	if (![response isSuccess]) {
 		[self showSaveError:response];
@@ -516,12 +462,12 @@ BOOL objectsLoaded = NO;
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-	self.container = nil;
+	self.objectsContainer = nil;
 	objectsLoaded = NO;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-	self.container = nil;
+	self.objectsContainer = nil;
 	objectsLoaded = NO;
 	[super viewDidDisappear:animated];
 }
@@ -533,6 +479,7 @@ BOOL objectsLoaded = NO;
 	[cdnSwitch release];
 	[logSwitch release];
 	[spinnerView release];
+	[objectsContainer release];
     [super dealloc];
 }
 
