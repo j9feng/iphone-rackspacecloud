@@ -10,14 +10,18 @@
 
 @class CloudFilesObject, Container;
 
-@interface WebFileViewController : UIViewController {
+@interface WebFileViewController : UIViewController <UIWebViewDelegate> {
 	CloudFilesObject *cfObject;
 	Container *container;
 	IBOutlet UIWebView *webView;
+	IBOutlet UIActivityIndicatorView *spinner;
+	IBOutlet UILabel *loadingLabel;
 }
 
 @property (nonatomic, retain) CloudFilesObject *cfObject;
 @property (nonatomic, retain) Container *container;
 @property (nonatomic, retain) UIWebView *webView;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
+@property (nonatomic, retain) UILabel *loadingLabel;
 
 @end

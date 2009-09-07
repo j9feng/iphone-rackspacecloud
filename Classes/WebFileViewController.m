@@ -12,28 +12,16 @@
 
 @implementation WebFileViewController
 
-@synthesize cfObject, webView, container;
-
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+@synthesize cfObject, webView, container, spinner, loadingLabel;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	self.navigationItem.title = @"Preview";		
+	self.navigationItem.title = @"Preview";
     [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 	NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
-	//NSURL *url = [[NSURL alloc] initWithString:@"http://c0162922.cdn.cloudfiles.rackspacecloud.com/mike.jpeg"];
-	NSLog(urlString);
 	NSURL *url = [[NSURL alloc] initWithString:urlString];
 	
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL: url]; 
@@ -45,13 +33,20 @@
 	[super viewWillAppear:animated];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+#pragma mark Web View Delegate Methods
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+	self.webView.userInteractionEnabled = NO;
+	spinner.hidden = NO;
+	loadingLabel.hidden = NO;
 }
-*/
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+	self.webView.userInteractionEnabled = YES;
+	spinner.hidden = YES;
+	loadingLabel.hidden = YES;
+}
+
+#pragma mark Memory Management
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -68,7 +63,10 @@
 
 - (void)dealloc {
 	[cfObject release];
+	webView.delegate = nil; // you must get rid of the delegate before releasing
 	[webView release];
+	[spinner release];
+	[loadingLabel release];
 	[container release];
     [super dealloc];
 }
