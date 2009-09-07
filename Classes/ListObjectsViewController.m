@@ -16,6 +16,7 @@
 #import "ObjectViewController.h"
 #import "RoundedRectView.h"
 #import "Response.h"
+#import "EditableCell.h"
 
 #define kContainerDetails 0
 #define kCDN 1
@@ -345,6 +346,28 @@ BOOL objectsLoaded = NO;
 			logSwitchCell.selectionStyle = UITableViewCellSelectionStyleNone;
 		}
 		
+		static NSString *CDNURLCellIdentifier = @"CDNURLCell";
+		cdnURLCell = (EditableCell *) [aTableView dequeueReusableCellWithIdentifier:CDNURLCellIdentifier];
+		if (cdnURLCell == nil) {
+			cdnURLCell = [[EditableCell alloc] initWithFrame:CGRectZero reuseIdentifier:CDNURLCellIdentifier];
+			cdnURLCell.selectionStyle = UITableViewCellSelectionStyleNone;
+			cdnURLCell.textField.delegate = self;
+			
+			// hide the clear button, since this field is not editable
+			cdnURLCell.textField.clearButtonMode = UITextFieldViewModeNever;
+			
+			// move the text over a little bit
+			CGRect labelRect = cdnURLCell.labelField.frame;
+			labelRect.origin.x -= 15;
+			cdnURLCell.labelField.frame = labelRect;
+			
+			CGRect textRect = cdnURLCell.textField.frame;
+			textRect.origin.x += 10;
+			textRect.size.width -= 10; // to prevent scrolling off the side
+			cdnURLCell.textField.frame = textRect;
+			
+		}
+		
 		switch (indexPath.row) {
 			case 0:
 				cdnSwitchCell.textLabel.text = @"Publish to CDN";
@@ -369,8 +392,9 @@ BOOL objectsLoaded = NO;
 				cell.detailTextLabel.text = self.container.ttl;
 				break;
 			case 3:
-				cell.textLabel.text = @"CDN URL";
-				cell.detailTextLabel.text = self.container.cdnUrl;
+				cdnURLCell.labelField.text = @"CDN URL";
+				cdnURLCell.textField.text = self.container.cdnUrl;
+				return cdnURLCell;
 				break;
 		}
 		
@@ -423,6 +447,22 @@ BOOL objectsLoaded = NO;
 		}
 	} 
 	return nil;
+}
+
+#pragma mark Text Field Delegate Methods for CDN URL Cell
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+	[textField resignFirstResponder];
+	return NO; // contents are not editable.  it's a text field to allow users to easily copy/paste
+}
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField {
+	[textField resignFirstResponder];
+	return NO; // contents are not editable.  it's a text field to allow users to easily copy/paste
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+	[textField resignFirstResponder];
 }
 
 #pragma mark Shake Feature

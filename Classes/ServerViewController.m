@@ -485,8 +485,6 @@ NSString *initialFlavorId;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	NSLog([NSString stringWithFormat:@"button %i clicked", buttonIndex]);
-	NSLog(rebootMode);
 	
 	if (buttonIndex == 0) { // that's the reboot button
 		//[NSThread detachNewThreadSelector:@selector(rebootSlice) toTarget:self withObject:nil];	
@@ -521,8 +519,6 @@ NSString *initialFlavorId;
 	self.server.status = [newServer.status copy];	
 	self.server.progress = [newServer.progress copy];
 		
-	NSLog([NSString stringWithFormat:@"Status: %@ - Progress: %@", newServer.status, newServer.progress]);
-	
 	[self performSelectorOnMainThread:@selector(hideSpinnerView) withObject:nil waitUntilDone:NO];
 	[self performSelectorOnMainThread:@selector(reloadTableData) withObject:nil waitUntilDone:YES];
 	
@@ -630,7 +626,6 @@ NSString *initialFlavorId;
 	[server release];
 	[serverNameCell release];
 	[saveButton release];
-	NSLog([NSString stringWithFormat:@"dealloc ServerViewController - statusCell retainCount = %i", [statusCell retainCount]]);
 //		[statusCell release];
 	[spinnerView release];
 	[serversRootViewController release];
