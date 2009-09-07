@@ -123,13 +123,20 @@ NSString *initialFlavorId;
 	} else if (section == kPrivateIPs) {
 		return [[server.addresses objectForKey:@"private"] count];
 	} else if (section == kActions) {
-		// if the server is resizing, don't offer the resize action
-//		if ([self.server.status isEqualToString:@"QUEUE_RESIZE"] || [self.server.status isEqualToString:@"PREP_RESIZE"] || [self.server.status isEqualToString:@"RESIZE"] || [self.server.status isEqualToString:@"VERIFY_RESIZE"]) {
-//			return 1;
-//		} else {
-//			return 2;
-//		}
-		return 3;
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];	
+		NSString *protocol = [defaults stringForKey:@"ssh_app_protocol_preference"];
+		if (!protocol) {
+			protocol = @"ssh://";
+		}
+		NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", protocol, [[server.addresses objectForKey:@"public"] objectAtIndex:0]]];
+		
+		UIApplication *app = [UIApplication sharedApplication];
+		
+		if ([app canOpenURL:url]) {
+			return 3;
+		} else {
+			return 2; // hide the ssh row
+		}
 	} else {
 		return 0;
 	}
@@ -380,7 +387,14 @@ NSString *initialFlavorId;
 				protocol = @"ssh://";
 			}
 			NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", protocol, [[server.addresses objectForKey:@"public"] objectAtIndex:0]]];
-			[[UIApplication sharedApplication] openURL:url];
+			
+			UIApplication *app = [UIApplication sharedApplication];
+			
+			if ([app canOpenURL:url]) {
+				[app openURL:url];
+			} else {
+				NSLog(@"can't open the ssh client url");
+			}			
 		}
 	}
 }
