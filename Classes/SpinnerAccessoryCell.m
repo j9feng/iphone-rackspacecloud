@@ -27,18 +27,20 @@
     // Configure the view for the selected state
 	if (selected) {
 		self.accessoryType = UITableViewCellAccessoryNone;
+		UIActivityIndicatorView *spinner;
+		spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(253.0, 12.0, 20.0, 20.0)];
+		spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+		spinner.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin |
+									UIViewAutoresizingFlexibleRightMargin |
+									UIViewAutoresizingFlexibleTopMargin |
+									UIViewAutoresizingFlexibleBottomMargin);	
+		[spinner startAnimating];
+		[self.contentView addSubview:spinner];
+
 	} else {
 		self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}	
-	
-	UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-	spinner.frame = CGRectMake(10, 0, 18, 18);
-	[self.contentView addSubview:spinner];
-	
-//	UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"test" message:@"test" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil];
-//	[av show];
-//	[av release];
-	
+	self.accessoryType = UITableViewCellAccessoryNone;	
 }
 
 

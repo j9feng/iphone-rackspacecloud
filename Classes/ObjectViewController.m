@@ -129,7 +129,7 @@
 		SpinnerAccessoryCell *attachCell = (SpinnerAccessoryCell *) [aTableView dequeueReusableCellWithIdentifier:AttachCellIdentifier];
 		if (attachCell == nil) {
 			attachCell = [[[SpinnerAccessoryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:AttachCellIdentifier] autorelease];
-			attachCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+			attachCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;			
 		}
 		
 		switch (indexPath.row) {
@@ -171,6 +171,9 @@
 		[vc release];
 		
 	} else if (indexPath.row == 2) { // email as attachment
+		
+		[aTableView reloadData];
+		
 		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
 		vc.mailComposeDelegate = self;
 		
