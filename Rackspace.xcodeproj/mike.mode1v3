@@ -293,7 +293,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {321, 689}}</string>
+							<string>{{0, 34}, {321, 689}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -342,7 +342,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>276968C51055E72300D64A7B</string>
+										<string>276968DB1055E8BF00D64A7B</string>
 										<key>history</key>
 										<array>
 											<string>2786AE080FFC368D002B852B</string>
@@ -637,7 +637,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>276968C61055E72300D64A7B</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>276964031055BDB200D64A7B</string>
 		<string>276964041055BDB200D64A7B</string>

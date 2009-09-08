@@ -153,16 +153,8 @@
 		[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
 	} else if (indexPath.row == 1) { // email a link
 		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
-		vc.mailComposeDelegate = self;
-		
+		vc.mailComposeDelegate = self;		
 		[vc setSubject:self.cfObject.name];
-		
-		// Attach an image to the email
-//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
-//		NSData *myData = [NSData dataWithContentsOfFile:path];
-//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
-		
-		// Fill out the email body text
 		NSString *emailBody = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
 		[vc setMessageBody:emailBody isHTML:NO];
 		
@@ -170,6 +162,23 @@
 		[vc release];
 		
 	} else if (indexPath.row == 2) { // email as attachment
+		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
+		vc.mailComposeDelegate = self;
+		
+		[vc setSubject:self.cfObject.name];
+		
+		// Attach an image to the email
+		//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
+		//		NSData *myData = [NSData dataWithContentsOfFile:path];
+		//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
+		
+		
+		// Fill out the email body text
+		NSString *emailBody = @"";
+		[vc setMessageBody:emailBody isHTML:NO];
+		
+		[self presentModalViewController:vc animated:YES];
+		[vc release];
 	}
 }
 
