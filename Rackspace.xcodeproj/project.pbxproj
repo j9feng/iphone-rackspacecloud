@@ -18,6 +18,7 @@
 		272EF0AF1015999800DB17A1 /* ServerNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272EF0AD1015999800DB17A1 /* ServerNameController.xib */; };
 		275ACB480FFEFDE200EEB366 /* ObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */; };
 		276965FF1055D32C00D64A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276965FE1055D32C00D64A7B /* MessageUI.framework */; };
+		276968FD1055EDBE00D64A7B /* SpinnerAccessoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 276968FC1055EDBE00D64A7B /* SpinnerAccessoryCell.m */; };
 		2777B583101BF9AB0043D3C1 /* ConfirmResizeServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */; };
 		2777B584101BF9AB0043D3C1 /* ConfirmResizeServerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2777B582101BF9AB0043D3C1 /* ConfirmResizeServerController.xib */; };
 		2777B724101C15D00043D3C1 /* RoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777B723101C15D00043D3C1 /* RoundedRectView.m */; };
@@ -135,6 +136,8 @@
 		275ACB460FFEFDE200EEB366 /* ObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectViewController.h; sourceTree = "<group>"; };
 		275ACB470FFEFDE200EEB366 /* ObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectViewController.m; sourceTree = "<group>"; };
 		276965FE1055D32C00D64A7B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		276968FB1055EDBE00D64A7B /* SpinnerAccessoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerAccessoryCell.h; sourceTree = "<group>"; };
+		276968FC1055EDBE00D64A7B /* SpinnerAccessoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerAccessoryCell.m; sourceTree = "<group>"; };
 		2777B580101BF9AB0043D3C1 /* ConfirmResizeServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmResizeServerController.h; sourceTree = "<group>"; };
 		2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmResizeServerController.m; sourceTree = "<group>"; };
 		2777B582101BF9AB0043D3C1 /* ConfirmResizeServerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmResizeServerController.xib; sourceTree = "<group>"; };
@@ -647,6 +650,8 @@
 				2777B942101C321B0043D3C1 /* EditableLoginCell.m */,
 				2777B948101C32800043D3C1 /* SecureEditableLoginCell.h */,
 				2777B949101C32800043D3C1 /* SecureEditableLoginCell.m */,
+				276968FB1055EDBE00D64A7B /* SpinnerAccessoryCell.h */,
+				276968FC1055EDBE00D64A7B /* SpinnerAccessoryCell.m */,
 			);
 			name = "Table Cells";
 			sourceTree = "<group>";
@@ -1026,6 +1031,7 @@
 				2777BB9D101C57F20043D3C1 /* AddServerFlavorController.m in Sources */,
 				2777BBA2101C57FC0043D3C1 /* AddServerImageController.m in Sources */,
 				27FEADA9104A06470042BBFC /* WebFileViewController.m in Sources */,
+				276968FD1055EDBE00D64A7B /* SpinnerAccessoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

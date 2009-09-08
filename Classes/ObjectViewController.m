@@ -10,6 +10,7 @@
 #import "CloudFilesObject.h"
 #import "WebFileViewController.h"
 #import "Container.h"
+#import "SpinnerAccessoryCell.h"
 
 
 #define kFileDetails 0
@@ -124,6 +125,13 @@
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		}
 		
+		static NSString *AttachCellIdentifier = @"AttachCell";
+		SpinnerAccessoryCell *attachCell = (SpinnerAccessoryCell *) [aTableView dequeueReusableCellWithIdentifier:AttachCellIdentifier];
+		if (attachCell == nil) {
+			attachCell = [[[SpinnerAccessoryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:AttachCellIdentifier] autorelease];
+			attachCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+		}
+		
 		switch (indexPath.row) {
 			case 0:
 				cell.textLabel.text = @"Preview File";
@@ -132,7 +140,8 @@
 				cell.textLabel.text = @"Email Link to File";
 				break;
 			case 2:
-				cell.textLabel.text = @"Email File as Attachment";
+				attachCell.textLabel.text = @"Email File as Attachment";
+				return attachCell;
 				break;
 			default:
 				break;
@@ -171,7 +180,10 @@
 		//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
 		//		NSData *myData = [NSData dataWithContentsOfFile:path];
 		//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
-		
+		NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
+		NSURL *url = [NSURL URLWithString:urlString];
+		NSData *attachmentData = [NSData dataWithContentsOfURL:url];
+		[vc addAttachmentData:attachmentData mimeType:self.cfObject.contentType fileName:self.cfObject.name];
 		
 		// Fill out the email body text
 		NSString *emailBody = @"";
