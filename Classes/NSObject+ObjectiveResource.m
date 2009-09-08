@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+ObjectiveResource.h"
-#import "Connection.h"
+#import "ORConnection.h"
 #import "Response.h"
 #import "CoreSupport.h"
 #import "XMLSerializableSupport.h"
@@ -118,7 +118,7 @@ static ORSResponseFormat _format;
 
 // Find all items 
 + (NSArray *)findAllRemoteWithResponse:(NSError **)aError {
-	Response *res = [Connection get:[self getRemoteCollectionPath] withAuthToken:[[self class] getRemoteAuthToken]];
+	Response *res = [ORConnection get:[self getRemoteCollectionPath] withAuthToken:[[self class] getRemoteAuthToken]];
 	if([res isError] && aError) {
 		*aError = res.error;
 	}
@@ -131,7 +131,7 @@ static ORSResponseFormat _format;
 }
 
 + (id)findRemote:(NSString *)elementId withResponse:(NSError **)aError {
-	Response *res = [Connection get:[self getRemoteElementPath:elementId] withAuthToken:[[self class] getRemoteAuthToken]];
+	Response *res = [ORConnection get:[self getRemoteElementPath:elementId] withAuthToken:[[self class] getRemoteAuthToken]];
 	if([res isError] && aError) {
 		*aError = res.error;
 	}
@@ -222,7 +222,7 @@ static ORSResponseFormat _format;
 }
 
 - (BOOL)createRemoteAtPath:(NSString *)path withResponse:(NSError **)aError {
-	Response *res = [Connection post:[self convertToRemoteExpectedType] to:path withAuthToken:[[self class]  getRemoteAuthToken]];
+	Response *res = [ORConnection post:[self convertToRemoteExpectedType] to:path withAuthToken:[[self class]  getRemoteAuthToken]];
 	if([res isError] && aError) {
 		*aError = res.error;
 	}
@@ -237,7 +237,7 @@ static ORSResponseFormat _format;
 }
 
 -(BOOL)updateRemoteAtPath:(NSString *)path withResponse:(NSError **)aError {	
-	Response *res = [Connection put:[self convertToRemoteExpectedType] to:path 
+	Response *res = [ORConnection put:[self convertToRemoteExpectedType] to:path 
 						   withAuthToken:[[self class] getRemoteAuthToken]];
 	if([res isError] && aError) {
 		*aError = res.error;
@@ -256,7 +256,7 @@ static ORSResponseFormat _format;
 }
 
 - (BOOL)destroyRemoteAtPath:(NSString *)path withResponse:(NSError **)aError {
-	Response *res = [Connection delete:path withAuthToken:[[self class] getRemoteAuthToken]];
+	Response *res = [ORConnection delete:path withAuthToken:[[self class] getRemoteAuthToken]];
 	if([res isError] && aError) {
 		*aError = res.error;
 	}

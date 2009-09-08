@@ -8,7 +8,7 @@
 
 #import "CloudFilesObject.h"
 #import "RackspaceAppDelegate.h"
-#import "Connection.h"
+#import "ORConnection.h"
 #import "Response.h"
 #import "Container.h"
 
@@ -68,7 +68,7 @@
 	//[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];
 	
 	[request setHTTPBody:data];
-	Response *response = [Connection sendRequest:request withAuthToken:app.authToken];	
+	Response *response = [ORConnection sendRequest:request withAuthToken:app.authToken];	
 	
 	if ([response isError]) {
 		NSLog(@"status code is not good");

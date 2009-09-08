@@ -10,14 +10,15 @@
 
 @class Container;
 
-@interface Account : NSObject {
+@interface CFAccount : NSObject {
 	NSMutableArray *containers;
-	NSString *container;
+	Container *container;
 }
 
 @property (nonatomic, retain) NSMutableArray *containers;
-@property (nonatomic, retain) NSString *container;
+@property (nonatomic, retain) Container *container;
 
 + (id)findCDNRemote:(NSString *)elementId withResponse:(NSError **)aError;
++ (NSString *) xmlElementName;
 
 @end

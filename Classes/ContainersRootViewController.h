@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class Account;
+@class CFAccount;
 
 @interface ContainersRootViewController : UITableViewController <UIAccelerometerDelegate> {
-	Account *account;
-	Account *cdnAccount;
+	CFAccount *account;
+	CFAccount *cdnAccount;
 	UIAccelerationValue	myAccelerometer[3];
 }
 
-@property (nonatomic, retain) Account *account;
-@property (nonatomic, retain) Account *cdnAccount;
+@property (nonatomic, retain) CFAccount *account;
+@property (nonatomic, retain) CFAccount *cdnAccount;
 
 @end

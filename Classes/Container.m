@@ -9,7 +9,7 @@
 #import "Container.h"
 #import "RackspaceAppDelegate.h"
 #import "Response.h"
-#import "Connection.h"
+#import "ORConnection.h"
 
 @implementation Container
 
@@ -119,7 +119,7 @@
 	
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];	
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];	
 	if([res isError] && aError) {
 		*aError = res.error;
 	}
@@ -137,7 +137,7 @@
 - (Response *)save {
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];	
 
-	NSLog([NSString stringWithFormat:@"%@/%@?format=xml", app.cdnManagementUrl, [self.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]);
+	//NSLog([NSString stringWithFormat:@"%@/%@?format=xml", app.cdnManagementUrl, [self.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]);
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", app.storageUrl, [self.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];	
 
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -152,10 +152,8 @@
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		
 	
 	// look for X-CDN-URI header
-	return [Connection sendRequest:request withAuthToken:app.authToken];
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
-
-
 
 -(void)dealloc {
 	[name release];
@@ -166,6 +164,7 @@
 	[ttl release];
 	[logRetention release];
 	[cdnUrl release];
+	//[container release];
 	[super dealloc];
 }
 

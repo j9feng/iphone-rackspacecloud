@@ -35,6 +35,8 @@
 	NSString *logRetention;
 	NSString *cdnUrl;
 	
+	//Container *container;
+	
 }
 
 @property (nonatomic, retain) NSString *name;
@@ -48,6 +50,8 @@
 
 @property (nonatomic, retain) NSMutableArray *objects;
 @property (nonatomic, retain) NSString *object;
+
+//@property (nonatomic, retain) Container *container;
 
 -(NSString *)humanizedBytes;
 -(NSString *)humanizedCount;

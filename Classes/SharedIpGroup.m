@@ -10,7 +10,7 @@
 #import "ObjectiveResource.h"
 #import "RackspaceAppDelegate.h"
 #import "Response.h"
-#import "Connection.h"
+#import "ORConnection.h"
 
 @implementation SharedIpGroup
 
@@ -33,7 +33,7 @@
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@shared_ip_groups/detail.xml", app.computeUrl]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];
 	
 	NSLog([NSString stringWithFormat:@"app token: %@", app.authToken]);
 	if([res isError] && aError) {

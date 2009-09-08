@@ -17,10 +17,6 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	self.navigationItem.title = @"Preview";
-    [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
 	NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
 	NSURL *url = [[NSURL alloc] initWithString:urlString];
 	
@@ -30,6 +26,10 @@
 	
 	[request release]; 
 	[url release]; 	
+    [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "ContainersRootViewController.h"
-#import "Account.h"
+#import "CFAccount.h"
 #import "Container.h"
 #import "RackspaceAppDelegate.h"
 #import "SpinnerCell.h"
@@ -30,9 +30,9 @@ BOOL containersLoaded = NO;
 		[ObjectiveResourceConfig setAuthToken:app.authToken];
 		[ObjectiveResourceConfig setResponseType:JSONResponse];	
 	
-		self.account = [Account findRemote:@"1" withResponse:nil];
+		self.account = [CFAccount findRemote:@"1" withResponse:nil];
 	
-		self.cdnAccount = [Account findCDNRemote:@"1" withResponse:nil];
+		self.cdnAccount = [CFAccount findCDNRemote:@"1" withResponse:nil];
 		
 		// loop through the CDN containers and assign attributes to the regular containers
 		// consider container name to be the key
@@ -77,7 +77,7 @@ BOOL containersLoaded = NO;
 //	[ObjectiveResourceConfig setAuthToken:app.authToken];
 //	[ObjectiveResourceConfig setResponseType:JSONResponse];	
 //	
-//	self.account = [Account findRemote:@"1" withResponse:nil];
+//	self.account = [CFAccount findRemote:@"1" withResponse:nil];
 //	
 //	containersLoaded = YES;
 //	self.tableView.userInteractionEnabled = YES;

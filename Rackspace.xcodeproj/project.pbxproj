@@ -17,6 +17,7 @@
 		272EF0AE1015999800DB17A1 /* ServerNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272EF0AC1015999800DB17A1 /* ServerNameController.m */; };
 		272EF0AF1015999800DB17A1 /* ServerNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272EF0AD1015999800DB17A1 /* ServerNameController.xib */; };
 		275ACB480FFEFDE200EEB366 /* ObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */; };
+		276965FF1055D32C00D64A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276965FE1055D32C00D64A7B /* MessageUI.framework */; };
 		2777B583101BF9AB0043D3C1 /* ConfirmResizeServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */; };
 		2777B584101BF9AB0043D3C1 /* ConfirmResizeServerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2777B582101BF9AB0043D3C1 /* ConfirmResizeServerController.xib */; };
 		2777B724101C15D00043D3C1 /* RoundedRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777B723101C15D00043D3C1 /* RoundedRectView.m */; };
@@ -83,7 +84,7 @@
 		4C3B1E990FDC3D7500AE2133 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E880FDC3D7500AE2133 /* ConnectionManager.m */; };
 		4C3B1E9A0FDC3D7500AE2133 /* ConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E8A0FDC3D7500AE2133 /* ConnectionDelegate.m */; };
 		4C3B1E9B0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E8C0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.m */; };
-		4C3B1E9C0FDC3D7500AE2133 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E8E0FDC3D7500AE2133 /* Connection.m */; };
+		4C3B1E9C0FDC3D7500AE2133 /* ORConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E8E0FDC3D7500AE2133 /* ORConnection.m */; };
 		4C3B1E9D0FDC3D7500AE2133 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E900FDC3D7500AE2133 /* Response.m */; };
 		4C3B1E9E0FDC3D7500AE2133 /* NSMutableURLRequest+ResponseType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E920FDC3D7500AE2133 /* NSMutableURLRequest+ResponseType.m */; };
 		4C3B1E9F0FDC3D7500AE2133 /* NSError+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B1E940FDC3D7500AE2133 /* NSError+Error.m */; };
@@ -112,7 +113,7 @@
 		4C9985BE0FEEDA25005D12B7 /* cloud-files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9985BD0FEEDA25005D12B7 /* cloud-files.png */; };
 		4C9985D30FEEDFC4005D12B7 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9985D20FEEDFC4005D12B7 /* Container.m */; };
 		4C9985D80FEEDFE2005D12B7 /* CloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */; };
-		4C9985F20FEEE085005D12B7 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9985F10FEEE085005D12B7 /* Account.m */; };
+		4C9985F20FEEE085005D12B7 /* CFAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9985F10FEEE085005D12B7 /* CFAccount.m */; };
 		4C9985FD0FEEE1F2005D12B7 /* ContainersRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */; };
 		4C9989970FEF48AA005D12B7 /* ListObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */; };
 		4C9989FC0FEF4B79005D12B7 /* ListObjects.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9989FB0FEF4B79005D12B7 /* ListObjects.xib */; };
@@ -133,6 +134,7 @@
 		272EF0AD1015999800DB17A1 /* ServerNameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServerNameController.xib; path = Classes/ServerNameController.xib; sourceTree = "<group>"; };
 		275ACB460FFEFDE200EEB366 /* ObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectViewController.h; sourceTree = "<group>"; };
 		275ACB470FFEFDE200EEB366 /* ObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectViewController.m; sourceTree = "<group>"; };
+		276965FE1055D32C00D64A7B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		2777B580101BF9AB0043D3C1 /* ConfirmResizeServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmResizeServerController.h; sourceTree = "<group>"; };
 		2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmResizeServerController.m; sourceTree = "<group>"; };
 		2777B582101BF9AB0043D3C1 /* ConfirmResizeServerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmResizeServerController.xib; sourceTree = "<group>"; };
@@ -254,8 +256,8 @@
 		4C3B1E8A0FDC3D7500AE2133 /* ConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDelegate.m; sourceTree = "<group>"; };
 		4C3B1E8B0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+Error.h"; sourceTree = "<group>"; };
 		4C3B1E8C0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+Error.m"; sourceTree = "<group>"; };
-		4C3B1E8D0FDC3D7500AE2133 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
-		4C3B1E8E0FDC3D7500AE2133 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		4C3B1E8D0FDC3D7500AE2133 /* ORConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORConnection.h; sourceTree = "<group>"; };
+		4C3B1E8E0FDC3D7500AE2133 /* ORConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORConnection.m; sourceTree = "<group>"; };
 		4C3B1E8F0FDC3D7500AE2133 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		4C3B1E900FDC3D7500AE2133 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		4C3B1E910FDC3D7500AE2133 /* NSMutableURLRequest+ResponseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+ResponseType.h"; sourceTree = "<group>"; };
@@ -304,8 +306,8 @@
 		4C9985D20FEEDFC4005D12B7 /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
 		4C9985D60FEEDFE2005D12B7 /* CloudFilesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudFilesObject.h; sourceTree = "<group>"; };
 		4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudFilesObject.m; sourceTree = "<group>"; };
-		4C9985F00FEEE085005D12B7 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
-		4C9985F10FEEE085005D12B7 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		4C9985F00FEEE085005D12B7 /* CFAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFAccount.h; sourceTree = "<group>"; };
+		4C9985F10FEEE085005D12B7 /* CFAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFAccount.m; sourceTree = "<group>"; };
 		4C9985FB0FEEE1F2005D12B7 /* ContainersRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainersRootViewController.h; sourceTree = "<group>"; };
 		4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainersRootViewController.m; sourceTree = "<group>"; };
 		4C9989950FEF48AA005D12B7 /* ListObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListObjectsViewController.h; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				276965FF1055D32C00D64A7B /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +466,7 @@
 		2738C3921050B276007D6C85 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				276964D31055CCF400D64A7B /* View Object */,
 				2738C3941050B299007D6C85 /* List Objects */,
 				278D8470101173430060DBA1 /* File Viewers */,
 			);
@@ -487,14 +491,21 @@
 			name = "List Objects";
 			sourceTree = "<group>";
 		};
+		276964D31055CCF400D64A7B /* View Object */ = {
+			isa = PBXGroup;
+			children = (
+				275ACB460FFEFDE200EEB366 /* ObjectViewController.h */,
+				275ACB470FFEFDE200EEB366 /* ObjectViewController.m */,
+			);
+			name = "View Object";
+			sourceTree = "<group>";
+		};
 		2786B0640FFC6B46002B852B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				4C3B1D260FDA14DA00AE2133 /* Login and Settings */,
 				2738C3881050B17E007D6C85 /* Cloud Servers */,
 				2738C3891050B184007D6C85 /* Cloud Files */,
-				275ACB460FFEFDE200EEB366 /* ObjectViewController.h */,
-				275ACB470FFEFDE200EEB366 /* ObjectViewController.m */,
 				278D8B561013E56F0060DBA1 /* AddObjectViewController.h */,
 				278D8B571013E56F0060DBA1 /* AddObjectViewController.m */,
 			);
@@ -608,6 +619,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				276965FE1055D32C00D64A7B /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -779,8 +791,8 @@
 				4C3B1E8A0FDC3D7500AE2133 /* ConnectionDelegate.m */,
 				4C3B1E8B0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.h */,
 				4C3B1E8C0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.m */,
-				4C3B1E8D0FDC3D7500AE2133 /* Connection.h */,
-				4C3B1E8E0FDC3D7500AE2133 /* Connection.m */,
+				4C3B1E8D0FDC3D7500AE2133 /* ORConnection.h */,
+				4C3B1E8E0FDC3D7500AE2133 /* ORConnection.m */,
 				4C3B1E8F0FDC3D7500AE2133 /* Response.h */,
 				4C3B1E900FDC3D7500AE2133 /* Response.m */,
 				4C3B1E910FDC3D7500AE2133 /* NSMutableURLRequest+ResponseType.h */,
@@ -833,8 +845,8 @@
 				4C9985D20FEEDFC4005D12B7 /* Container.m */,
 				4C9985D60FEEDFE2005D12B7 /* CloudFilesObject.h */,
 				4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */,
-				4C9985F00FEEE085005D12B7 /* Account.h */,
-				4C9985F10FEEE085005D12B7 /* Account.m */,
+				4C9985F00FEEE085005D12B7 /* CFAccount.h */,
+				4C9985F10FEEE085005D12B7 /* CFAccount.m */,
 			);
 			name = "Cloud Files";
 			sourceTree = "<group>";
@@ -975,7 +987,7 @@
 				4C3B1E990FDC3D7500AE2133 /* ConnectionManager.m in Sources */,
 				4C3B1E9A0FDC3D7500AE2133 /* ConnectionDelegate.m in Sources */,
 				4C3B1E9B0FDC3D7500AE2133 /* NSHTTPURLResponse+Error.m in Sources */,
-				4C3B1E9C0FDC3D7500AE2133 /* Connection.m in Sources */,
+				4C3B1E9C0FDC3D7500AE2133 /* ORConnection.m in Sources */,
 				4C3B1E9D0FDC3D7500AE2133 /* Response.m in Sources */,
 				4C3B1E9E0FDC3D7500AE2133 /* NSMutableURLRequest+ResponseType.m in Sources */,
 				4C3B1E9F0FDC3D7500AE2133 /* NSError+Error.m in Sources */,
@@ -995,7 +1007,7 @@
 				4C9984270FEEB502005D12B7 /* Auth.m in Sources */,
 				4C9985D30FEEDFC4005D12B7 /* Container.m in Sources */,
 				4C9985D80FEEDFE2005D12B7 /* CloudFilesObject.m in Sources */,
-				4C9985F20FEEE085005D12B7 /* Account.m in Sources */,
+				4C9985F20FEEE085005D12B7 /* CFAccount.m in Sources */,
 				4C9985FD0FEEE1F2005D12B7 /* ContainersRootViewController.m in Sources */,
 				4C9989970FEF48AA005D12B7 /* ListObjectsViewController.m in Sources */,
 				2786B0670FFC6B5D002B852B /* ServerViewController.m in Sources */,

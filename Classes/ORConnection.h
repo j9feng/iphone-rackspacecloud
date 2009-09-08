@@ -1,5 +1,5 @@
 //
-//  Connection.h
+//  ORConnection.h
 //  
 //
 //  Created by Ryan Daigle on 7/30/08.
@@ -8,7 +8,7 @@
 
 @class Response;
 
-@interface Connection : NSObject
+@interface ORConnection : NSObject
 + (void) setTimeout:(float)timeout;
 + (float) timeout;
 + (Response *)post:(NSString *)body to:(NSString *)url;

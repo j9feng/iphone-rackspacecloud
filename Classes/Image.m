@@ -10,7 +10,7 @@
 #import "ObjectiveResource.h"
 #import "RackspaceAppDelegate.h"
 #import "Response.h"
-#import "Connection.h"
+#import "ORConnection.h"
 #import "Server.h"
 
 @implementation Image
@@ -35,7 +35,7 @@
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];	
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@images/detail.xml", app.computeUrl]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];	
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];	
 	if([res isError] && aError) {
 		*aError = res.error;
 	}

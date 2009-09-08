@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @class CloudFilesObject, Container;
 
-@interface ObjectViewController : UITableViewController {
+@interface ObjectViewController : UITableViewController <MFMailComposeViewControllerDelegate> {
 	CloudFilesObject *cfObject;
 	Container *container;
 }

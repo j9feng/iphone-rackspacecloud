@@ -10,7 +10,7 @@
 #import "EditableLoginCell.h"
 #import "SecureEditableLoginCell.h"
 #import "RackspaceAppDelegate.h"
-#import "Connection.h"
+#import "ORConnection.h"
 #import "Response.h"
 #import "Flavor.h"
 #import "Image.h"
@@ -133,7 +133,7 @@
 	
 	// only try to authenticate if a user name and api key are provided
 	if (userName && ![userName isEqualToString:@""] && apiKey && ![apiKey isEqualToString:@""]) {
-		Response *response = [Connection sendAuthRequest:userName andPassword:apiKey];
+		Response *response = [ORConnection sendAuthRequest:userName andPassword:apiKey];
 		
 		if (response.statusCode == 204) {
 			[self handleSuccessfulLogin:response];

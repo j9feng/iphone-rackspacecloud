@@ -11,7 +11,7 @@
 #import "CloudFilesObject.h"
 #import "SpinnerCell.h"
 #import "RackspaceAppDelegate.h"
-#import "Account.h"
+#import "CFAccount.h"
 #import "AddObjectViewController.h"
 #import "ObjectViewController.h"
 #import "RoundedRectView.h"

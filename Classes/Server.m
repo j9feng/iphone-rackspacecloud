@@ -10,7 +10,7 @@
 #import "ObjectiveResource.h"
 #import "RackspaceAppDelegate.h"
 #import "Response.h"
-#import "Connection.h"
+#import "ORConnection.h"
 #import "Image.h"
 #import "Flavor.h"
 
@@ -26,7 +26,7 @@
 	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];	
 	NSString *body = [NSString stringWithFormat:@"{ \"resize\" : { \"flavorId\" : %@ } }", self.flavorId];
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		
-	return [Connection sendRequest:request withAuthToken:app.authToken];
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
 
 - (Response *)confirmResize {
@@ -37,7 +37,7 @@
 	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];	
 	NSString *body = @"{ \"confirmResize\" : null }";
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		
-	return [Connection sendRequest:request withAuthToken:app.authToken];
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
 
 - (Response *)revertResize {
@@ -48,7 +48,7 @@
 	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];	
 	NSString *body = @"{ \"revertResize\" : null }";
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		
-	return [Connection sendRequest:request withAuthToken:app.authToken];
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
 
 - (Response *)saveRemote {
@@ -67,7 +67,7 @@
 	}	
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];	
 	
-	return [Connection sendRequest:request withAuthToken:app.authToken];
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
 
 + (Server *)findRemoteWithId:(NSString *)serverId andResponse:(NSError **)aError {
@@ -75,7 +75,7 @@
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@servers/%@.xml", app.computeUrl, serverId]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];
 	
 	NSLog([NSString stringWithFormat:@"app token: %@", app.authToken]);
 	if([res isError] && aError) {
@@ -92,7 +92,7 @@
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@servers/detail.xml", app.computeUrl]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];
 	
 	NSLog([NSString stringWithFormat:@"app token: %@", app.authToken]);
 	if([res isError] && aError) {
@@ -114,7 +114,7 @@
 	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 	NSString *body = [NSString stringWithFormat:@"{ \"reboot\" : { \"type\" : \"%@\" } }", rebootType];
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];	
-	return [Connection sendRequest:request withAuthToken:app.authToken];	
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];	
 }
 
 -(Response *)create {
@@ -126,7 +126,7 @@
 	NSString *body = [NSString stringWithFormat:@"{ \"server\" : { \"name\" : \"%@\", \"imageId\" : %@, \"flavorId\" : %@ } }", self.serverName, self.imageId, self.flavorId];
 	NSLog(body);
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		
-	return [Connection sendRequest:request withAuthToken:app.authToken];
+	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
 
 -(Response *)softReboot {

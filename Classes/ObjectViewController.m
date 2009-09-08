@@ -11,6 +11,7 @@
 #import "WebFileViewController.h"
 #import "Container.h"
 
+
 #define kFileDetails 0
 #define kActions 1
 
@@ -73,7 +74,11 @@
 	if (section == kFileDetails) {
 		return 3;
 	} else if (section == kActions) {
-		return 1;
+		//if ([MFMailComposeViewController canSendMail]) {
+			return 3;
+//		} else {
+//			return 1;
+//		}
 	} else {
 		return 0;
 	}
@@ -119,7 +124,19 @@
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		}
 		
-		cell.textLabel.text = @"Preview File";
+		switch (indexPath.row) {
+			case 0:
+				cell.textLabel.text = @"Preview File";
+				break;
+			case 1:
+				cell.textLabel.text = @"Email Link to File";
+				break;
+			case 2:
+				cell.textLabel.text = @"Email File as Attachment";
+				break;
+			default:
+				break;
+		}
 		return cell;
 	} else {
 		return nil;
@@ -127,13 +144,42 @@
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	WebFileViewController *vc = [[WebFileViewController alloc] initWithNibName:@"WebFileViewController" bundle:nil];
-	vc.cfObject = self.cfObject;
-	vc.container = self.container;
-	[self.navigationController pushViewController:vc animated:YES];
-	[vc release];
-	[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
+	if (indexPath.row == 0) { // preview the file
+		WebFileViewController *vc = [[WebFileViewController alloc] initWithNibName:@"WebFileViewController" bundle:nil];
+		vc.cfObject = self.cfObject;
+		vc.container = self.container;
+		[self.navigationController pushViewController:vc animated:YES];
+		[vc release];
+		[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
+	} else if (indexPath.row == 1) { // email a link
+		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
+		vc.mailComposeDelegate = self;
+		
+		[vc setSubject:self.cfObject.name];
+		
+		// Attach an image to the email
+//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
+//		NSData *myData = [NSData dataWithContentsOfFile:path];
+//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
+		
+		// Fill out the email body text
+		NSString *emailBody = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
+		[vc setMessageBody:emailBody isHTML:NO];
+		
+		[self presentModalViewController:vc animated:YES];
+		[vc release];
+		
+	} else if (indexPath.row == 2) { // email as attachment
+	}
 }
+
+#pragma mark Mail Composer Delegate Methods
+
+// Dismisses the email composition interface when users tap Cancel or Send.
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {	
+	[self dismissModalViewControllerAnimated:YES];
+}
+
 
 #pragma mark Memory Management
 

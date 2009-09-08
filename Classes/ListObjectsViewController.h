@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class Container, Account, RoundedRectView, EditableCell;
+@class Container, CFAccount, RoundedRectView, EditableCell;
 
 @interface ListObjectsViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAccelerometerDelegate, UITextFieldDelegate> {
 	NSString *containerName;
 	Container *container;
 	Container *objectsContainer;
-	Account *account;
+	CFAccount *account;
 	UIAccelerationValue	myAccelerometer[3];
 	UISwitch *cdnSwitch;
 	UISwitch *logSwitch;
@@ -25,7 +25,7 @@
 @property (nonatomic, retain) NSString *containerName;
 @property (nonatomic, retain) Container *container;
 @property (nonatomic, retain) Container *objectsContainer;
-@property (nonatomic, retain) Account *account;
+@property (nonatomic, retain) CFAccount *account;
 @property (nonatomic, retain) UISwitch *cdnSwitch;
 @property (nonatomic, retain) UISwitch *logSwitch;
 @property (nonatomic, retain) RoundedRectView *spinnerView;

@@ -6,25 +6,30 @@
 //  Copyright 2009 Michael Mayo. All rights reserved.
 //
 
-#import "Account.h"
+#import "CFAccount.h"
 #import "Response.h"
-#import "Connection.h"
+#import "ORConnection.h"
 #import "RackspaceAppDelegate.h"
+#import "Container.h"
 
-@implementation Account
+@implementation CFAccount
 
 @synthesize containers;
 
--(NSString *)container {
+-(Container *)container {
 	return container;
 }
 
--(Account *)init {
+-(CFAccount *)init {
 	self.containers = [NSMutableArray arrayWithCapacity:10];
 	return self;
 }
 
--(void)setContainer:(NSString *)aContainer {
++(NSString *)xmlElementName {
+	return @"account";
+}
+
+-(void)setContainer:(Container *)aContainer {
 	// viscious hack!  rackspace doesn't return a <container> inside of <containers>, so hack the setter
 	// to pretend it's in a <containers> element
 	if (!containers) {
@@ -40,7 +45,7 @@
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?format=xml", app.storageUrl]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];	
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];	
 	if ([res isError] && aError) {
 		*aError = res.error;
 	}
@@ -54,7 +59,7 @@
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?format=xml", app.cdnManagementUrl]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
-	Response *res = [Connection sendRequest:request withAuthToken:app.authToken];	
+	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];	
 	if ([res isError] && aError) {
 		*aError = res.error;
 	}

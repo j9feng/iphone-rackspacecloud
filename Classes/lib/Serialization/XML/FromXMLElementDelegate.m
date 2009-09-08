@@ -108,7 +108,7 @@ BOOL parsingPrivateAddresses = NO;
 		parsingPublicAddresses = YES;
 		parsingPrivateAddresses = NO;
 	}
-
+	
 	if ([@"private" isEqualToString:elementName]) {
 		parsingPublicAddresses = NO;
 		parsingPrivateAddresses = YES;
@@ -118,7 +118,7 @@ BOOL parsingPrivateAddresses = NO;
 		Server *s = self.parsedObject;
 		[[s.addresses objectForKey:@"public"] addObject:[attributeDict objectForKey:@"addr"]];
 	}
-
+	
 	if (parsingPrivateAddresses && [@"ip" isEqualToString:elementName]) {
 		Server *s = self.parsedObject;
 		[[s.addresses objectForKey:@"private"] addObject:[attributeDict objectForKey:@"addr"]];
@@ -127,21 +127,21 @@ BOOL parsingPrivateAddresses = NO;
 	if ([@"nil-classes" isEqualToString:elementName]) {
 		//empty result set, do nothing
 	} else if ([@"sharedIpGroups" isEqualToString:elementName] || ([@"servers" isEqualToString:elementName] && ![@"sharedIpGroup" isEqualToString:self.currentPropertyName]) || [@"flavors" isEqualToString:elementName] || [@"images" isEqualToString:elementName]) {
-// sharedIpGroup
+		// sharedIpGroup
 		
 		self.parsedObject = [NSMutableArray array];
 		[self.unclosedProperties addObject:[NSArray arrayWithObjects:elementName, self.parsedObject, nil]];
 		self.currentPropertyName = elementName;
 		
-	//Start of an array type
+		//Start of an array type
 	} else if ([@"array" isEqualToString:[attributeDict objectForKey:@"type"]]) {
 		self.parsedObject = [NSMutableArray array];
 		[self.unclosedProperties addObject:[NSArray arrayWithObjects:elementName, self.parsedObject, nil]];
 		self.currentPropertyName = elementName;
-	
-	
+		
+		
 	} else if ([@"server" isEqualToString:elementName] && self.currentPropertyName == nil) {
-	
+		
 		Server *server = [[Server alloc] init];
 		server.serverId = [serverAttributes objectForKey:@"id"];
 		server.serverName = [serverAttributes objectForKey:@"name"];
@@ -151,7 +151,7 @@ BOOL parsingPrivateAddresses = NO;
 		
 		self.parsedObject = server;
 		
-	//Start of the root object
+		//Start of the root object
     } else if (parsedObject == nil && [elementName isEqualToString:[self.targetClass xmlElementName]]) {
         self.parsedObject = [[[self.targetClass alloc] init] autorelease];
 		[self.unclosedProperties addObject:[NSArray arrayWithObjects:elementName, self.parsedObject, nil]];
@@ -161,24 +161,24 @@ BOOL parsingPrivateAddresses = NO;
 	else {
 		
 		// i hate having to hack objective resource :(
-//		if (self.currentPropertyName != nil && [elementName isEqualToString:@"object"]) {
-//			
-//			NSLog(@"caught an object!");
-//			self.parsedObject = [[[CloudFilesObject alloc] init] autorelease];
-//			[self.unclosedProperties addObject:[NSArray arrayWithObjects:self.currentPropertyName, self.parsedObject, nil]];
-//			self.currentPropertyName = elementName;
-//			
-//			
-//		} else 
+		//		if (self.currentPropertyName != nil && [elementName isEqualToString:@"object"]) {
+		//			
+		//			NSLog(@"caught an object!");
+		//			self.parsedObject = [[[CloudFilesObject alloc] init] autorelease];
+		//			[self.unclosedProperties addObject:[NSArray arrayWithObjects:self.currentPropertyName, self.parsedObject, nil]];
+		//			self.currentPropertyName = elementName;
+		//			
+		//			
+		//		} else 
 		
 		//if we are inside another element and it is not the current parent object, 
 		// then create an object for that parent element
 		if (self.currentPropertyName != nil && (![self.currentPropertyName isEqualToString:[[self.parsedObject class] xmlElementName]]) ) {
-//				&& (![self.currentPropertyName isEqualToString:@"object"])) {
+			//				&& (![self.currentPropertyName isEqualToString:@"object"])) {
 			Class elementClass = NSClassFromString([currentPropertyName toClassName]);
 			if (elementClass != nil) {
 				//classname matches, instantiate a new instance of the class and set it as the current parent object
-
+				
 				
 				
 				if ([currentPropertyName isEqualToString:@"object"]) {
@@ -228,9 +228,9 @@ BOOL parsingPrivateAddresses = NO;
 		
 		// If we recognize an element that corresponds to a known property of the current parent object, or if the
 		// current parent is an array then start collecting content for this child element
-    
+		
 		if (([self.parsedObject isKindOfClass:[NSArray class]]) ||
-        ([[[self.parsedObject class] propertyNames] containsObject:[[self convertElementName:elementName] camelize]])) {
+			([[[self.parsedObject class] propertyNames] containsObject:[[self convertElementName:elementName] camelize]])) {
 			self.currentPropertyName = [self convertElementName:elementName];
 			self.contentOfCurrentProperty = [NSMutableString string];
 			self.currentPropertyType = [attributeDict objectForKey:@"type"];
@@ -286,36 +286,36 @@ BOOL parsingPrivateAddresses = NO;
 
 // Converts the Id element to modelNameId
 - (NSString *) convertElementName:(NSString *)anElementName {
- 
-  if([anElementName isEqualToString:@"id"]) {
+	
+	if([anElementName isEqualToString:@"id"]) {
 		return [NSString stringWithFormat:@"%@Id",[[[self.parsedObject class]xmlElementName] camelize]];
- //   return [NSString stringWithFormat:@"%@_%@" , [NSStringFromClass([self.parsedObject class]) 
-//                                                 stringByReplacingCharactersInRange:NSMakeRange(0, 1) 
-//                                                 withString:[[NSStringFromClass([self.parsedObject class]) 
-//                                                              substringWithRange:NSMakeRange(0,1)] 
-//                                                              lowercaseString]], anElementName];
-  }
-  else {
-    
-    return anElementName;
-    
-  }
-
+		//   return [NSString stringWithFormat:@"%@_%@" , [NSStringFromClass([self.parsedObject class]) 
+		//                                                 stringByReplacingCharactersInRange:NSMakeRange(0, 1) 
+		//                                                 withString:[[NSStringFromClass([self.parsedObject class]) 
+		//                                                              substringWithRange:NSMakeRange(0,1)] 
+		//                                                              lowercaseString]], anElementName];
+	}
+	else {
+		
+		return anElementName;
+		
+	}
+	
 }
 
 // We're done receiving the value of a particular element, so take the value we've collected and
 // set it on the current object
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {    
-
+	
 	// i hate having to hack objective resource :(
-//	if (self.currentPropertyName != nil && [elementName isEqualToString:@"object"]) {
-//		
-//		NSLog(@"caught an object!");
-//		Container *c = (Container *) self.parsedObject;
-//		c.object = self.contentOfCurrentProperty;
-//		
-//	} else 
+	//	if (self.currentPropertyName != nil && [elementName isEqualToString:@"object"]) {
+	//		
+	//		NSLog(@"caught an object!");
+	//		Container *c = (Container *) self.parsedObject;
+	//		c.object = self.contentOfCurrentProperty;
+	//		
+	//	} else 
 	
 	if ([@"flavor" isEqualToString:elementName] || [@"image" isEqualToString:elementName]) {
 		// meh
@@ -335,7 +335,7 @@ BOOL parsingPrivateAddresses = NO;
 			}
 			else {
 				//if (![@"sharedIpGroup" isEqualToString:elementName]) {
-					[[[self.unclosedProperties lastObject] objectAtIndex:1] setValue:self.parsedObject forKey:[self convertElementName:[elementName camelize]]];
+				[[[self.unclosedProperties lastObject] objectAtIndex:1] setValue:self.parsedObject forKey:[self convertElementName:[elementName camelize]]];
 				//}
 			}
 			self.parsedObject = [[self.unclosedProperties lastObject] objectAtIndex:1];
