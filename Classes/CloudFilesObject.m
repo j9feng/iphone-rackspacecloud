@@ -42,31 +42,14 @@
 	
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
 	
-	//	PUT /<api version>/<account>/<container>/<object> HTTP/1.1 
-	//Host: storage.clouddrive.com 
-	//	X-Auth-Token: eaaafd18-0fed-4b3a-81b4-663c99ec1cbb 
-	//ETag: 8a964ee2a5e88be344f36c22562a6486 
-	//	Content-Length: 512000 
-	//	X-Object-Meta-PIN: 1234 
-	//	
-	//	[ ... ] 
-	
-	NSLog([NSString stringWithFormat:@"File URL: %@", [NSString stringWithFormat:@"%@/%@/%@", app.storageUrl,  containerName, self.name]]);
-	
 	accountName = [Container urlencode:accountName];
 	containerName = [Container urlencode:containerName];
 	
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", app.storageUrl, [containerName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], [self.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	[request setHTTPMethod:@"PUT"];
-	NSLog([NSString stringWithFormat:@"Content-Length: %i", data.length]);
 	[request setValue:[NSString stringWithFormat:@"%i", data.length] forHTTPHeaderField:@"Content-Length"];
-	
-	[request setValue:self.contentType forHTTPHeaderField:@"Content-Type"];
-	
-	//NSString *body = [NSString stringWithFormat:@"{ \"reboot\" : { \"type\" : \"%@\" } }", rebootType];
-	//[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];
-	
+	[request setValue:self.contentType forHTTPHeaderField:@"Content-Type"];	
 	[request setHTTPBody:data];
 	Response *response = [ORConnection sendRequest:request withAuthToken:app.authToken];	
 	

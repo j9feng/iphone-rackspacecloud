@@ -50,14 +50,6 @@ NSString *selectedFlavorId;
 	[super viewWillAppear:animated];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
 #pragma mark Table Methods
 
 - (NSString *)tableView:(UITableView *)aTableView titleForHeaderInSection:(NSInteger)section {
@@ -112,9 +104,6 @@ NSString *selectedFlavorId;
 	}
 	
 	[aTableView reloadData];
-	//self.serverViewController.saveButton.enabled = YES;
-	//[self.serverViewController.tableView reloadData];
-	//[self.navigationController popToViewController:serverViewController animated:YES];
 }
 
 #pragma mark Spinner Methods
@@ -174,7 +163,7 @@ NSString *selectedFlavorId;
 		// fake out the first resize status to force the server view to poll progress
 		self.server.status = @"QUEUE_RESIZE";
 		self.server.progress = @"0";
-		// TODO: it's not polling....
+
 		[self.serverViewController detachProgressPollingThread];
 		
 		// pop back to server view

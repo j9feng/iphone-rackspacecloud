@@ -22,24 +22,6 @@
 			27B6C6120FF0B971006C965F /* Rackspace */,
 		);
 	};
-	27036E7010044D89006453B9 /* SharedIpGroup.m:33 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EE80FDC98BD00AE2133 /* SharedIpGroup.m */;
-		functionName = "+findAllRemoteWithResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 33;
-		location = Rackspace;
-		modificationTime = 274248512.539071;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	27036E7A10044E94006453B9 /* FromXMLElementDelegate.m:320 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -54,7 +36,7 @@
 		ignoreCount = 0;
 		lineNumber = 320;
 		location = Rackspace;
-		modificationTime = 274248512.539103;
+		modificationTime = 274248663.815325;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -72,7 +54,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.539145;
+		modificationTime = 274248663.815335;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -90,7 +72,7 @@
 		ignoreCount = 0;
 		lineNumber = 323;
 		location = Rackspace;
-		modificationTime = 274248512.539164;
+		modificationTime = 274248663.815352;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -108,7 +90,7 @@
 		ignoreCount = 0;
 		lineNumber = 338;
 		location = Rackspace;
-		modificationTime = 274248512.539187;
+		modificationTime = 274248663.81536;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -126,7 +108,7 @@
 		ignoreCount = 0;
 		lineNumber = 337;
 		location = Rackspace;
-		modificationTime = 274248512.539223;
+		modificationTime = 274248663.815375;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -144,7 +126,7 @@
 		ignoreCount = 0;
 		lineNumber = 348;
 		location = Rackspace;
-		modificationTime = 274248512.539251;
+		modificationTime = 274248663.815384;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -162,7 +144,7 @@
 		ignoreCount = 0;
 		lineNumber = 331;
 		location = Rackspace;
-		modificationTime = 274248512.539302;
+		modificationTime = 274248663.815392;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -172,60 +154,6 @@
 		name = IPGroupsRootViewController.m;
 		path = "/Users/mike/workspace/personal/rackspace-iphone/Classes/IPGroupsRootViewController.m";
 		sourceTree = "<group>";
-	};
-	27036ED410045206006453B9 /* IPGroupsRootViewController.m:92 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 92;
-		location = Rackspace;
-		modificationTime = 274248512.539314;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27036EE710045270006453B9 /* SharedIpGroup.m:25 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EE80FDC98BD00AE2133 /* SharedIpGroup.m */;
-		functionName = "-count";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 25;
-		location = Rackspace;
-		modificationTime = 274248512.539327;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	27036EEF10045299006453B9 /* IPGroupsRootViewController.m:31 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-loadIPGroups";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 31;
-		location = Rackspace;
-		modificationTime = 274248512.539364;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	272EF03B101593DD00DB17A1 /* AddServerViewController.h */ = {
 		uiCtxt = {
@@ -270,61 +198,7 @@
 		ignoreCount = 0;
 		lineNumber = 227;
 		location = Rackspace;
-		modificationTime = 274248512.540534;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	272EF26510162BBF00DB17A1 /* Container.m:84 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "+urlencode:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 84;
-		location = Rackspace;
-		modificationTime = 274248512.540557;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	272EF26B10162BDF00DB17A1 /* Container.m:96 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "+urlencode:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 96;
-		location = Rackspace;
-		modificationTime = 274248512.54057;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	272EF29310162D8700DB17A1 /* Container.m:117 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "+findRemote:withResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 117;
-		location = Rackspace;
-		modificationTime = 274248512.540582;
+		modificationTime = 274248663.815997;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -333,7 +207,7 @@
 		fRef = 2793CA581016D5BD009EB8C3 /* ResizeServerController.m */;
 		name = "ResizeServerController.m: 177";
 		rLen = 0;
-		rLoc = 5941;
+		rLoc = 5422;
 		rType = 0;
 		vrLen = 1618;
 		vrLoc = 5193;
@@ -353,7 +227,7 @@
 		fRef = 27A3C4E21019762500198388 /* RenameServerController.m */;
 		name = "RenameServerController.m: 61";
 		rLen = 0;
-		rLoc = 1722;
+		rLoc = 888;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 0;
@@ -383,7 +257,7 @@
 		fRef = 2777BA86101C40010043D3C1 /* ResetPasswordController.m */;
 		name = "ResetPasswordController.m: 107";
 		rLen = 0;
-		rLoc = 4251;
+		rLoc = 2802;
 		rType = 0;
 		vrLen = 1680;
 		vrLoc = 0;
@@ -463,7 +337,7 @@
 		fRef = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
 		name = "ServersRootViewController.m: 223";
 		rLen = 0;
-		rLoc = 6998;
+		rLoc = 6488;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 5057;
@@ -473,7 +347,7 @@
 		fRef = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
 		name = "IPGroupsRootViewController.m: 90";
 		rLen = 0;
-		rLoc = 2667;
+		rLoc = 2553;
 		rType = 0;
 		vrLen = 1320;
 		vrLoc = 223;
@@ -503,7 +377,7 @@
 		fRef = 4C3B1EE80FDC98BD00AE2133 /* SharedIpGroup.m */;
 		name = "SharedIpGroup.m: 26";
 		rLen = 0;
-		rLoc = 500;
+		rLoc = 489;
 		rType = 0;
 		vrLen = 1099;
 		vrLoc = 0;
@@ -513,7 +387,7 @@
 		fRef = 4C3B1EE70FDC98BD00AE2133 /* SharedIpGroup.h */;
 		name = "SharedIpGroup.h: 27";
 		rLen = 0;
-		rLoc = 599;
+		rLoc = 479;
 		rType = 0;
 		vrLen = 605;
 		vrLoc = 0;
@@ -523,7 +397,7 @@
 		fRef = 4C3B1EDE0FDC455500AE2133 /* Image.m */;
 		name = "Image.m: 56";
 		rLen = 0;
-		rLoc = 2024;
+		rLoc = 1700;
 		rType = 0;
 		vrLen = 1758;
 		vrLoc = 231;
@@ -573,7 +447,7 @@
 		fRef = 4C3B1EAE0FDC3E3400AE2133 /* Server.h */;
 		name = "Server.h: 64";
 		rLen = 0;
-		rLoc = 1657;
+		rLoc = 1285;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 355;
@@ -633,7 +507,7 @@
 		fRef = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */;
 		name = "ConfirmResizeServerController.m: 216";
 		rLen = 0;
-		rLoc = 7544;
+		rLoc = 6975;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 0;
@@ -683,7 +557,7 @@
 		fRef = 2786B6700FFEC75B002B852B /* IPGroupViewController.m */;
 		name = "IPGroupViewController.m: 134";
 		rLen = 0;
-		rLoc = 4382;
+		rLoc = 4255;
 		rType = 0;
 		vrLen = 1780;
 		vrLoc = 3689;
@@ -768,60 +642,6 @@
 		vrLen = 1403;
 		vrLoc = 230;
 	};
-	274EAD9D1022926500D3D2C7 /* ResizeServerController.m:106 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2793CA581016D5BD009EB8C3 /* ResizeServerController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 106;
-		location = Rackspace;
-		modificationTime = 274248512.541385;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	274EADA61022930800D3D2C7 /* ServerViewController.m:172 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 172;
-		location = Rackspace;
-		modificationTime = 274248512.54142;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	274EADB4102293FE00D3D2C7 /* ServerViewController.m:293 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 293;
-		location = Rackspace;
-		modificationTime = 274248512.541435;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	274EADDF1022AF6500D3D2C7 /* AddServerViewController.m:286 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -836,7 +656,7 @@
 		ignoreCount = 0;
 		lineNumber = 286;
 		location = Rackspace;
-		modificationTime = 274248512.541458;
+		modificationTime = 274248663.816674;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -854,25 +674,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.541502;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	274EAE141022B35B00D3D2C7 /* LoginViewController.m:72 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1D280FDA14F300AE2133 /* LoginViewController.m */;
-		functionName = "-handleSuccessfulLogin:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 72;
-		location = Rackspace;
-		modificationTime = 274248512.541521;
+		modificationTime = 274248663.816699;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -913,7 +715,7 @@
 		isa = PBXTextBookmark;
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		rLen = 0;
-		rLoc = 180;
+		rLoc = 149;
 		rType = 1;
 	};
 	2750B5AB1058A4CF00B1D370 /* PBXTextBookmark */ = {
@@ -921,7 +723,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 177";
 		rLen = 0;
-		rLoc = 5460;
+		rLoc = 4510;
 		rType = 0;
 		vrLen = 1623;
 		vrLoc = 4795;
@@ -941,7 +743,7 @@
 		fRef = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
 		name = "ServerViewController.m: 182";
 		rLen = 0;
-		rLoc = 6550;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1821;
 		vrLoc = 6343;
@@ -951,7 +753,7 @@
 		fRef = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
 		name = "ServerViewController.m: 182";
 		rLen = 0;
-		rLoc = 6550;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1751;
 		vrLoc = 6449;
@@ -961,7 +763,7 @@
 		fRef = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
 		name = "ServerViewController.m: 182";
 		rLen = 0;
-		rLoc = 6550;
+		rLoc = 5976;
 		rType = 0;
 		vrLen = 1751;
 		vrLoc = 6449;
@@ -1041,113 +843,33 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 73";
 		rLen = 0;
-		rLoc = 1864;
+		rLoc = 914;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 1144;
 	};
-	275ACACD0FFEF2E500EEB366 /* ListObjectsViewController.m:223 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-showCamera";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 223;
-		location = Rackspace;
-		modificationTime = 274248512.538613;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	275ACB040FFEF86500EEB366 /* ListObjectsViewController.m:157 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-imagePickerController:didFinishPickingMediaWithInfo:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 157;
-		location = Rackspace;
-		modificationTime = 274248512.538727;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	275ACB060FFEF86500EEB366 /* ListObjectsViewController.m:210 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-imagePickerControllerDidCancel:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 210;
-		location = Rackspace;
-		modificationTime = 274248512.538849;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	275ACB160FFEF8C900EEB366 /* ListObjectsViewController.m:209 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-imagePickerControllerDidCancel:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 209;
-		location = Rackspace;
-		modificationTime = 274248512.538918;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	275ACB180FFEF8CA00EEB366 /* ListObjectsViewController.m:211 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-imagePickerControllerDidCancel:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 211;
-		location = Rackspace;
-		modificationTime = 274248512.538979;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
+	2750B5E61058B3D500B1D370 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
+		name = "ObjectViewController.m: 73";
+		rLen = 0;
+		rLoc = 914;
+		rType = 0;
+		vrLen = 1049;
+		vrLoc = 1144;
 	};
 	275ACB460FFEFDE200EEB366 /* ObjectViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 647}}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
 			sepNavSelRange = "{255, 0}";
 			sepNavVisRange = "{0, 560}";
 		};
 	};
 	275ACB470FFEFDE200EEB366 /* ObjectViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 4064}}";
-			sepNavSelRange = "{1864, 0}";
-			sepNavVisRange = "{1144, 1049}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 3264}}";
+			sepNavSelRange = "{6017, 0}";
+			sepNavVisRange = "{5142, 1032}";
 			sepNavWindowFrame = "{{38, 189}, {1095, 663}}";
 		};
 	};
@@ -1231,24 +953,6 @@
 		vrLen = 963;
 		vrLoc = 151;
 	};
-	276966621055D6D400D64A7B /* CFAccount.m:32 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985F10FEEE085005D12B7 /* CFAccount.m */;
-		functionName = "+getRemoteCollectionName";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 32;
-		location = Rackspace;
-		modificationTime = 274248512.542138;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
 	276966691055D74000D64A7B /* NSObject+ObjectiveResource.m:152 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -1263,7 +967,7 @@
 		ignoreCount = 0;
 		lineNumber = 152;
 		location = Rackspace;
-		modificationTime = 274248512.542187;
+		modificationTime = 274248663.817065;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1331,7 +1035,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.542201;
+		modificationTime = 274248663.817075;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1349,25 +1053,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.542236;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	276967531055E31A00D64A7B /* CFAccount.m:35 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985F10FEEE085005D12B7 /* CFAccount.m */;
-		functionName = "-setContainer:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 35;
-		location = Rackspace;
-		modificationTime = 274248512.542262;
+		modificationTime = 274248663.817108;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1385,25 +1071,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.542277;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	276967911055E51F00D64A7B /* CFAccount.m:29 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985F10FEEE085005D12B7 /* CFAccount.m */;
-		functionName = "+xmlElementName";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 29;
-		location = Rackspace;
-		modificationTime = 274248512.542306;
+		modificationTime = 274248663.817142;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1432,7 +1100,7 @@
 		fRef = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
 		name = "Container.m: 142";
 		rLen = 0;
-		rLoc = 4669;
+		rLoc = 3573;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 3624;
@@ -1442,7 +1110,7 @@
 		fRef = 4C9985D10FEEDFC4005D12B7 /* Container.h */;
 		name = "Container.h: 31";
 		rLen = 0;
-		rLoc = 556;
+		rLoc = 318;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 76;
@@ -1565,43 +1233,7 @@
 		ignoreCount = 0;
 		lineNumber = 25;
 		location = Rackspace;
-		modificationTime = 274248512.542323;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	276969FF1055F5AF00D64A7B /* ObjectViewController.m:181 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 181;
-		location = Rackspace;
-		modificationTime = 274248512.542359;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	27696A091055F5E300D64A7B /* ObjectViewController.m:135 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 135;
-		location = Rackspace;
-		modificationTime = 274248512.542373;
+		modificationTime = 274248663.817181;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1629,7 +1261,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.540895;
+		modificationTime = 274248663.816276;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1647,7 +1279,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.540915;
+		modificationTime = 274248663.816284;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1675,25 +1307,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.540949;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B4C1101B90420043D3C1 /* ServerViewController.m:66 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-viewWillAppear:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 66;
-		location = Rackspace;
-		modificationTime = 274248512.540976;
+		modificationTime = 274248663.816306;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1719,90 +1333,18 @@
 	};
 	2777B580101BF9AB0043D3C1 /* ConfirmResizeServerController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 416}}";
-			sepNavSelRange = "{132, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
+			sepNavSelRange = "{437, 0}";
 			sepNavVisRange = "{0, 708}";
 		};
 	};
 	2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 3936}}";
-			sepNavSelRange = "{132, 0}";
-			sepNavVisRange = "{0, 841}";
+			sepNavIntBoundsRect = "{{0, 0}, {1503, 3616}}";
+			sepNavSelRange = "{5861, 0}";
+			sepNavVisRange = "{6282, 1205}";
 			sepNavWindowFrame = "{{130, 105}, {1095, 663}}";
 		};
-	};
-	2777B638101C046A0043D3C1 /* ConfirmResizeServerController.m:101 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 101;
-		location = Rackspace;
-		modificationTime = 274248512.541007;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B689101C0BB40043D3C1 /* ConfirmResizeServerController.m:138 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */;
-		functionName = "-confirmResize";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 138;
-		location = Rackspace;
-		modificationTime = 274248512.541026;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B6C6101C0E010043D3C1 /* ServerViewController.m:59 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-initWithNibName:bundle:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 59;
-		location = Rackspace;
-		modificationTime = 274248512.541042;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B6D4101C0E930043D3C1 /* ConfirmResizeServerController.m:146 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */;
-		functionName = "-confirmResize";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 146;
-		location = Rackspace;
-		modificationTime = 274248512.541067;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	2777B722101C15D00043D3C1 /* RoundedRectView.h */ = {
 		uiCtxt = {
@@ -1819,150 +1361,6 @@
 			sepNavVisRange = "{0, 1043}";
 			sepNavWindowFrame = "{{39, 81}, {1095, 663}}";
 		};
-	};
-	2777B7BF101C1E020043D3C1 /* ServerViewController.m:541 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-saveButtonPressed:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 541;
-		location = Rackspace;
-		modificationTime = 274248512.541089;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B7EA101C205B0043D3C1 /* ServerViewController.m:93 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-viewDidLoad";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 93;
-		location = Rackspace;
-		modificationTime = 274248512.541122;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B87E101C2BCA0043D3C1 /* ServersRootViewController.m:131 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-initWithNibName:bundle:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 131;
-		location = Rackspace;
-		modificationTime = 274248512.54114;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B883101C2BF30043D3C1 /* ServersRootViewController.m:96 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-viewWillAppear:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 96;
-		location = Rackspace;
-		modificationTime = 274248512.541152;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B892101C2C520043D3C1 /* ServersRootViewController.m:55 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-loadServers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 55;
-		location = Rackspace;
-		modificationTime = 274248512.541173;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B89C101C2CC40043D3C1 /* ServersRootViewController.m:33 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-viewDidLoad";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 33;
-		location = Rackspace;
-		modificationTime = 274248512.541193;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B8AC101C2D420043D3C1 /* ServersRootViewController.m:290 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-dealloc";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 290;
-		location = Rackspace;
-		modificationTime = 274248512.541211;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777B8B7101C2D510043D3C1 /* ServerViewController.m:627 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-dealloc";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 627;
-		location = Rackspace;
-		modificationTime = 274248512.541232;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	2777B941101C321B0043D3C1 /* EditableLoginCell.h */ = {
 		uiCtxt = {
@@ -2042,36 +1440,18 @@
 		vrLen = 248;
 		vrLoc = 0;
 	};
-	2777BA15101C393A0043D3C1 /* ServerViewController.m:539 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-saveButtonPressed:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 539;
-		location = Rackspace;
-		modificationTime = 274248512.541246;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	2777BA85101C40010043D3C1 /* ResetPasswordController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 544}}";
-			sepNavSelRange = "{126, 0}";
-			sepNavVisRange = "{0, 678}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
+			sepNavSelRange = "{947, 0}";
+			sepNavVisRange = "{0, 953}";
 		};
 	};
 	2777BA86101C40010043D3C1 /* ResetPasswordController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 3712}}";
-			sepNavSelRange = "{126, 0}";
-			sepNavVisRange = "{0, 932}";
+			sepNavIntBoundsRect = "{{0, 0}, {1510, 3136}}";
+			sepNavSelRange = "{3243, 0}";
+			sepNavVisRange = "{5224, 1174}";
 		};
 	};
 	2777BAC4101C42910043D3C1 /* PBXTextBookmark */ = {
@@ -2136,7 +1516,7 @@
 		ignoreCount = 0;
 		lineNumber = 277;
 		location = Rackspace;
-		modificationTime = 274248512.541264;
+		modificationTime = 274248663.816547;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2154,7 +1534,7 @@
 		ignoreCount = 0;
 		lineNumber = 256;
 		location = Rackspace;
-		modificationTime = 274248512.541287;
+		modificationTime = 274248663.816555;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2172,151 +1552,7 @@
 		ignoreCount = 0;
 		lineNumber = 267;
 		location = Rackspace;
-		modificationTime = 274248512.541317;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777BD86101EA73C0043D3C1 /* ConfirmResizeServerController.m:129 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */;
-		functionName = "-setServerStatus:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 129;
-		location = Rackspace;
-		modificationTime = 274248512.541334;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777BD8D101EA8F40043D3C1 /* ConfirmResizeServerController.m:155 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */;
-		functionName = "-confirmResize:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 155;
-		location = Rackspace;
-		modificationTime = 274248512.541346;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2777BE07101ECA450043D3C1 /* ServerViewController.m:332 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 332;
-		location = Rackspace;
-		modificationTime = 274248512.541367;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F56B0FF32FAA00D060C3 /* ContainersRootViewController.m:25 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */;
-		functionName = "-loadContainers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 25;
-		location = Rackspace;
-		modificationTime = 274248512.536583;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	2784F57E0FF3317B00D060C3 /* ContainersRootViewController.m:33 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */;
-		functionName = "-loadContainers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 33;
-		location = Rackspace;
-		modificationTime = 274248512.536609;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F5EA0FF5FCAF00D060C3 /* ContainersRootViewController.m:153 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 153;
-		location = Rackspace;
-		modificationTime = 274248512.536626;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F7890FF842D300D060C3 /* Container.m:57 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "-setObject:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 57;
-		location = Rackspace;
-		modificationTime = 274248512.536651;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F7A30FF8431E00D060C3 /* Container.m:103 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "+findRemote:withResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 103;
-		location = Rackspace;
-		modificationTime = 274248512.536686;
+		modificationTime = 274248663.816575;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2334,7 +1570,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.536721;
+		modificationTime = 274248663.814071;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2352,7 +1588,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.53677;
+		modificationTime = 274248663.814089;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2370,7 +1606,7 @@
 		ignoreCount = 0;
 		lineNumber = 322;
 		location = Rackspace;
-		modificationTime = 274248512.536788;
+		modificationTime = 274248663.814119;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2388,7 +1624,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.536813;
+		modificationTime = 274248663.814132;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2406,79 +1642,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.536846;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F8870FF84A7300D060C3 /* ListObjectsViewController.m:505 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-viewDidUnload";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 505;
-		location = Rackspace;
-		modificationTime = 274248512.536868;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F88B0FF84A8400D060C3 /* ListObjectsViewController.m:510 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-viewDidDisappear";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 510;
-		location = Rackspace;
-		modificationTime = 274248512.537024;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F8980FF84B3900D060C3 /* ListObjectsViewController.m:404 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 404;
-		location = Rackspace;
-		modificationTime = 274248512.537083;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2784F8C70FF84EC600D060C3 /* Container.m:27 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "-humanizedBytes";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 27;
-		location = Rackspace;
-		modificationTime = 274248512.537143;
+		modificationTime = 274248663.814191;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2496,7 +1660,7 @@
 		ignoreCount = 0;
 		lineNumber = 114;
 		location = Rackspace;
-		modificationTime = 274248512.537274;
+		modificationTime = 274248663.814372;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2524,7 +1688,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537311;
+		modificationTime = 274248663.81446;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2542,25 +1706,7 @@
 		ignoreCount = 0;
 		lineNumber = 23;
 		location = Rackspace;
-		modificationTime = 274248512.537335;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786AEA60FFC4629002B852B /* ServersRootViewController.m:77 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-loadServers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 77;
-		location = Rackspace;
-		modificationTime = 274248512.537362;
+		modificationTime = 274248663.81447;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2578,7 +1724,7 @@
 		ignoreCount = 0;
 		lineNumber = 50;
 		location = Rackspace;
-		modificationTime = 274248512.537388;
+		modificationTime = 274248663.814514;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2596,7 +1742,7 @@
 		ignoreCount = 0;
 		lineNumber = 62;
 		location = Rackspace;
-		modificationTime = 274248512.537407;
+		modificationTime = 274248663.814544;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2634,7 +1780,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537441;
+		modificationTime = 274248663.814579;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2652,25 +1798,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537463;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786AFFF0FFC5FBE002B852B /* ServersRootViewController.m:226 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 226;
-		location = Rackspace;
-		modificationTime = 274248512.537503;
+		modificationTime = 274248663.814591;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2684,87 +1812,15 @@
 	};
 	2786B0660FFC6B5D002B852B /* ServerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1643, 10016}}";
-			sepNavSelRange = "{6550, 0}";
-			sepNavVisRange = "{6449, 1751}";
+			sepNavIntBoundsRect = "{{0, 0}, {1468, 9920}}";
+			sepNavSelRange = "{22373, 0}";
+			sepNavVisRange = "{21727, 1155}";
 			sepNavWindowFrame = "{{76, 173}, {1095, 663}}";
 		};
 	};
 	2786B07F0FFC6D0E002B852B /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 4C3B1D730FDA1D0E00AE2133 /* Default-old.png */;
-	};
-	2786B1040FFC76AB002B852B /* ServerViewController.m:162 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 162;
-		location = Rackspace;
-		modificationTime = 274248512.53752;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B1700FFC7D50002B852B /* ServersRootViewController.m:96 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-viewWillAppear:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 96;
-		location = Rackspace;
-		modificationTime = 274248512.537536;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B1C70FFC8B61002B852B /* LoginViewController.m:65 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1D280FDA14F300AE2133 /* LoginViewController.m */;
-		functionName = "-handleSuccessfulLogin:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 65;
-		location = Rackspace;
-		modificationTime = 274248512.537563;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B1FB0FFC8BE6002B852B /* LoginViewController.m:80 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1D280FDA14F300AE2133 /* LoginViewController.m */;
-		functionName = "-handleSuccessfulLogin:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 80;
-		location = Rackspace;
-		modificationTime = 274248512.537583;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	2786B21C0FFC8DCB002B852B /* FromXMLElementDelegate.m:18 */ = {
 		isa = PBXFileBreakpoint;
@@ -2780,7 +1836,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537619;
+		modificationTime = 274248663.814708;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2798,26 +1854,8 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537636;
+		modificationTime = 274248663.814733;
 		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	2786B2B80FFC960C002B852B /* Server.m:151 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-imageName";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 151;
-		location = Rackspace;
-		modificationTime = 274248512.53765;
-		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
 	2786B2ED0FFD16CB002B852B /* FromXMLElementDelegate.m:18 */ = {
@@ -2834,7 +1872,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537682;
+		modificationTime = 274248663.814773;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2852,7 +1890,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537713;
+		modificationTime = 274248663.814786;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2870,7 +1908,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537756;
+		modificationTime = 274248663.814797;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2888,7 +1926,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.537782;
+		modificationTime = 274248663.814824;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2906,43 +1944,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.5378;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B3AD0FFD2ED0002B852B /* ServerViewController.m:489 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-actionSheet:clickedButtonAtIndex:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 489;
-		location = Rackspace;
-		modificationTime = 274248512.537838;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B3CF0FFD37FA002B852B /* Server.m:139 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-softReboot";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 139;
-		location = Rackspace;
-		modificationTime = 274248512.537871;
+		modificationTime = 274248663.814834;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -2953,96 +1955,6 @@
 		path = "/Users/mike/workspace/personal/rackspace-iphone/Classes/Server.m";
 		sourceTree = "<group>";
 	};
-	2786B4050FFD3ADF002B852B /* Server.m:106 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-sendRebootRequest:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 106;
-		location = Rackspace;
-		modificationTime = 274248512.537904;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B40C0FFD3AE9002B852B /* Server.m:133 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-softReboot";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 133;
-		location = Rackspace;
-		modificationTime = 274248512.537931;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B40E0FFD3AEB002B852B /* Server.m:142 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-hardReboot";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 142;
-		location = Rackspace;
-		modificationTime = 274248512.537954;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B4230FFD3BE0002B852B /* Server.m:133 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-softReboot";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 133;
-		location = Rackspace;
-		modificationTime = 274248512.537993;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B4250FFD3BE1002B852B /* Server.m:133 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-softReboot";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 133;
-		location = Rackspace;
-		modificationTime = 274248512.538017;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	2786B44B0FFD3CC8002B852B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4C3B1E4F0FDC3D5300AE2133 /* NSObject+JSONSerializableSupport.m */;
@@ -3052,24 +1964,6 @@
 		rType = 0;
 		vrLen = 2309;
 		vrLoc = 1355;
-	};
-	2786B4900FFD4CEF002B852B /* IPGroupsRootViewController.m:37 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-loadIPGroups";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 37;
-		location = Rackspace;
-		modificationTime = 274248512.538053;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	2786B4EC0FFD5C26002B852B /* FromXMLElementDelegate.m:18 */ = {
 		isa = PBXFileBreakpoint;
@@ -3085,7 +1979,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538081;
+		modificationTime = 274248663.814996;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3103,7 +1997,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538101;
+		modificationTime = 274248663.815006;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3121,7 +2015,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538129;
+		modificationTime = 274248663.815033;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3139,7 +2033,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538155;
+		modificationTime = 274248663.815041;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3157,7 +2051,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538187;
+		modificationTime = 274248663.815049;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3175,7 +2069,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538204;
+		modificationTime = 274248663.815067;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3193,7 +2087,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538221;
+		modificationTime = 274248663.815075;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -3211,7 +2105,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538252;
+		modificationTime = 274248663.815089;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3229,115 +2123,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.538289;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B5940FFD63AD002B852B /* SharedIpGroup.m:20 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EE80FDC98BD00AE2133 /* SharedIpGroup.m */;
-		functionName = "-init";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 20;
-		location = Rackspace;
-		modificationTime = 274248512.53835;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B5DA0FFD6FE4002B852B /* IPGroupsRootViewController.m:132 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-setEditing:animated:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 132;
-		location = Rackspace;
-		modificationTime = 274248512.538406;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B6010FFEBB7A002B852B /* IPGroupsRootViewController.m:71 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-tableView:numberOfRowsInSection:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 71;
-		location = Rackspace;
-		modificationTime = 274248512.53842;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B6030FFEBB88002B852B /* IPGroupsRootViewController.m:96 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 96;
-		location = Rackspace;
-		modificationTime = 274248512.538461;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B6130FFEBC26002B852B /* IPGroupsRootViewController.m:90 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 90;
-		location = Rackspace;
-		modificationTime = 274248512.538494;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	2786B6390FFEBDF4002B852B /* IPGroupsRootViewController.m:144 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-tableView:commitEditingStyle:forRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 144;
-		location = Rackspace;
-		modificationTime = 274248512.538532;
+		modificationTime = 274248663.815107;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3355,7 +2141,7 @@
 		ignoreCount = 0;
 		lineNumber = 259;
 		location = Rackspace;
-		modificationTime = 274248512.538549;
+		modificationTime = 274248663.815195;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3368,30 +2154,12 @@
 	};
 	2786B6700FFEC75B002B852B /* IPGroupViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{665, 504}\";\n            s = 0;\n        },\n                {\n            r = \"{1213, 855}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6068}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 2288}}";
-			sepNavSelRange = "{3025, 0}";
-			sepNavVisRange = "{2332, 1780}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{665, 504}\";\n            s = 0;\n        },\n                {\n            r = \"{1213, 855}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5436}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 2080}}";
+			sepNavSelRange = "{3504, 0}";
+			sepNavVisRange = "{2883, 1196}";
 			sepNavWindowFrame = "{{15, 210}, {1095, 663}}";
 		};
-	};
-	2786B6E80FFECDB0002B852B /* IPGroupViewController.m:123 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B6700FFEC75B002B852B /* IPGroupViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 123;
-		location = Rackspace;
-		modificationTime = 274248512.538571;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	278D8472101173500060DBA1 /* ImageViewController.m */ = {
 		isa = PBXFileReference;
@@ -3415,25 +2183,7 @@
 		ignoreCount = 0;
 		lineNumber = 242;
 		location = Rackspace;
-		modificationTime = 274248512.539464;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	278D84EC10123E490060DBA1 /* ListObjectsViewController.m:176 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 176;
-		location = Rackspace;
-		modificationTime = 274248512.539477;
+		modificationTime = 274248663.815469;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3451,25 +2201,7 @@
 		ignoreCount = 0;
 		lineNumber = 262;
 		location = Rackspace;
-		modificationTime = 274248512.539563;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	278D851E101255570060DBA1 /* ContainersRootViewController.m:54 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */;
-		functionName = "-loadContainers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 54;
-		location = Rackspace;
-		modificationTime = 274248512.539594;
+		modificationTime = 274248663.815499;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3494,7 +2226,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 59;
-		modificationTime = 274248512.539638;
+		modificationTime = 274248663.815521;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3512,7 +2244,7 @@
 		ignoreCount = 0;
 		lineNumber = 133;
 		location = Rackspace;
-		modificationTime = 274248512.539667;
+		modificationTime = 274248663.815545;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3530,7 +2262,7 @@
 		ignoreCount = 0;
 		lineNumber = 94;
 		location = Rackspace;
-		modificationTime = 274248512.539903;
+		modificationTime = 274248663.815558;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3547,7 +2279,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 45;
-		modificationTime = 274248512.539945;
+		modificationTime = 274248663.815586;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3575,25 +2307,7 @@
 		ignoreCount = 0;
 		lineNumber = 242;
 		location = Rackspace;
-		modificationTime = 274248512.539973;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	278D876F1012C3B70060DBA1 /* ListObjectsViewController.m:176 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 176;
-		location = Rackspace;
-		modificationTime = 274248512.539997;
+		modificationTime = 274248663.815604;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3611,7 +2325,7 @@
 		ignoreCount = 0;
 		lineNumber = 113;
 		location = Rackspace;
-		modificationTime = 274248512.540056;
+		modificationTime = 274248663.815629;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3629,7 +2343,7 @@
 		ignoreCount = 0;
 		lineNumber = 119;
 		location = Rackspace;
-		modificationTime = 274248512.540083;
+		modificationTime = 274248663.815646;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3647,7 +2361,7 @@
 		ignoreCount = 0;
 		lineNumber = 189;
 		location = Rackspace;
-		modificationTime = 274248512.540136;
+		modificationTime = 274248663.815671;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3665,7 +2379,7 @@
 		ignoreCount = 0;
 		lineNumber = 189;
 		location = Rackspace;
-		modificationTime = 274248512.540156;
+		modificationTime = 274248663.815681;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3683,7 +2397,7 @@
 		ignoreCount = 0;
 		lineNumber = 233;
 		location = Rackspace;
-		modificationTime = 274248512.540187;
+		modificationTime = 274248663.815692;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3708,7 +2422,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 34;
-		modificationTime = 274248512.540213;
+		modificationTime = 274248663.815716;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3725,7 +2439,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 46;
-		modificationTime = 274248512.54023;
+		modificationTime = 274248663.815728;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3742,7 +2456,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 108;
-		modificationTime = 274248512.540254;
+		modificationTime = 274248663.815779;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3759,7 +2473,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 224;
-		modificationTime = 274248512.540283;
+		modificationTime = 274248663.815801;
 		originalNumberOfMultipleMatches = 1;
 		state = 0;
 	};
@@ -3777,7 +2491,7 @@
 		ignoreCount = 0;
 		lineNumber = 395;
 		location = Rackspace;
-		modificationTime = 274248512.540319;
+		modificationTime = 274248663.815816;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3795,7 +2509,7 @@
 		ignoreCount = 0;
 		lineNumber = 394;
 		location = Rackspace;
-		modificationTime = 274248512.540337;
+		modificationTime = 274248663.81584;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3813,7 +2527,7 @@
 		ignoreCount = 0;
 		lineNumber = 399;
 		location = Rackspace;
-		modificationTime = 274248512.540363;
+		modificationTime = 274248663.815857;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3826,9 +2540,9 @@
 	};
 	278D8B571013E56F0060DBA1 /* AddObjectViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 2656}}";
-			sepNavSelRange = "{928, 0}";
-			sepNavVisRange = "{1285, 1212}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 2512}}";
+			sepNavSelRange = "{264, 0}";
+			sepNavVisRange = "{3569, 1118}";
 			sepNavWindowFrame = "{{130, 105}, {1095, 663}}";
 		};
 	};
@@ -3846,27 +2560,9 @@
 		ignoreCount = 0;
 		lineNumber = 118;
 		location = Rackspace;
-		modificationTime = 274248512.540411;
+		modificationTime = 274248663.815889;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
-	};
-	278D8C1B1013F0620060DBA1 /* CloudFilesObject.m:43 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */;
-		functionName = "-createFileWithAccountName:andContainerName:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 43;
-		location = Rackspace;
-		modificationTime = 274248512.54043;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	278D8C2A1013F1150060DBA1 /* ORConnection.m:175 */ = {
 		isa = PBXFileBreakpoint;
@@ -3882,61 +2578,7 @@
 		ignoreCount = 0;
 		lineNumber = 175;
 		location = Rackspace;
-		modificationTime = 274248512.540457;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	278D8C571013F34B0060DBA1 /* CloudFilesObject.m:74 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */;
-		functionName = "-createFileWithAccountName:andContainerName:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 74;
-		location = Rackspace;
-		modificationTime = 274248512.54047;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	278D8C701013F3C20060DBA1 /* CloudFilesObject.m:73 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */;
-		functionName = "-createFileWithAccountName:andContainerName:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 73;
-		location = Rackspace;
-		modificationTime = 274248512.540482;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	278D8C741013F3F40060DBA1 /* CloudFilesObject.m:63 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */;
-		functionName = "-createFileWithAccountName:andContainerName:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 63;
-		location = Rackspace;
-		modificationTime = 274248512.540503;
+		modificationTime = 274248663.815908;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -3945,24 +2587,24 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 131";
 		rLen = 0;
-		rLoc = 3911;
+		rLoc = 2961;
 		rType = 0;
 		vrLen = 1355;
 		vrLoc = 3031;
 	};
 	2793CA571016D5BD009EB8C3 /* ResizeServerController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 416}}";
-			sepNavSelRange = "{125, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
+			sepNavSelRange = "{778, 0}";
 			sepNavVisRange = "{0, 785}";
 			sepNavWindowFrame = "{{153, 84}, {1095, 663}}";
 		};
 	};
 	2793CA581016D5BD009EB8C3 /* ResizeServerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 3584}}";
-			sepNavSelRange = "{125, 0}";
-			sepNavVisRange = "{0, 721}";
+			sepNavIntBoundsRect = "{{0, 0}, {1468, 3488}}";
+			sepNavSelRange = "{5425, 0}";
+			sepNavVisRange = "{5654, 1153}";
 			sepNavWindowFrame = "{{236, 215}, {1095, 663}}";
 		};
 	};
@@ -4021,7 +2663,7 @@
 		fRef = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
 		name = "ServerViewController.m: 81";
 		rLen = 0;
-		rLoc = 2811;
+		rLoc = 2240;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 2336;
@@ -4039,108 +2681,18 @@
 	};
 	27A3C4E11019762500198388 /* RenameServerController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 393}}";
-			sepNavSelRange = "{125, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
+			sepNavSelRange = "{381, 35}";
 			sepNavVisRange = "{0, 424}";
 		};
 	};
 	27A3C4E21019762500198388 /* RenameServerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 1632}}";
-			sepNavSelRange = "{125, 0}";
-			sepNavVisRange = "{0, 710}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 1232}}";
+			sepNavSelRange = "{326, 0}";
+			sepNavVisRange = "{880, 875}";
 			sepNavWindowFrame = "{{15, 210}, {1095, 663}}";
 		};
-	};
-	27A3C5201019796300198388 /* RenameServerController.m:68 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 27A3C4E21019762500198388 /* RenameServerController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 68;
-		location = Rackspace;
-		modificationTime = 274248512.540611;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C56010197C5F00198388 /* ServerViewController.m:55 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-initWithNibName:bundle:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 55;
-		location = Rackspace;
-		modificationTime = 274248512.540631;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C5A210197F5D00198388 /* ServerViewController.m:552 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-saveButtonPressed:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 552;
-		location = Rackspace;
-		modificationTime = 274248512.540661;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C5B21019805600198388 /* Server.m:55 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-saveRemote";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 55;
-		location = Rackspace;
-		modificationTime = 274248512.540674;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C5F2101982E500198388 /* Server.m:70 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-saveRemote";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 70;
-		location = Rackspace;
-		modificationTime = 274248512.540686;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	27A3C61B101986B000198388 /* Response.m:47 */ = {
 		isa = PBXFileBreakpoint;
@@ -4156,7 +2708,7 @@
 		ignoreCount = 0;
 		lineNumber = 47;
 		location = Rackspace;
-		modificationTime = 274248512.540716;
+		modificationTime = 274248663.816182;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4169,150 +2721,6 @@
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 746;
-	};
-	27A3C68410198C3C00198388 /* Server.m:22 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "-resize";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 22;
-		location = Rackspace;
-		modificationTime = 274248512.540738;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C6B810198E1800198388 /* ServerViewController.m:36 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-setServer:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 36;
-		location = Rackspace;
-		modificationTime = 274248512.540757;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C6BE10198E5A00198388 /* ServerViewController.m:65 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-viewWillAppear:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 65;
-		location = Rackspace;
-		modificationTime = 274248512.54077;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C6CA10198ECC00198388 /* ServerViewController.m:80 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-viewDidLoad";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 80;
-		location = Rackspace;
-		modificationTime = 274248512.540794;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C76C1019982A00198388 /* Server.m:74 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "+findRemoteWithId:andResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 74;
-		location = Rackspace;
-		modificationTime = 274248512.540824;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C7731019988800198388 /* ServerViewController.m:516 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-refreshProgress:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 516;
-		location = Rackspace;
-		modificationTime = 274248512.540842;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A3C77C101998E200198388 /* ServerViewController.m:523 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-refreshProgress:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 523;
-		location = Rackspace;
-		modificationTime = 274248512.540878;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27A8DB5E1008FFED0019682B /* IPGroupsRootViewController.m:150 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */;
-		functionName = "-tableView:commitEditingStyle:forRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 150;
-		location = Rackspace;
-		modificationTime = 274248512.539395;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	27B63576101633C800A82616 /* Root.plist */ = {
 		isa = PBXFileReference;
@@ -4367,24 +2775,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	27B6C6630FF0BE3C006C965F /* ContainersRootViewController.m:27 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */;
-		functionName = "-loadContainers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 27;
-		location = Rackspace;
-		modificationTime = 274248512.536524;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	27BCEA121005206A00404C15 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4C3B1E550FDC3D5300AE2133 /* NSObject+Serialize.m */;
@@ -4394,41 +2784,6 @@
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 0;
-	};
-	27C12BD21024D1E800C843EC /* ServersRootViewController.m:219 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-imageForServer:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 219;
-		modificationTime = 274248512.541581;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27C12BD41024D1ED00C843EC /* ServersRootViewController.m:179 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-imageForServer:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 179;
-		location = Rackspace;
-		modificationTime = 274248512.541599;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	27C12C141024D51000C843EC /* AddServerViewController.m:100 */ = {
 		isa = PBXFileBreakpoint;
@@ -4444,7 +2799,7 @@
 		ignoreCount = 0;
 		lineNumber = 100;
 		location = Rackspace;
-		modificationTime = 274248512.541613;
+		modificationTime = 274248663.816771;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4462,7 +2817,7 @@
 		ignoreCount = 0;
 		lineNumber = 18;
 		location = Rackspace;
-		modificationTime = 274248512.541654;
+		modificationTime = 274248663.816796;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4475,24 +2830,6 @@
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 0;
-	};
-	27C12DEA1024F01900C843EC /* ResetPasswordController.m:186 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2777BA86101C40010043D3C1 /* ResetPasswordController.m */;
-		functionName = "-saveButtonPressed:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 186;
-		location = Rackspace;
-		modificationTime = 274248512.54168;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	27C12EC910252BE900C843EC /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -4536,96 +2873,6 @@
 		path = "/Users/mike/workspace/personal/rackspace-iphone/Classes/ListObjectsViewController.m";
 		sourceTree = "<group>";
 	};
-	27D8702D1041EB6400B805A9 /* ListObjectsViewController.m:248 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-viewWillAppear:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 248;
-		location = Rackspace;
-		modificationTime = 274248512.541796;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27D870371041EB7D00B805A9 /* ListObjectsViewController.m:317 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 317;
-		location = Rackspace;
-		modificationTime = 274248512.541883;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27D8709B1041FF9B00B805A9 /* CFAccount.m:43 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985F10FEEE085005D12B7 /* CFAccount.m */;
-		functionName = "+findRemote:withResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 43;
-		location = Rackspace;
-		modificationTime = 274248512.541939;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	27D8709D1041FF9D00B805A9 /* CFAccount.m:57 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985F10FEEE085005D12B7 /* CFAccount.m */;
-		functionName = "+findCDNRemote:withResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 57;
-		location = Rackspace;
-		modificationTime = 274248512.541956;
-		originalNumberOfMultipleMatches = 1;
-		state = 2;
-	};
-	27D8714A10420FF800B805A9 /* ListObjectsViewController.m:306 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */;
-		functionName = "-tableView:cellForRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 306;
-		location = Rackspace;
-		modificationTime = 274248512.541984;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	27E58ED41040583800A4F32C /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Rackspace-Info.plist */;
@@ -4662,7 +2909,7 @@
 		ignoreCount = 0;
 		lineNumber = 81;
 		location = Rackspace;
-		modificationTime = 274248512.541705;
+		modificationTime = 274248663.816835;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4680,7 +2927,7 @@
 		ignoreCount = 0;
 		lineNumber = 322;
 		location = Rackspace;
-		modificationTime = 274248512.541724;
+		modificationTime = 274248663.81685;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4698,7 +2945,7 @@
 		ignoreCount = 0;
 		lineNumber = 80;
 		location = Rackspace;
-		modificationTime = 274248512.541745;
+		modificationTime = 274248663.816867;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4716,7 +2963,7 @@
 		ignoreCount = 0;
 		lineNumber = 366;
 		location = Rackspace;
-		modificationTime = 274248512.541778;
+		modificationTime = 274248663.816881;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4734,7 +2981,7 @@
 		ignoreCount = 0;
 		lineNumber = 52;
 		location = Rackspace;
-		modificationTime = 274248512.539438;
+		modificationTime = 274248663.815451;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -4752,60 +2999,6 @@
 		rLen = 22;
 		rLoc = 0;
 	};
-	27F89C41104B3FF600BE3753 /* ServerViewController.m:384 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 2786B0660FFC6B5D002B852B /* ServerViewController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 384;
-		location = Rackspace;
-		modificationTime = 274248512.542122;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	27FEAD201049F09F0042BBFC /* Container.m:138 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "-save";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 138;
-		location = Rackspace;
-		modificationTime = 274248512.542061;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27FEAD611049F2A80042BBFC /* Container.m:147 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9985D20FEEDFC4005D12B7 /* Container.m */;
-		functionName = "-save";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 147;
-		location = Rackspace;
-		modificationTime = 274248512.542108;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
 	27FEADA6104A06470042BBFC /* WebFileViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
@@ -4815,9 +3008,9 @@
 	};
 	27FEADA7104A06470042BBFC /* WebFileViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1036, 1152}}";
-			sepNavSelRange = "{500, 0}";
-			sepNavVisRange = "{236, 1017}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 1216}}";
+			sepNavSelRange = "{844, 0}";
+			sepNavVisRange = "{948, 903}";
 			sepNavWindowFrame = "{{15, 210}, {1095, 663}}";
 		};
 	};
@@ -4830,78 +3023,6 @@
 		rType = 0;
 		vrLen = 1609;
 		vrLoc = 6799;
-	};
-	27FF0CFC0FFA7ECD0073FD87 /* LoginViewController.m:57 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1D280FDA14F300AE2133 /* LoginViewController.m */;
-		functionName = "-handleSuccessfulLogin:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 57;
-		location = Rackspace;
-		modificationTime = 274248512.537173;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27FF0D160FFA82580073FD87 /* ServersRootViewController.m:66 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-loadContainers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 66;
-		location = Rackspace;
-		modificationTime = 274248512.537202;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27FF0D370FFA82E90073FD87 /* ServersRootViewController.m:57 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */;
-		functionName = "-loadServers";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 57;
-		location = Rackspace;
-		modificationTime = 274248512.537245;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
-	};
-	27FF0D500FFA85480073FD87 /* Server.m:91 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 4C3B1EAF0FDC3E3400AE2133 /* Server.m */;
-		functionName = "+findAllRemoteWithResponse:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 91;
-		location = Rackspace;
-		modificationTime = 274248512.53726;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	28216C950DB411BC00E5133A /* FirstViewController.h */ = {
 		uiCtxt = {
@@ -4933,54 +3054,25 @@
 			1D6058900D05DD3D006BFB54 /* Rackspace */,
 		);
 		breakpoints = (
-			27B6C6630FF0BE3C006C965F /* ContainersRootViewController.m:27 */,
-			2784F56B0FF32FAA00D060C3 /* ContainersRootViewController.m:25 */,
-			2784F57E0FF3317B00D060C3 /* ContainersRootViewController.m:33 */,
-			2784F5EA0FF5FCAF00D060C3 /* ContainersRootViewController.m:153 */,
-			2784F7890FF842D300D060C3 /* Container.m:57 */,
-			2784F7A30FF8431E00D060C3 /* Container.m:103 */,
 			2784F7A50FF8435000D060C3 /* FromXMLElementDelegate.m:18 */,
 			2784F7A80FF8439700D060C3 /* FromXMLElementDelegate.m:18 */,
 			2784F7B60FF843CD00D060C3 /* FromXMLElementDelegate.m:322 */,
 			2784F7DE0FF8458700D060C3 /* FromXMLElementDelegate.m:18 */,
 			2784F83F0FF8481A00D060C3 /* FromXMLElementDelegate.m:18 */,
-			2784F8870FF84A7300D060C3 /* ListObjectsViewController.m:505 */,
-			2784F88B0FF84A8400D060C3 /* ListObjectsViewController.m:510 */,
-			2784F8980FF84B3900D060C3 /* ListObjectsViewController.m:404 */,
-			2784F8C70FF84EC600D060C3 /* Container.m:27 */,
-			27FF0CFC0FFA7ECD0073FD87 /* LoginViewController.m:57 */,
-			27FF0D160FFA82580073FD87 /* ServersRootViewController.m:66 */,
-			27FF0D370FFA82E90073FD87 /* ServersRootViewController.m:57 */,
-			27FF0D500FFA85480073FD87 /* Server.m:91 */,
 			2786AE040FFC3687002B852B /* NSObject+XMLSerializableSupport.m:114 */,
 			2786AE1E0FFC36D3002B852B /* FromXMLElementDelegate.m:18 */,
 			2786AE4C0FFC39FC002B852B /* NSObject+JSONSerializableSupport.m:23 */,
-			2786AEA60FFC4629002B852B /* ServersRootViewController.m:77 */,
 			2786AF290FFC4C85002B852B /* NSString+SBJSON.m:50 */,
 			2786AF2B0FFC4C91002B852B /* NSObject+JSONSerializableSupport.m:62 */,
 			2786AF9B0FFC5B43002B852B /* FromXMLElementDelegate.m:18 */,
 			2786AFB30FFC5C8C002B852B /* FromXMLElementDelegate.m:18 */,
-			2786AFFF0FFC5FBE002B852B /* ServersRootViewController.m:226 */,
-			2786B1040FFC76AB002B852B /* ServerViewController.m:162 */,
-			2786B1700FFC7D50002B852B /* ServersRootViewController.m:96 */,
-			2786B1C70FFC8B61002B852B /* LoginViewController.m:65 */,
-			2786B1FB0FFC8BE6002B852B /* LoginViewController.m:80 */,
 			2786B21C0FFC8DCB002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B22C0FFC8E0C002B852B /* FromXMLElementDelegate.m:18 */,
-			2786B2B80FFC960C002B852B /* Server.m:151 */,
 			2786B2ED0FFD16CB002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B3260FFD1AC3002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B3280FFD1AC5002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B32A0FFD1ACE002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B32C0FFD1ACF002B852B /* FromXMLElementDelegate.m:18 */,
-			2786B3AD0FFD2ED0002B852B /* ServerViewController.m:489 */,
-			2786B3CF0FFD37FA002B852B /* Server.m:139 */,
-			2786B4050FFD3ADF002B852B /* Server.m:106 */,
-			2786B40C0FFD3AE9002B852B /* Server.m:133 */,
-			2786B40E0FFD3AEB002B852B /* Server.m:142 */,
-			2786B4230FFD3BE0002B852B /* Server.m:133 */,
-			2786B4250FFD3BE1002B852B /* Server.m:133 */,
-			2786B4900FFD4CEF002B852B /* IPGroupsRootViewController.m:37 */,
 			2786B4EC0FFD5C26002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B4EE0FFD5C2B002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B4FE0FFD5CC9002B852B /* FromXMLElementDelegate.m:18 */,
@@ -4990,20 +3082,7 @@
 			2786B5610FFD6143002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B5700FFD625A002B852B /* FromXMLElementDelegate.m:18 */,
 			2786B5860FFD62D2002B852B /* FromXMLElementDelegate.m:18 */,
-			2786B5940FFD63AD002B852B /* SharedIpGroup.m:20 */,
-			2786B5DA0FFD6FE4002B852B /* IPGroupsRootViewController.m:132 */,
-			2786B6010FFEBB7A002B852B /* IPGroupsRootViewController.m:71 */,
-			2786B6030FFEBB88002B852B /* IPGroupsRootViewController.m:96 */,
-			2786B6130FFEBC26002B852B /* IPGroupsRootViewController.m:90 */,
-			2786B6390FFEBDF4002B852B /* IPGroupsRootViewController.m:144 */,
 			2786B63D0FFEBE2C002B852B /* NSObject+ObjectiveResource.m:259 */,
-			2786B6E80FFECDB0002B852B /* IPGroupViewController.m:123 */,
-			275ACACD0FFEF2E500EEB366 /* ListObjectsViewController.m:223 */,
-			275ACB040FFEF86500EEB366 /* ListObjectsViewController.m:157 */,
-			275ACB060FFEF86500EEB366 /* ListObjectsViewController.m:210 */,
-			275ACB160FFEF8C900EEB366 /* ListObjectsViewController.m:209 */,
-			275ACB180FFEF8CA00EEB366 /* ListObjectsViewController.m:211 */,
-			27036E7010044D89006453B9 /* SharedIpGroup.m:33 */,
 			27036E7A10044E94006453B9 /* FromXMLElementDelegate.m:320 */,
 			27036E7C10044EC1006453B9 /* FromXMLElementDelegate.m:18 */,
 			27036E8910045005006453B9 /* FromXMLElementDelegate.m:323 */,
@@ -5011,21 +3090,14 @@
 			27036E9D10045088006453B9 /* FromXMLElementDelegate.m:337 */,
 			27036EBD10045149006453B9 /* FromXMLElementDelegate.m:348 */,
 			27036ED0100451E9006453B9 /* FromXMLElementDelegate.m:331 */,
-			27036ED410045206006453B9 /* IPGroupsRootViewController.m:92 */,
-			27036EE710045270006453B9 /* SharedIpGroup.m:25 */,
-			27036EEF10045299006453B9 /* IPGroupsRootViewController.m:31 */,
-			27A8DB5E1008FFED0019682B /* IPGroupsRootViewController.m:150 */,
 			27F1E4DC100CEFB600810831 /* ORConnection.m:52 */,
 			278D84DC10123D530060DBA1 /* ImageViewController.m:242 */,
-			278D84EC10123E490060DBA1 /* ListObjectsViewController.m:176 */,
 			278D84FD10123E820060DBA1 /* ImageViewController.m:262 */,
-			278D851E101255570060DBA1 /* ContainersRootViewController.m:54 */,
 			278D85D410125D060060DBA1 /* PinchImageView.m:59 */,
 			278D85FF10125E9F0060DBA1 /* ImageViewController.m:133 */,
 			278D861C10125F7C0060DBA1 /* ImageViewController.m:94 */,
 			278D8631101260140060DBA1 /* PinchImageView.m:45 */,
 			278D87601012C34E0060DBA1 /* ImageViewController.m:242 */,
-			278D876F1012C3B70060DBA1 /* ListObjectsViewController.m:176 */,
 			278D88331013A9D40060DBA1 /* ImageViewController.m:113 */,
 			278D88751013B42A0060DBA1 /* ImageViewController.m:119 */,
 			278D88F31013B9340060DBA1 /* ImageViewController.m:189 */,
@@ -5039,84 +3111,28 @@
 			278D8ACA1013DA060060DBA1 /* ImageViewController.m:394 */,
 			278D8AD11013DA240060DBA1 /* ImageViewController.m:399 */,
 			278D8C151013F0420060DBA1 /* AddObjectViewController.m:118 */,
-			278D8C1B1013F0620060DBA1 /* CloudFilesObject.m:43 */,
 			278D8C2A1013F1150060DBA1 /* ORConnection.m:175 */,
-			278D8C571013F34B0060DBA1 /* CloudFilesObject.m:74 */,
-			278D8C701013F3C20060DBA1 /* CloudFilesObject.m:73 */,
-			278D8C741013F3F40060DBA1 /* CloudFilesObject.m:63 */,
 			272EF0E810159B4700DB17A1 /* AddServerViewController.m:227 */,
-			272EF26510162BBF00DB17A1 /* Container.m:84 */,
-			272EF26B10162BDF00DB17A1 /* Container.m:96 */,
-			272EF29310162D8700DB17A1 /* Container.m:117 */,
-			27A3C5201019796300198388 /* RenameServerController.m:68 */,
-			27A3C56010197C5F00198388 /* ServerViewController.m:55 */,
-			27A3C5A210197F5D00198388 /* ServerViewController.m:552 */,
-			27A3C5B21019805600198388 /* Server.m:55 */,
-			27A3C5F2101982E500198388 /* Server.m:70 */,
 			27A3C61B101986B000198388 /* Response.m:47 */,
-			27A3C68410198C3C00198388 /* Server.m:22 */,
-			27A3C6B810198E1800198388 /* ServerViewController.m:36 */,
-			27A3C6BE10198E5A00198388 /* ServerViewController.m:65 */,
-			27A3C6CA10198ECC00198388 /* ServerViewController.m:80 */,
-			27A3C76C1019982A00198388 /* Server.m:74 */,
-			27A3C7731019988800198388 /* ServerViewController.m:516 */,
-			27A3C77C101998E200198388 /* ServerViewController.m:523 */,
 			2777B47D101B8D8C0043D3C1 /* FromXMLElementDelegate.m:18 */,
 			2777B47F101B8DC70043D3C1 /* FromXMLElementDelegate.m:18 */,
 			2777B4AE101B90020043D3C1 /* FromXMLElementDelegate.m:18 */,
-			2777B4C1101B90420043D3C1 /* ServerViewController.m:66 */,
-			2777B638101C046A0043D3C1 /* ConfirmResizeServerController.m:101 */,
-			2777B689101C0BB40043D3C1 /* ConfirmResizeServerController.m:138 */,
-			2777B6C6101C0E010043D3C1 /* ServerViewController.m:59 */,
-			2777B6D4101C0E930043D3C1 /* ConfirmResizeServerController.m:146 */,
-			2777B7BF101C1E020043D3C1 /* ServerViewController.m:541 */,
-			2777B7EA101C205B0043D3C1 /* ServerViewController.m:93 */,
-			2777B87E101C2BCA0043D3C1 /* ServersRootViewController.m:131 */,
-			2777B883101C2BF30043D3C1 /* ServersRootViewController.m:96 */,
-			2777B892101C2C520043D3C1 /* ServersRootViewController.m:55 */,
-			2777B89C101C2CC40043D3C1 /* ServersRootViewController.m:33 */,
-			2777B8AC101C2D420043D3C1 /* ServersRootViewController.m:290 */,
-			2777B8B7101C2D510043D3C1 /* ServerViewController.m:627 */,
-			2777BA15101C393A0043D3C1 /* ServerViewController.m:539 */,
 			2777BCE2101D5C410043D3C1 /* AddServerViewController.m:277 */,
 			2777BCF1101D5C810043D3C1 /* AddServerViewController.m:256 */,
 			2777BD01101D5D350043D3C1 /* AddServerViewController.m:267 */,
-			2777BD86101EA73C0043D3C1 /* ConfirmResizeServerController.m:129 */,
-			2777BD8D101EA8F40043D3C1 /* ConfirmResizeServerController.m:155 */,
-			2777BE07101ECA450043D3C1 /* ServerViewController.m:332 */,
-			274EAD9D1022926500D3D2C7 /* ResizeServerController.m:106 */,
-			274EADA61022930800D3D2C7 /* ServerViewController.m:172 */,
-			274EADB4102293FE00D3D2C7 /* ServerViewController.m:293 */,
 			274EADDF1022AF6500D3D2C7 /* AddServerViewController.m:286 */,
 			274EADF71022B0F600D3D2C7 /* FromXMLElementDelegate.m:18 */,
-			274EAE141022B35B00D3D2C7 /* LoginViewController.m:72 */,
-			27C12BD21024D1E800C843EC /* ServersRootViewController.m:219 */,
-			27C12BD41024D1ED00C843EC /* ServersRootViewController.m:179 */,
 			27C12C141024D51000C843EC /* AddServerViewController.m:100 */,
 			27C12C1E1024D5C000C843EC /* FromXMLElementDelegate.m:18 */,
-			27C12DEA1024F01900C843EC /* ResetPasswordController.m:186 */,
 			27E58F101040624400A4F32C /* ImageViewController.m:81 */,
 			27E58F121040624E00A4F32C /* ImageViewController.m:322 */,
 			27E58F17104062C800A4F32C /* ImageViewController.m:80 */,
 			27E58F2E1040649200A4F32C /* ImageViewController.m:366 */,
-			27D8702D1041EB6400B805A9 /* ListObjectsViewController.m:248 */,
-			27D870371041EB7D00B805A9 /* ListObjectsViewController.m:317 */,
-			27D8709B1041FF9B00B805A9 /* CFAccount.m:43 */,
-			27D8709D1041FF9D00B805A9 /* CFAccount.m:57 */,
-			27D8714A10420FF800B805A9 /* ListObjectsViewController.m:306 */,
-			27FEAD201049F09F0042BBFC /* Container.m:138 */,
-			27FEAD611049F2A80042BBFC /* Container.m:147 */,
-			27F89C41104B3FF600BE3753 /* ServerViewController.m:384 */,
-			276966621055D6D400D64A7B /* CFAccount.m:32 */,
 			276966691055D74000D64A7B /* NSObject+ObjectiveResource.m:152 */,
 			276966C81055DB8E00D64A7B /* FromXMLElementDelegate.m:18 */,
 			276967311055DEFE00D64A7B /* FromXMLElementDelegate.m:18 */,
-			276967531055E31A00D64A7B /* CFAccount.m:35 */,
 			2769678A1055E4AD00D64A7B /* FromXMLElementDelegate.m:18 */,
-			276967911055E51F00D64A7B /* CFAccount.m:29 */,
 			276969FD1055F56100D64A7B /* SpinnerAccessoryCell.m:25 */,
-			276969FF1055F5AF00D64A7B /* ObjectViewController.m:181 */,
-			27696A091055F5E300D64A7B /* ObjectViewController.m:135 */,
 		);
 		codeSenseManager = 27B6C62B0FF0B97C006C965F /* Code sense */;
 		executables = (
@@ -5210,6 +3226,7 @@
 			2750B5E11058B3B900B1D370 /* PBXTextBookmark */ = 2750B5E11058B3B900B1D370 /* PBXTextBookmark */;
 			2750B5E21058B3B900B1D370 /* PBXTextBookmark */ = 2750B5E21058B3B900B1D370 /* PBXTextBookmark */;
 			2750B5E31058B3B900B1D370 /* PBXTextBookmark */ = 2750B5E31058B3B900B1D370 /* PBXTextBookmark */;
+			2750B5E61058B3D500B1D370 /* PBXTextBookmark */ = 2750B5E61058B3D500B1D370 /* PBXTextBookmark */;
 			276964311055BF6100D64A7B = 276964311055BF6100D64A7B /* PBXTextBookmark */;
 			2769649A1055C81C00D64A7B = 2769649A1055C81C00D64A7B /* PBXTextBookmark */;
 			276964A81055C99A00D64A7B = 276964A81055C99A00D64A7B /* PBXTextBookmark */;
@@ -5330,16 +3347,16 @@
 	};
 	4C3B1D270FDA14F300AE2133 /* LoginViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 647}}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
 			sepNavSelRange = "{128, 0}";
 			sepNavVisRange = "{0, 873}";
 		};
 	};
 	4C3B1D280FDA14F300AE2133 /* LoginViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 4976}}";
-			sepNavSelRange = "{295, 0}";
-			sepNavVisRange = "{0, 734}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 4992}}";
+			sepNavSelRange = "{7741, 0}";
+			sepNavVisRange = "{8338, 877}";
 			sepNavWindowFrame = "{{40, 137}, {1095, 663}}";
 		};
 	};
@@ -5490,17 +3507,17 @@
 	};
 	4C3B1EAE0FDC3E3400AE2133 /* Server.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 1152}}";
-			sepNavSelRange = "{108, 0}";
-			sepNavVisRange = "{0, 452}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 832}}";
+			sepNavSelRange = "{426, 0}";
+			sepNavVisRange = "{166, 1125}";
 			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
 		};
 	};
 	4C3B1EAF0FDC3E3400AE2133 /* Server.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 3104}}";
-			sepNavSelRange = "{223, 0}";
-			sepNavVisRange = "{0, 796}";
+			sepNavIntBoundsRect = "{{0, 0}, {1230, 2832}}";
+			sepNavSelRange = "{6015, 0}";
+			sepNavVisRange = "{5989, 990}";
 			sepNavWindowFrame = "{{77, 191}, {1095, 663}}";
 		};
 	};
@@ -5514,9 +3531,9 @@
 	};
 	4C3B1ED10FDC443500AE2133 /* Flavor.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 736}}";
-			sepNavSelRange = "{244, 10}";
-			sepNavVisRange = "{30, 804}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 688}}";
+			sepNavSelRange = "{912, 0}";
+			sepNavVisRange = "{3, 1034}";
 			sepNavWindowFrame = "{{27, 308}, {750, 558}}";
 		};
 	};
@@ -5530,24 +3547,24 @@
 	};
 	4C3B1EDE0FDC455500AE2133 /* Image.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 1312}}";
-			sepNavSelRange = "{242, 10}";
-			sepNavVisRange = "{0, 641}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 1120}}";
+			sepNavSelRange = "{1329, 0}";
+			sepNavVisRange = "{730, 1165}";
 			sepNavWindowFrame = "{{31, 159}, {1095, 663}}";
 		};
 	};
 	4C3B1EE70FDC98BD00AE2133 /* SharedIpGroup.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
-			sepNavSelRange = "{599, 0}";
-			sepNavVisRange = "{0, 605}";
+			sepNavSelRange = "{291, 0}";
+			sepNavVisRange = "{0, 485}";
 		};
 	};
 	4C3B1EE80FDC98BD00AE2133 /* SharedIpGroup.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 1120}}";
-			sepNavSelRange = "{258, 10}";
-			sepNavVisRange = "{0, 497}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 832}}";
+			sepNavSelRange = "{1090, 0}";
+			sepNavVisRange = "{163, 1052}";
 		};
 	};
 	4C3B1EF20FDC99E400AE2133 /* BackgroundSchedule.h */ = {
@@ -5630,9 +3647,9 @@
 	};
 	4C9982B40FEE0EFB005D12B7 /* ServersRootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 4752}}";
-			sepNavSelRange = "{6998, 0}";
-			sepNavVisRange = "{5057, 1071}";
+			sepNavIntBoundsRect = "{{0, 0}, {943, 4400}}";
+			sepNavSelRange = "{8493, 0}";
+			sepNavVisRange = "{7647, 1122}";
 			sepNavWindowFrame = "{{20, 320}, {750, 558}}";
 		};
 	};
@@ -5645,9 +3662,9 @@
 	};
 	4C9982B80FEE0F23005D12B7 /* IPGroupsRootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {943, 3824}}";
-			sepNavSelRange = "{2667, 0}";
-			sepNavVisRange = "{223, 1320}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 3120}}";
+			sepNavSelRange = "{5483, 0}";
+			sepNavVisRange = "{5483, 1355}";
 		};
 	};
 	4C9984250FEEB502005D12B7 /* Auth.h */ = {
@@ -5666,17 +3683,17 @@
 	};
 	4C9985D10FEEDFC4005D12B7 /* Container.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 1024}}";
-			sepNavSelRange = "{556, 0}";
-			sepNavVisRange = "{76, 849}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 768}}";
+			sepNavSelRange = "{865, 0}";
+			sepNavVisRange = "{130, 862}";
 			sepNavWindowFrame = "{{38, 189}, {1095, 663}}";
 		};
 	};
 	4C9985D20FEEDFC4005D12B7 /* Container.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1272, 2528}}";
-			sepNavSelRange = "{4669, 0}";
-			sepNavVisRange = "{3624, 1776}";
+			sepNavIntBoundsRect = "{{0, 0}, {1300, 2256}}";
+			sepNavSelRange = "{3819, 0}";
+			sepNavVisRange = "{3061, 1274}";
 			sepNavWindowFrame = "{{202, 215}, {1095, 663}}";
 		};
 	};
@@ -5690,15 +3707,15 @@
 	};
 	4C9985D70FEEDFE2005D12B7 /* CloudFilesObject.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1231, 1696}}";
-			sepNavSelRange = "{204, 10}";
-			sepNavVisRange = "{0, 477}";
+			sepNavIntBoundsRect = "{{0, 0}, {1769, 1280}}";
+			sepNavSelRange = "{1713, 0}";
+			sepNavVisRange = "{933, 1263}";
 			sepNavWindowFrame = "{{156, 148}, {1095, 663}}";
 		};
 	};
 	4C9985F00FEEE085005D12B7 /* CFAccount.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 647}}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
 			sepNavSelRange = "{470, 0}";
 			sepNavVisRange = "{0, 494}";
 			sepNavWindowFrame = "{{107, 126}, {1095, 663}}";
@@ -5706,39 +3723,39 @@
 	};
 	4C9985F10FEEE085005D12B7 /* CFAccount.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 1312}}";
-			sepNavSelRange = "{376, 0}";
-			sepNavVisRange = "{0, 962}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 1200}}";
+			sepNavSelRange = "{555, 0}";
+			sepNavVisRange = "{637, 1546}";
 			sepNavWindowFrame = "{{89, 111}, {1095, 663}}";
 		};
 	};
 	4C9985FB0FEEE1F2005D12B7 /* ContainersRootViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 647}}";
+			sepNavIntBoundsRect = "{{0, 0}, {877, 670}}";
 			sepNavSelRange = "{481, 0}";
 			sepNavVisRange = "{0, 487}";
 		};
 	};
 	4C9985FC0FEEE1F2005D12B7 /* ContainersRootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {877, 3232}}";
-			sepNavSelRange = "{519, 0}";
-			sepNavVisRange = "{152, 1487}";
+			sepNavIntBoundsRect = "{{0, 0}, {943, 2928}}";
+			sepNavSelRange = "{2250, 0}";
+			sepNavVisRange = "{4750, 1111}";
 			sepNavWindowFrame = "{{61, 168}, {1095, 663}}";
 		};
 	};
 	4C9989950FEF48AA005D12B7 /* ListObjectsViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1230, 622}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1230, 670}}";
 			sepNavSelRange = "{236, 0}";
 			sepNavVisRange = "{0, 1092}";
 		};
 	};
 	4C9989960FEF48AA005D12B7 /* ListObjectsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1223, 8528}}";
-			sepNavSelRange = "{9196, 0}";
-			sepNavVisRange = "{8978, 1226}";
+			sepNavIntBoundsRect = "{{0, 0}, {894, 8800}}";
+			sepNavSelRange = "{5190, 0}";
+			sepNavVisRange = "{17012, 904}";
 			sepNavWindowFrame = "{{90, 177}, {1095, 663}}";
 		};
 	};

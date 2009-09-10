@@ -52,10 +52,9 @@
 }
 
 -(void)setObject:(NSString *)anObject {
-	// viscious hack!  rackspace doesn't return a <object> inside of <objects>, so hack the setter
+	// rackspace doesn't return a <object> inside of <objects>, so hack the setter
 	// to pretend it's in a <objects> element
 	if (!objects) {
-		//objects = [NSMutableArray array];
 		objects = [NSMutableArray arrayWithCapacity:10];
 	}
 	[objects addObject:anObject];
@@ -64,8 +63,7 @@
 //simple API that encodes reserved characters according to:
 //RFC 3986
 //http://tools.ietf.org/html/rfc3986
-+(NSString *) urlencode: (NSString *) url
-{
++(NSString *) urlencode: (NSString *) url {
     NSArray *escapeChars = [NSArray arrayWithObjects:@";" , @"/" , @"?" , @":" ,
 							@"@" , @"&" , @"=" , @"+" ,
 							@"$" , @"," , @"[" , @"]",
@@ -102,51 +100,29 @@
 + (id)findRemote:(NSString *)elementId withResponse:(NSError **)aError {
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
 	
-	NSLog(@"FULL URL");
-	// not escaping!  yay!
-
-	//NSLog([Container urlencode:[NSString stringWithFormat:@"%@/%@?format=xml", app.storageUrl, elementId]]);
-	NSLog([NSString stringWithFormat:@"%@/%@?format=xml", app.storageUrl, [elementId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]);
-	//NSLog([NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?format=xml", app.storageUrl, [Container urlencode:elementId]]]);
-
-	NSLog([Container urlencode:elementId]);
-	
-	// https://storage.clouddrive.com/v1/MossoCloudFS_56ad0327-43d6-4ac4-9883-797f5690238e/overhrd.com?format=xml
-
 	elementId = [Container urlencode:elementId];
 	
-	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?format=xml", app.storageUrl, [elementId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];	
-	
+	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?format=xml", app.storageUrl, [elementId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];		
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	
 	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];	
-	if([res isError] && aError) {
+	if ([res isError] && aError) {
 		*aError = res.error;
 	}
-	//return [self performSelector:@selector(fromJSONData:) withObject:res.body];	
+
 	return [self performSelector:@selector(fromXMLData:) withObject:res.body];
 }
 
-// example post:
-//POST /<api version>/<account>/<container> HTTP/1.1 
-//Host: cdn.clouddrive.com 
-//X-Auth-Token: eaaafd18-0fed-4b3a-81b4-663c99ec1cbb 
-//X-TTL: 86400 
-//X-CDN-Enabled: True 
-//X-Log-Retention: True 
 - (Response *)save {
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];	
 
-	//NSLog([NSString stringWithFormat:@"%@/%@?format=xml", app.cdnManagementUrl, [self.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]);
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", app.storageUrl, [self.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];	
 
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	[request setHTTPMethod:@"PUT"];
-	//[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];	
 	
 	[request setValue:self.ttl forHTTPHeaderField:@"X-TTL"];
 	[request setValue:self.cdnEnabled forHTTPHeaderField:@"X-CDN-Enabled"];
-	//[request setValue:self.logRetention forHTTPHeaderField:@"X-Log-Retention"];
 	
 	NSString *body = @""; //[NSString stringWithFormat:@"{ \"resize\" : { \"flavorId\" : %@ } }", self.flavorId];
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		

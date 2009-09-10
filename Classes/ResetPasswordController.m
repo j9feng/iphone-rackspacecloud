@@ -35,8 +35,6 @@
 		self.confirmPasswordCell.textField.keyboardType = UIKeyboardTypeDefault;
 		self.confirmPasswordCell.textField.delegate = self;	
 		
-		//[self.passwordCell.textField becomeFirstResponder];
-		
 		// show a rounded rect view
 		self.spinnerView = [[RoundedRectView alloc] initWithDefaultFrame];
 		[self.view addSubview:self.spinnerView];
@@ -56,13 +54,6 @@
 
     [super viewDidLoad];	
 }	
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 #pragma mark Keyboard Handler
 
@@ -71,24 +62,7 @@
 	if ([self.passwordCell.textField isFirstResponder]) {
 		[self.confirmPasswordCell.textField becomeFirstResponder];
 	} else {
-
-		[self.confirmPasswordCell.textField resignFirstResponder];
-		
-		// see if they match, and if so, set it and pop the view controller
-		if ([self.passwordCell.textField.text isEqualToString:@""] || [self.confirmPasswordCell.textField.text isEqualToString:@""]) {
-//			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"The password and confirmation cannot be blank and must be the same value." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//			[alert show];
-//			[alert release];
-		} else if (![self.passwordCell.textField.text isEqualToString:self.confirmPasswordCell.textField.text]) {
-//			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"The password and confirmation cannot be blank and must be the same value." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//			[alert show];
-//			[alert release];
-		} else {
-			// all is well, so set it to the server object
-			//self.server.newPassword = self.passwordCell.textField.text;
-			//self.serverViewController.saveButton.enabled = YES;
-			//[self.navigationController popToViewController:self.serverViewController animated:YES];
-		}
+		[self.confirmPasswordCell.textField resignFirstResponder];		
 	}
 	
 	return YES;
@@ -121,17 +95,6 @@
 		return confirmPasswordCell;
 	}
 }
-
-- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
-//	Flavor *flavor = [app.flavors objectAtIndex:indexPath.row];
-//	self.server.flavorId = flavor.flavorId;
-//	[aTableView reloadData];
-//	self.serverViewController.saveButton.enabled = YES;
-//	[self.serverViewController.tableView reloadData];
-//	[self.navigationController popToViewController:serverViewController animated:YES];
-}
-
 
 #pragma mark Spinner Methods
 

@@ -13,11 +13,6 @@
 	NSString *sharedIpGroupId;
 	NSString *sharedIpGroupName;
 	NSMutableArray *servers;
-//	<servers> 
-//	<serverId>23203</serverId> 
-//	<serverId>2456</serverId> 
-//	<serverId>9891</serverId> 
-//	</servers> 
 }
 
 @property (nonatomic, retain) NSString *sharedIpGroupId;

@@ -12,20 +12,9 @@
 
 @interface Container : NSObject {
 
-	/*	// CDN xml
-	<container> 
-	<name>images</name> 
-	<cdn_enabled>True</cdn_enabled> 
-	<ttl>86400</ttl> 
-	<log_retention>True</log_retention> 
-	<cdn_url>http://c0010171.cdn.cloudfiles.rackspacecloud.com/</cdn_url> 
-	</container> 
-	 */	
-	
 	NSString *name;
 	NSString *count;
-	NSString *bytes;
-	
+	NSString *bytes;	
 	NSMutableArray *objects;
 	NSString *object;
 	
@@ -34,9 +23,6 @@
 	NSString *ttl;
 	NSString *logRetention;
 	NSString *cdnUrl;
-	
-	//Container *container;
-	
 }
 
 @property (nonatomic, retain) NSString *name;
@@ -50,8 +36,6 @@
 
 @property (nonatomic, retain) NSMutableArray *objects;
 @property (nonatomic, retain) NSString *object;
-
-//@property (nonatomic, retain) Container *container;
 
 -(NSString *)humanizedBytes;
 -(NSString *)humanizedCount;

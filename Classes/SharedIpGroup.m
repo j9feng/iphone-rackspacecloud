@@ -22,8 +22,7 @@
 }
 
 -(void)count {
-	return;// nil;
-	//return -1;
+	return;
 }
 
 // Find all items 
@@ -35,15 +34,11 @@
 	
 	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];
 	
-	NSLog([NSString stringWithFormat:@"app token: %@", app.authToken]);
-	if([res isError] && aError) {
+	if ([res isError] && aError) {
 		*aError = res.error;
 	}
 	
-	//NSString *fakeResponse = @"<sharedIpGroups xmlns=\"http://docs.rackspacecloud.com/servers/api/v1.0\"><sharedIpGroup id=\"1234\" name=\"Shared IP Group 1\"><servers><server id=\"422\" /><server id=\"3445\" /></servers></sharedIpGroup><sharedIpGroup id=\"5678\" name=\"Shared IP Group 2\"><servers><server id=\"23203\"/><server id=\"2456\" /><server id=\"9891\" /></servers></sharedIpGroup></sharedIpGroups>";
-	
 	return [self performSelector:@selector(fromXMLData:) withObject:res.body];
-	//return [self performSelector:@selector(fromXMLData:) withObject:[fakeResponse dataUsingEncoding:NSASCIIStringEncoding]];
 }
 
 -(void) dealloc {

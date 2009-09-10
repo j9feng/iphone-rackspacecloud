@@ -36,15 +36,9 @@ NSString *initialFlavorId;
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-
 		// make and disable the save button
-		//self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveButtonPressed:)];
 		self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleBordered target:self action:@selector(saveButtonPressed:)];
 		self.saveButton = self.navigationItem.rightBarButtonItem;
-		//self.navigationItem.rightBarButtonItem = self.saveButton;
-		
-		//self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(saveButtonPressed:)];
 		self.navigationItem.rightBarButtonItem.enabled = NO;
 
 		// set up editable cell for server name
@@ -54,8 +48,6 @@ NSString *initialFlavorId;
 		
 		serverNameCell.textField.keyboardType = UIKeyboardTypeDefault;
 		serverNameCell.textField.delegate = self;
-		
-		
     }
     return self;
 }
@@ -65,13 +57,6 @@ NSString *initialFlavorId;
 	self.navigationItem.title = self.server.serverName;
 	[super viewWillAppear:animated];
 }
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -176,7 +161,6 @@ NSString *initialFlavorId;
 				image = img;
 			}
 		}
-		
 		
 		static NSString *CellIdentifier = @"ViewServerCell";
 		UITableViewCell *cell = (UITableViewCell *) [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -465,7 +449,6 @@ NSString *initialFlavorId;
 															 otherButtonTitles:nil];
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
 	[actionSheet showInView:self.tabBarController.view]; // if it's not over the tab bar, the bottom half of the cancel button isn't touchable
-	//[actionSheet showInView:self.view]; // show from our table view (pops up in the middle of the table)
 	[actionSheet release];
 }
 
@@ -487,7 +470,6 @@ NSString *initialFlavorId;
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
 	if (buttonIndex == 0) { // that's the reboot button
-		//[NSThread detachNewThreadSelector:@selector(rebootSlice) toTarget:self withObject:nil];	
 		
 		if ([rebootMode isEqualToString:@"soft"]) {
 			Response *res = [self.server softReboot];
@@ -501,8 +483,7 @@ NSString *initialFlavorId;
 			}
 		}
 		
-		[self.tableView reloadData];
-				
+		[self.tableView reloadData];		
 	}
 }
 
@@ -510,7 +491,6 @@ NSString *initialFlavorId;
 	[self.tableView reloadData];
 }
 
-//- (void)refreshProgress:(NSTimer *)timer {
 - (void)refreshProgress:(ServerViewController *)vc {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	Server *newServer = [Server findRemoteWithId:self.server.serverId andResponse:nil];
@@ -523,7 +503,6 @@ NSString *initialFlavorId;
 	[self performSelectorOnMainThread:@selector(reloadTableData) withObject:nil waitUntilDone:YES];
 	
 	if (!([self.server.status isEqualToString:@"VERIFY_RESIZE"] || [self.server.status isEqualToString:@"ACTIVE"])) {
-		//[timer invalidate]; // quit polling
 		[self refreshProgress:vc]; // keep polling until it's done
 	}
 	[pool release];
@@ -536,10 +515,7 @@ NSString *initialFlavorId;
 - (void)saveButtonPressed:(id)sender {
 
 	// the button is the first responder but the keyboard takes too long to hide so force it
-//	if ([serverNameCell.textField canBecomeFirstResponder]) {
-//		[serverNameCell.textField becomeFirstResponder];
-		[serverNameCell.textField resignFirstResponder];
-//	}	
+	[serverNameCell.textField resignFirstResponder];
 
 	[self showSpinnerView];
 	
@@ -554,29 +530,9 @@ NSString *initialFlavorId;
 		if (saveResponse.statusCode == 413) {
 			overRateLimit = YES;
 		}
-//		[self hideSpinnerView];
 	} else {
 		success = YES;
 		self.navigationItem.title = self.server.serverName;
-//		if (![self.server.flavorId isEqualToString:initialFlavorId]) {
-//			
-//			Response *response = [self.server resize];
-//			success = [response isSuccess];
-//			
-//			if (success) {
-//				// fire off an NSTimer to keep the progress up to date
-//				//[NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(refreshProgress:) userInfo:nil repeats:YES];
-//				[NSThread detachNewThreadSelector:@selector(refreshProgress:) toTarget:self withObject:self];
-//			} else {
-//				if (response.statusCode == 413) {
-//					overRateLimit = YES;
-//				}
-//				
-//				[self hideSpinnerView];
-//			}
-//		} else {
-//			[self hideSpinnerView];
-//		}
 	}
 	[self hideSpinnerView];
 	

@@ -30,7 +30,7 @@
 }
 
 -(void)setContainer:(Container *)aContainer {
-	// viscious hack!  rackspace doesn't return a <container> inside of <containers>, so hack the setter
+	// rackspace doesn't return a <container> inside of <containers>, so hack the setter
 	// to pretend it's in a <containers> element
 	if (!containers) {
 		containers = [NSMutableArray array];

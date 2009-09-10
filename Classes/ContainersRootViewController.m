@@ -50,7 +50,6 @@ BOOL containersLoaded = NO;
 			}
 		}
 		
-		
 		containersLoaded = YES;
 		self.tableView.userInteractionEnabled = YES;
 		[self.tableView reloadData];
@@ -61,36 +60,14 @@ BOOL containersLoaded = NO;
 
 
 - (void)viewWillAppear:(BOOL)animated {
-
 	// set up the accelerometer for the "shake to refresh" feature
 	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / 25)];
-	[[UIAccelerometer sharedAccelerometer] setDelegate:self];	
-	
-	//NSAutoreleasePool *autoreleasepool = [[NSAutoreleasePool alloc] init];
+	[[UIAccelerometer sharedAccelerometer] setDelegate:self];		
 	[NSThread detachNewThreadSelector:@selector(loadContainers) toTarget:self withObject:nil];	
-	//[autoreleasepool release];	
-	
-	//[self loadContainers];
-	
-//	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
-//	[ObjectiveResourceConfig setSite:app.storageUrl];	
-//	[ObjectiveResourceConfig setAuthToken:app.authToken];
-//	[ObjectiveResourceConfig setResponseType:JSONResponse];	
-//	
-//	self.account = [CFAccount findRemote:@"1" withResponse:nil];
-//	
-//	containersLoaded = YES;
-//	self.tableView.userInteractionEnabled = YES;
-//	[self.tableView reloadData];
-	
 	[super viewWillAppear:animated];
 }
 
 #pragma mark Table Methods
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//	return 50;
-//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return 1;

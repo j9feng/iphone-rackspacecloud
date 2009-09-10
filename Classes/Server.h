@@ -16,25 +16,11 @@
 	NSString *serverName;
 	NSString *imageId;
 	NSString *flavorId;
-	NSString *hostId;
-	
+	NSString *hostId;	
 	NSMutableDictionary *addresses;
-	// addresses => public => ip (attrs), private => ip (attrs)
-
-	
 	NSMutableArray *serverMetaData;
-//	<serverMetaData> 
-//	<serverMetaDataKey>Server Label</serverMetaDataKey> 
-//	<serverMetaDataValue>DB 1</serverMetaDataValue> 
-//	</serverMetaData> 
-//	<serverMetaData> 
-//	<serverMetaDataKey>My Image Version</serverMetaDataKey> 
-//	<serverMetaDataValue>2.1</serverMetaDataValue> 
-//	</serverMetaData> 
-
 	NSString *status;
 	NSString *progress;
-
 	NSString *newPassword;
 	
 }

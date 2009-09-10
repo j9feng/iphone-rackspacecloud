@@ -28,9 +28,6 @@
 	}
 	
 	return [self performSelector:@selector(fromXMLData:) withObject:res.body];
-	//return [self performSelector:@selector(fromXMLData:) withObject:[fakeResponse dataUsingEncoding:NSASCIIStringEncoding]];
-	//return [self performSelector:@selector(fromJSONData:) withObject:res.body];
-	//return [self performSelector:@selector(fromJSONData:) withObject:[fakeJSON dataUsingEncoding:NSASCIIStringEncoding]];
 }
 
 

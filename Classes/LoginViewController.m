@@ -230,26 +230,6 @@
 	}
 }
 
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-//	CGRect r = self.view.frame;
-//	r.origin.y += 720;
-//	
-//    [UIView beginAnimations:nil context:NULL];
-//    [UIView setAnimationDuration:0.65];
-//	
-//	self.view.frame = r;
-//	
-//	[UIView commitAnimations];
-	
-	
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];	

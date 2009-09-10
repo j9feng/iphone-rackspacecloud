@@ -77,8 +77,7 @@
 	
 	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];
 	
-	NSLog([NSString stringWithFormat:@"app token: %@", app.authToken]);
-	if([res isError] && aError) {
+	if ([res isError] && aError) {
 		*aError = res.error;
 	}
 	
@@ -94,8 +93,7 @@
 	
 	Response *res = [ORConnection sendRequest:request withAuthToken:app.authToken];
 	
-	NSLog([NSString stringWithFormat:@"app token: %@", app.authToken]);
-	if([res isError] && aError) {
+	if ([res isError] && aError) {
 		*aError = res.error;
 	}
 	
@@ -104,10 +102,6 @@
 
 -(Response *)sendRebootRequest:(NSString *)rebootType {
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];	
-//	NSLog([NSString stringWithFormat:@"Reboot URL: %@", [NSString stringWithFormat:@"%@servers/%@/actions/reboot?format=xml", app.computeUrl, self.serverId]]);
-//	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@servers/%@/actions/reboot?format=xml", app.computeUrl, self.serverId]];
-
-	NSLog([NSString stringWithFormat:@"Reboot URL: %@", [NSString stringWithFormat:@"%@servers/%@/action", app.computeUrl, self.serverId]]);
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@servers/%@/action", app.computeUrl, self.serverId]];
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
 	[request setHTTPMethod:@"POST"];
@@ -124,26 +118,15 @@
 	[request setHTTPMethod:@"POST"];
 	[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];	
 	NSString *body = [NSString stringWithFormat:@"{ \"server\" : { \"name\" : \"%@\", \"imageId\" : %@, \"flavorId\" : %@ } }", self.serverName, self.imageId, self.flavorId];
-	NSLog(body);
 	[request setHTTPBody:[body dataUsingEncoding:NSASCIIStringEncoding]];		
 	return [ORConnection sendRequest:request withAuthToken:app.authToken];
 }
 
 -(Response *)softReboot {
-//	if ([[self sendRebootRequest:@"SOFT"] isError]) {
-//		return NO;
-//	} else {
-//		return YES;
-//	}
 	return [self sendRebootRequest:@"SOFT"];
 }
 
 -(Response *)hardReboot {
-//	if ([[self sendRebootRequest:@"HARD"] isError]) {
-//		return NO;
-//	} else {
-//		return YES;
-//	}
 	return [self sendRebootRequest:@"HARD"];
 }
 

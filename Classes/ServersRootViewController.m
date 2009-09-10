@@ -30,12 +30,7 @@ static UIImage *rhelImage = nil;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-//	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
-//	app.serversRootViewController = self;	
-//	[NSThread detachNewThreadSelector:@selector(loadServers) toTarget:self withObject:nil];	
-	
-	self.navigationItem.rightBarButtonItem.enabled = NO;
-	
+	self.navigationItem.rightBarButtonItem.enabled = NO;	
 	[super viewDidLoad];
 }
 
@@ -57,7 +52,6 @@ static UIImage *rhelImage = nil;
 	RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
 
 	if (!serversLoaded && app.computeUrl) {
-		
 		
 		[ObjectiveResourceConfig setSite:app.computeUrl];
 		[ObjectiveResourceConfig setAuthToken:app.authToken];
@@ -136,19 +130,6 @@ static UIImage *rhelImage = nil;
     return self;
 }
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
 #pragma mark Table Methods
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -159,11 +140,9 @@ static UIImage *rhelImage = nil;
 	}
 }
 
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return 1;
 }
-
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -236,11 +215,7 @@ static UIImage *rhelImage = nil;
 		cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", [s flavorName], [s imageName]];
 		cell.imageView.image = [self imageForServer:s];
 		
-		//self.bandwidthLabel.text = [NSString stringWithFormat:@"%@ GB in / %@ GB out", newServer.bwIn, newServer.bwOut];
-		//cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ files, %@", c.count, [c humanizedBytes]];
-		
 		return cell;
-		
 		
 	} else {
 		static NSString *CellIdentifier = @"SpinnerCell";

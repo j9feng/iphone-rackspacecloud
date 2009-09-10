@@ -27,21 +27,6 @@ BOOL sendingRequest = NO;
     return self;
 }
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
 #pragma mark Table Methods
 
 - (NSString *)tableView:(UITableView *)aTableView titleForHeaderInSection:(NSInteger)section {
@@ -127,7 +112,6 @@ BOOL sendingRequest = NO;
 
 - (void) setServerStatus:(Server *)aServer {
 	self.serverViewController.server.status = aServer.status;
-	//self.serverViewController.server.status = @"WTF";
 	[self reloadTableData];
 }
 
@@ -145,7 +129,6 @@ BOOL sendingRequest = NO;
 				if (![self.serverViewController.server.status isEqualToString:s.status]) {
 					statusChanged = YES;
 					svc.server.status = [s.status copy];
-					//svc.server.status = @"WTF";
 					[self performSelectorOnMainThread:@selector(setServerStatus:) withObject:s waitUntilDone:YES];
 				}
 				[self performSelectorOnMainThread:@selector(reloadTableData) withObject:nil waitUntilDone:YES];
@@ -187,7 +170,6 @@ BOOL sendingRequest = NO;
 				if (![self.serverViewController.server.status isEqualToString:s.status]) {
 					statusChanged = YES;
 					svc.server.status = [s.status copy];
-					//svc.server.status = @"WTF";
 					[self performSelectorOnMainThread:@selector(setServerStatus:) withObject:s waitUntilDone:YES];
 				}
 				[self performSelectorOnMainThread:@selector(reloadTableData) withObject:nil waitUntilDone:YES];
