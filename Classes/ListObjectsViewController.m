@@ -281,7 +281,7 @@ BOOL objectsLoaded = NO;
 	if (section == kContainerDetails) {
 		rows = 2;
 	} else if (section == kCDN) {
-		rows = 4;
+		rows = 3;
 	} else { // if (section == kFiles) {
 		if (objectsLoaded) {
 			rows = [container.objects count];
