@@ -67,7 +67,11 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 2;
+	if ([self.container.cdnEnabled isEqualToString:@"True"]) {
+		return 2;
+	} else {
+		return 1;
+	}
 }
 
 // Customize the number of rows in the table view.
