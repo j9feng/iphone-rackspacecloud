@@ -127,7 +127,8 @@
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.row == 0) { // preview the file		
-		if ([self.cfObject.contentType isEqualToString:@"application/octet-stream"]) {
+		if ([self.cfObject.contentType isEqualToString:@"application/octet-stream"]
+				|| ((NSRange) [self.cfObject.contentType rangeOfString:@"video/"]).location == 0) {
 			// let's assume it's audio or video... try and play it!
 			RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
 			NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
