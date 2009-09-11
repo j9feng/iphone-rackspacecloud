@@ -11,7 +11,7 @@
 #import "WebFileViewController.h"
 #import "Container.h"
 #import "SpinnerAccessoryCell.h"
-
+#import "RackspaceAppDelegate.h"
 
 #define kFileDetails 0
 #define kActions 1
@@ -126,13 +126,21 @@
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.row == 0) { // preview the file
-		WebFileViewController *vc = [[WebFileViewController alloc] initWithNibName:@"WebFileViewController" bundle:nil];
-		vc.cfObject = self.cfObject;
-		vc.container = self.container;
-		[self.navigationController pushViewController:vc animated:YES];
-		[vc release];
-		[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
+	if (indexPath.row == 0) { // preview the file		
+		if ([self.cfObject.contentType isEqualToString:@"application/octet-stream"]) {
+			// let's assume it's audio or video... try and play it!
+			RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
+			NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
+			NSURL *url = [[NSURL alloc] initWithString:urlString];
+			[app initAndPlayMovie:url];
+		} else {
+			WebFileViewController *vc = [[WebFileViewController alloc] initWithNibName:@"WebFileViewController" bundle:nil];
+			vc.cfObject = self.cfObject;
+			vc.container = self.container;
+			[self.navigationController pushViewController:vc animated:YES];
+			[vc release];
+			[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
+		}
 	} else if (indexPath.row == 1) { // email a link
 		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
 		vc.mailComposeDelegate = self;		

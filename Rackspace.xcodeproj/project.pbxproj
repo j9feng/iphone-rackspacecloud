@@ -17,6 +17,7 @@
 		272EF0AE1015999800DB17A1 /* ServerNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272EF0AC1015999800DB17A1 /* ServerNameController.m */; };
 		272EF0AF1015999800DB17A1 /* ServerNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272EF0AD1015999800DB17A1 /* ServerNameController.xib */; };
 		275ACB480FFEFDE200EEB366 /* ObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */; };
+		27687767105A0A7600E0655C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27687766105A0A7600E0655C /* MediaPlayer.framework */; };
 		276965FF1055D32C00D64A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276965FE1055D32C00D64A7B /* MessageUI.framework */; };
 		276968FD1055EDBE00D64A7B /* SpinnerAccessoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 276968FC1055EDBE00D64A7B /* SpinnerAccessoryCell.m */; };
 		2777B583101BF9AB0043D3C1 /* ConfirmResizeServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2777B581101BF9AB0043D3C1 /* ConfirmResizeServerController.m */; };
@@ -135,6 +136,7 @@
 		272EF0AD1015999800DB17A1 /* ServerNameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServerNameController.xib; path = Classes/ServerNameController.xib; sourceTree = "<group>"; };
 		275ACB460FFEFDE200EEB366 /* ObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectViewController.h; sourceTree = "<group>"; };
 		275ACB470FFEFDE200EEB366 /* ObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectViewController.m; sourceTree = "<group>"; };
+		27687766105A0A7600E0655C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		276965FE1055D32C00D64A7B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		276968FB1055EDBE00D64A7B /* SpinnerAccessoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerAccessoryCell.h; sourceTree = "<group>"; };
 		276968FC1055EDBE00D64A7B /* SpinnerAccessoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerAccessoryCell.m; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				276965FF1055D32C00D64A7B /* MessageUI.framework in Frameworks */,
+				27687767105A0A7600E0655C /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +622,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27687766105A0A7600E0655C /* MediaPlayer.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,

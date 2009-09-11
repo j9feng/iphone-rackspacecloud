@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @class LoginViewController, ServersRootViewController;
 
@@ -29,6 +30,8 @@
 	NSString *apiKeyPreference;
 	
 	UIScrollView *imageScrollView;
+	
+	MPMoviePlayerController *moviePlayer;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -49,5 +52,10 @@
 @property (nonatomic, retain) NSString *apiKeyPreference;
 
 @property (nonatomic, retain) UIScrollView *imageScrollView;
+
+@property (readwrite, retain) MPMoviePlayerController *moviePlayer;
+
+-(void)initAndPlayMovie:(NSURL *)movieURL;
+-(void)setMoviePlayerUserSettings;
 
 @end
