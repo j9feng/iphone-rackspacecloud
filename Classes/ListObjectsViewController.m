@@ -19,8 +19,8 @@
 #import "EditableCell.h"
 
 #define kContainerDetails 0
-#define kCDN 1
-#define kFiles 2
+#define kCDN -1
+#define kFiles 1
 
 @implementation ListObjectsViewController
 
@@ -260,7 +260,7 @@ BOOL objectsLoaded = NO;
 //}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 3;
+	return 2;
 }
 
 - (NSString *)tableView:(UITableView *)aTableView titleForHeaderInSection:(NSInteger)section {

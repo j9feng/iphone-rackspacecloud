@@ -50,7 +50,7 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>SSH</string>
+			<string>SSH App Integration</string>
 		</dict>
 		<dict>
 			<key>Type</key>
