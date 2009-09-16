@@ -293,13 +293,13 @@ BOOL objectsLoaded = NO;
 }
 
 // not needed for grouped table view
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	CGFloat height = 44; // this is the apple default	
-	if (!objectsLoaded && indexPath.section == kFiles) {
-		height = 460;
-	}
-	return height;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//	CGFloat height = 44; // this is the apple default	
+//	if (!objectsLoaded && indexPath.section == kFiles) {
+//		height = 460;
+//	}
+//	return height;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
