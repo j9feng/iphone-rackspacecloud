@@ -3,7 +3,7 @@
 //  Rackspace
 //
 //  Created by Michael Mayo on 3/6/09.
-//  Copyright 2009 Michael Mayo. All rights reserved.
+//  Copyright 2009 Rackspace Hosting. All rights reserved.
 //
 
 #import "ServerCell.h"

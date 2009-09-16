@@ -9,7 +9,7 @@
 #import "ListObjectsViewController.h"
 #import "Container.h"
 #import "CloudFilesObject.h"
-#import "SpinnerCell.h"
+#import "GroupSpinnerCell.h"
 #import "RackspaceAppDelegate.h"
 #import "CFAccount.h"
 #import "AddObjectViewController.h"
@@ -283,6 +283,10 @@ BOOL objectsLoaded = NO;
 	} else if (section == kCDN) {
 		rows = 3;
 	} else { // if (section == kFiles) {
+		
+		return 1; // TODO: remove!  this is for testing
+		
+		
 		if (objectsLoaded) {
 			rows = [container.objects count];
 		} else {
@@ -401,7 +405,7 @@ BOOL objectsLoaded = NO;
 		return cell;			
 			
 	} else if (indexPath.section == kFiles) {
-		
+		/*
 		if (objectsLoaded) {
 			
 			static NSString *CellIdentifier = @"ObjectCell";
@@ -433,18 +437,18 @@ BOOL objectsLoaded = NO;
 			return cell;
 			
 		} else { // show the spinner cell
-			
+		*/	
 			static NSString *CellIdentifier = @"SpinnerCell";
-			SpinnerCell *cell = (SpinnerCell *) [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+			GroupSpinnerCell *cell = (GroupSpinnerCell *) [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 			if (cell == nil) {
-				cell = [[[SpinnerCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+				cell = [[[GroupSpinnerCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 				cell.userInteractionEnabled = NO;
 				self.tableView.userInteractionEnabled = NO;
 			}
 			
 			return cell;
-			
-		}
+		/*	
+		}*/
 	} 
 	return nil;
 }

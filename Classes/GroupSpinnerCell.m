@@ -1,15 +1,15 @@
 //
-//  SpinnerCell.m
+//  GroupSpinnerCell.m
 //  Rackspace Cloud
 //
-//  Created by Michael Mayo on 12/12/08.
+//  Created by Michael Mayo on 9/15/09.
 //  Copyright 2009 Rackspace Hosting. All rights reserved.
 //
 
-#import "SpinnerCell.h"
+#import "GroupSpinnerCell.h"
 
 
-@implementation SpinnerCell
+@implementation GroupSpinnerCell
 
 @synthesize spinner, message;
 
@@ -23,9 +23,9 @@
 		spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(90, 0, 20.0, 20.0)];
 		spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
 		spinner.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin |
-											 UIViewAutoresizingFlexibleRightMargin |
-											 UIViewAutoresizingFlexibleTopMargin |
-											 UIViewAutoresizingFlexibleBottomMargin);
+									UIViewAutoresizingFlexibleRightMargin |
+									UIViewAutoresizingFlexibleTopMargin |
+									UIViewAutoresizingFlexibleBottomMargin);
 		[self.contentView addSubview:spinner];
 		[spinner startAnimating];		
 		[self.contentView addSubview:message];
@@ -38,17 +38,17 @@
     // Start with a rect that is inset from the content view by 10 pixels on all sides.
     CGRect baseRect = CGRectInset(self.contentView.bounds, 10, 10);
     CGRect rect = baseRect;
-    rect.origin.x += 130;
+    rect.origin.x += 30;
     
 	// Position each label with a modified version of the base rect.
     // prompt.frame = rect;
-	rect.origin.y -= 200;
+	//rect.origin.y -= 200;
     rect.size.width = 60;
-
+	
     rect.size.width = baseRect.size.width - 70;
 	message.frame = rect;
 	rect.origin.x -= 30;
-	rect.origin.y = 20;
+	rect.origin.y += 2;
 	rect.size.width = 20;
 	rect.size.height = 20;
 	spinner.frame = rect;

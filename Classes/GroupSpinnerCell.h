@@ -1,15 +1,15 @@
 //
-//  SpinnerCell.h
+//  GroupSpinnerCell.h
 //  Rackspace Cloud
 //
-//  Created by Michael Mayo on 12/12/08.
+//  Created by Michael Mayo on 9/15/09.
 //  Copyright 2009 Rackspace Hosting. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
-@interface SpinnerCell : UITableViewCell {
+@interface GroupSpinnerCell : UITableViewCell {
 	UIActivityIndicatorView *spinner;
 	UILabel *message;
 }

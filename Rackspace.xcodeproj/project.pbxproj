@@ -16,6 +16,7 @@
 		272EF03D101593DD00DB17A1 /* AddServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272EF03C101593DD00DB17A1 /* AddServerViewController.m */; };
 		272EF0AE1015999800DB17A1 /* ServerNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272EF0AC1015999800DB17A1 /* ServerNameController.m */; };
 		272EF0AF1015999800DB17A1 /* ServerNameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272EF0AD1015999800DB17A1 /* ServerNameController.xib */; };
+		2743D0991060B22C00EF51D1 /* GroupSpinnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2743D0981060B22C00EF51D1 /* GroupSpinnerCell.m */; };
 		275ACB480FFEFDE200EEB366 /* ObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */; };
 		27687767105A0A7600E0655C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27687766105A0A7600E0655C /* MediaPlayer.framework */; };
 		276965FF1055D32C00D64A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276965FE1055D32C00D64A7B /* MessageUI.framework */; };
@@ -134,6 +135,8 @@
 		272EF0AB1015999800DB17A1 /* ServerNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerNameController.h; sourceTree = "<group>"; };
 		272EF0AC1015999800DB17A1 /* ServerNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerNameController.m; sourceTree = "<group>"; };
 		272EF0AD1015999800DB17A1 /* ServerNameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServerNameController.xib; path = Classes/ServerNameController.xib; sourceTree = "<group>"; };
+		2743D0971060B22C00EF51D1 /* GroupSpinnerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSpinnerCell.h; sourceTree = "<group>"; };
+		2743D0981060B22C00EF51D1 /* GroupSpinnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSpinnerCell.m; sourceTree = "<group>"; };
 		275ACB460FFEFDE200EEB366 /* ObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectViewController.h; sourceTree = "<group>"; };
 		275ACB470FFEFDE200EEB366 /* ObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectViewController.m; sourceTree = "<group>"; };
 		27687766105A0A7600E0655C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -656,6 +659,8 @@
 				2777B949101C32800043D3C1 /* SecureEditableLoginCell.m */,
 				276968FB1055EDBE00D64A7B /* SpinnerAccessoryCell.h */,
 				276968FC1055EDBE00D64A7B /* SpinnerAccessoryCell.m */,
+				2743D0971060B22C00EF51D1 /* GroupSpinnerCell.h */,
+				2743D0981060B22C00EF51D1 /* GroupSpinnerCell.m */,
 			);
 			name = "Table Cells";
 			sourceTree = "<group>";
@@ -1036,6 +1041,7 @@
 				2777BBA2101C57FC0043D3C1 /* AddServerImageController.m in Sources */,
 				27FEADA9104A06470042BBFC /* WebFileViewController.m in Sources */,
 				276968FD1055EDBE00D64A7B /* SpinnerAccessoryCell.m in Sources */,
+				2743D0991060B22C00EF51D1 /* GroupSpinnerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

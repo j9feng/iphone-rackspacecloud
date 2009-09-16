@@ -1,9 +1,9 @@
 //
 //  ProgressCell.h
-//  Slicehost
+//  Rackspace Cloud
 //
 //  Created by Michael Mayo on 12/10/08.
-//  Copyright 2008 Coupa Software. All rights reserved.
+//  Copyright 2009 Rackspace Hosting. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

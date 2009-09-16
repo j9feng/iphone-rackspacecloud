@@ -1,9 +1,9 @@
 //
-//  SliceCell.h
-//  Slicehost
+//  ServerCell.h
+//  Rackspace Cloud
 //
 //  Created by Michael Mayo on 3/6/09.
-//  Copyright 2009 Coupa Software. All rights reserved.
+//  Copyright 2009 Rackspace Hosting. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
