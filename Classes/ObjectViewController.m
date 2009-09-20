@@ -18,10 +18,60 @@
 
 @implementation ObjectViewController
 
+NSUInteger previewRowIndex = -1;
+NSUInteger emailLinkRowIndex = -1;
+NSUInteger emailFileRowIndex = -1;
+
+
 @synthesize cfObject, container;
+
+- (BOOL)canPreviewFile {
+	
+	NSArray *previewableContentTypes = [NSArray arrayWithObjects:@"application/pdf", @"text/plain", @"application/octet-stream", nil];
+	NSArray *previewableFileExtensions = [NSArray arrayWithObjects:@"pdf", @"txt", @"jpg", @"gif", @"png", @"m4a", @"mp3", @"mov", @"mpg", nil];
+	BOOL isImage = [self.cfObject.contentType rangeOfString:@"image/"].location == 0;
+	BOOL isVideo = [self.cfObject.contentType rangeOfString:@"video/"].location == 0;
+	
+	BOOL hasPreviewableContentType = NO;
+	for (int i = 0; i < [previewableContentTypes count]; i++) {
+		if ([self.cfObject.contentType isEqualToString:[previewableContentTypes objectAtIndex:i]]) {
+			hasPreviewableContentType = YES;
+			break;
+		}
+	}
+
+	BOOL hasPreviewableFileExtension = NO;
+	for (int i = 0; i < [previewableFileExtensions count]; i++) {
+		if ([[self.cfObject.name pathExtension] isEqualToString:[previewableFileExtensions objectAtIndex:i]]) {
+			hasPreviewableFileExtension = YES;
+			break;
+		}
+	}
+	
+	return isImage || isVideo || hasPreviewableContentType || hasPreviewableFileExtension;
+}
 
 - (void)viewWillAppear:(BOOL)animated {
 	self.navigationItem.title = self.cfObject.name;
+	
+	if ([self canPreviewFile]) {
+		previewRowIndex = 0;
+	} else {
+		previewRowIndex = -1;
+	}
+	if ([MFMailComposeViewController canSendMail]) {
+		if ([self canPreviewFile]) {
+			emailLinkRowIndex = 1;
+			emailFileRowIndex = 2;
+		} else {
+			emailLinkRowIndex = 0;
+			emailFileRowIndex = 1;
+		}
+	} else {
+		emailLinkRowIndex = -1;
+		emailFileRowIndex = -1;
+	}
+	
 	[super viewWillAppear:animated];
 }
 
@@ -48,11 +98,14 @@
 	if (section == kFileDetails) {
 		return 3;
 	} else if (section == kActions) {
-		//if ([MFMailComposeViewController canSendMail]) {
-			return 3;
-//		} else {
-//			return 1;
-//		}
+		int rows = 0;
+		if ([self canPreviewFile]) {
+			rows++;
+		}
+		if ([MFMailComposeViewController canSendMail]) {
+			rows += 2; // email link and file rows
+		}
+		return rows;		
 	} else {
 		return 0;
 	}
@@ -105,20 +158,15 @@
 			attachCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;			
 		}
 		
-		switch (indexPath.row) {
-			case 0:
-				cell.textLabel.text = @"Preview File";
-				break;
-			case 1:
-				cell.textLabel.text = @"Email Link to File";
-				break;
-			case 2:
-				attachCell.textLabel.text = @"Email File as Attachment";
-				return attachCell;
-				break;
-			default:
-				break;
+		if (indexPath.row == previewRowIndex) {
+			cell.textLabel.text = @"Preview File";
+		} else if (indexPath.row == emailLinkRowIndex) {
+			cell.textLabel.text = @"Email Link to File";
+		} else if (indexPath.row == emailFileRowIndex) {
+			attachCell.textLabel.text = @"Email File as Attachment";
+			return attachCell;
 		}
+		
 		return cell;
 	} else {
 		return nil;
@@ -126,56 +174,58 @@
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.row == 0) { // preview the file		
-		if ([self.cfObject.contentType isEqualToString:@"application/octet-stream"]
-				|| ((NSRange) [self.cfObject.contentType rangeOfString:@"video/"]).location == 0) {
-			// let's assume it's audio or video... try and play it!
-			RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
-			NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
-			NSURL *url = [[NSURL alloc] initWithString:urlString];
-			[app initAndPlayMovie:url];
-		} else {
-			WebFileViewController *vc = [[WebFileViewController alloc] initWithNibName:@"WebFileViewController" bundle:nil];
-			vc.cfObject = self.cfObject;
-			vc.container = self.container;
-			[self.navigationController pushViewController:vc animated:YES];
+	if (indexPath.section == kActions) {
+		if (indexPath.row == previewRowIndex) { // preview the file		
+			if ([self.cfObject.contentType isEqualToString:@"application/octet-stream"]
+					|| ((NSRange) [self.cfObject.contentType rangeOfString:@"video/"]).location == 0) {
+				// let's assume it's audio or video... try and play it!
+				RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
+				NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
+				NSURL *url = [[NSURL alloc] initWithString:urlString];
+				[app initAndPlayMovie:url];
+			} else {
+				WebFileViewController *vc = [[WebFileViewController alloc] initWithNibName:@"WebFileViewController" bundle:nil];
+				vc.cfObject = self.cfObject;
+				vc.container = self.container;
+				[self.navigationController pushViewController:vc animated:YES];
+				[vc release];
+				[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
+			}
+		} else if (indexPath.row == emailLinkRowIndex) { // email a link
+			MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
+			vc.mailComposeDelegate = self;		
+			[vc setSubject:self.cfObject.name];
+			NSString *emailBody = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
+			[vc setMessageBody:emailBody isHTML:NO];
+			
+			[self presentModalViewController:vc animated:YES];
 			[vc release];
-			[aTableView deselectRowAtIndexPath:indexPath animated:NO];		
+			
+		} else if (indexPath.row == emailFileRowIndex) { // email as attachment
+			
+			[aTableView reloadData];
+			
+			MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
+			vc.mailComposeDelegate = self;
+			
+			[vc setSubject:self.cfObject.name];
+			
+			// Attach an image to the email
+			//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
+			//		NSData *myData = [NSData dataWithContentsOfFile:path];
+			//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
+			NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
+			NSURL *url = [NSURL URLWithString:urlString];
+			NSData *attachmentData = [NSData dataWithContentsOfURL:url];
+			[vc addAttachmentData:attachmentData mimeType:self.cfObject.contentType fileName:self.cfObject.name];
+			
+			// Fill out the email body text
+			NSString *emailBody = @"";
+			[vc setMessageBody:emailBody isHTML:NO];
+			
+			[self presentModalViewController:vc animated:YES];
+			[vc release];
 		}
-	} else if (indexPath.row == 1) { // email a link
-		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
-		vc.mailComposeDelegate = self;		
-		[vc setSubject:self.cfObject.name];
-		NSString *emailBody = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
-		[vc setMessageBody:emailBody isHTML:NO];
-		
-		[self presentModalViewController:vc animated:YES];
-		[vc release];
-		
-	} else if (indexPath.row == 2) { // email as attachment
-		
-		[aTableView reloadData];
-		
-		MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
-		vc.mailComposeDelegate = self;
-		
-		[vc setSubject:self.cfObject.name];
-		
-		// Attach an image to the email
-		//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
-		//		NSData *myData = [NSData dataWithContentsOfFile:path];
-		//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
-		NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
-		NSURL *url = [NSURL URLWithString:urlString];
-		NSData *attachmentData = [NSData dataWithContentsOfURL:url];
-		[vc addAttachmentData:attachmentData mimeType:self.cfObject.contentType fileName:self.cfObject.name];
-		
-		// Fill out the email body text
-		NSString *emailBody = @"";
-		[vc setMessageBody:emailBody isHTML:NO];
-		
-		[self presentModalViewController:vc animated:YES];
-		[vc release];
 	}
 }
 

@@ -282,11 +282,7 @@ BOOL objectsLoaded = NO;
 		rows = 2;
 	} else if (section == kCDN) {
 		rows = 3;
-	} else { // if (section == kFiles) {
-		
-		return 1; // TODO: remove!  this is for testing
-		
-		
+	} else { // if (section == kFiles) {		
 		if (objectsLoaded) {
 			rows = [container.objects count];
 		} else {
@@ -405,7 +401,6 @@ BOOL objectsLoaded = NO;
 		return cell;			
 			
 	} else if (indexPath.section == kFiles) {
-		/*
 		if (objectsLoaded) {
 			
 			static NSString *CellIdentifier = @"ObjectCell";
@@ -437,7 +432,6 @@ BOOL objectsLoaded = NO;
 			return cell;
 			
 		} else { // show the spinner cell
-		*/	
 			static NSString *CellIdentifier = @"SpinnerCell";
 			GroupSpinnerCell *cell = (GroupSpinnerCell *) [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 			if (cell == nil) {
@@ -447,8 +441,7 @@ BOOL objectsLoaded = NO;
 			}
 			
 			return cell;
-		/*	
-		}*/
+		}
 	} 
 	return nil;
 }
