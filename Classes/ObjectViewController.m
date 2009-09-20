@@ -25,6 +25,35 @@ NSUInteger emailFileRowIndex = -1;
 
 @synthesize cfObject, container;
 
+- (BOOL)fileIsAudio {
+	NSArray *audioContentTypes = [NSArray arrayWithObjects:@"application/octet-stream", nil];
+	NSArray *audioFileExtensions = [NSArray arrayWithObjects:@"m4a", @"mp3", @"wav", @"aiff", @"aac", @"aif", @"aifc", @"amr",
+									@"caf", @"m2a", @"m4p", nil];
+	BOOL isAudio = [self.cfObject.contentType rangeOfString:@"audio/"].location == 0;
+	
+	BOOL hasAudioContentType = NO;
+	for (int i = 0; i < [audioContentTypes count]; i++) {
+		if ([self.cfObject.contentType isEqualToString:[audioContentTypes objectAtIndex:i]]) {
+			hasAudioContentType = YES;
+			break;
+		}
+	}
+	
+	BOOL hasAudioFileExtension = NO;
+	for (int i = 0; i < [audioFileExtensions count]; i++) {
+		if ([[self.cfObject.name pathExtension] isEqualToString:[audioFileExtensions objectAtIndex:i]]) {
+			hasAudioFileExtension = YES;
+			break;
+		}
+	}
+	
+	return isAudio || hasAudioContentType || hasAudioFileExtension;
+}
+
+- (BOOL)fileIsVideo {
+	return NO;
+}
+
 - (BOOL)canPreviewFile {
 	
 	NSArray *previewableContentTypes = [NSArray arrayWithObjects:@"application/pdf", @"text/plain", @"application/octet-stream", nil];
@@ -48,7 +77,7 @@ NSUInteger emailFileRowIndex = -1;
 		}
 	}
 	
-	return isImage || isVideo || hasPreviewableContentType || hasPreviewableFileExtension;
+	return isImage || [self fileIsAudio] || isVideo || hasPreviewableContentType || hasPreviewableFileExtension;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
