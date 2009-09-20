@@ -347,7 +347,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 130";
 		rLen = 0;
-		rLoc = 6290;
+		rLoc = 6222;
 		rType = 0;
 		vrLen = 2096;
 		vrLoc = 3560;
@@ -1134,9 +1134,9 @@
 	};
 	275ACB470FFEFDE200EEB366 /* ObjectViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1020, 4832}}";
-			sepNavSelRange = "{2507, 0}";
-			sepNavVisRange = "{947, 1518}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 4288}}";
+			sepNavSelRange = "{6282, 0}";
+			sepNavVisRange = "{5855, 1711}";
 			sepNavWindowFrame = "{{38, 189}, {1095, 663}}";
 		};
 	};
@@ -1185,7 +1185,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 165";
 		rLen = 0;
-		rLoc = 6108;
+		rLoc = 6040;
 		rType = 0;
 		vrLen = 2013;
 		vrLoc = 3968;
@@ -1195,7 +1195,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 200";
 		rLen = 0;
-		rLoc = 7726;
+		rLoc = 7527;
 		rType = 0;
 		vrLen = 1461;
 		vrLoc = 6617;
@@ -1205,7 +1205,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 207";
 		rLen = 0;
-		rLoc = 7924;
+		rLoc = 7725;
 		rType = 0;
 		vrLen = 1461;
 		vrLoc = 6617;
@@ -1215,7 +1215,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 112";
 		rLen = 0;
-		rLoc = 3991;
+		rLoc = 3923;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 1267;
@@ -1225,7 +1225,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 112";
 		rLen = 0;
-		rLoc = 3991;
+		rLoc = 3923;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 1267;
@@ -1235,7 +1235,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 73";
 		rLen = 0;
-		rLoc = 3028;
+		rLoc = 2960;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 1267;
@@ -1245,7 +1245,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 62";
 		rLen = 11;
-		rLoc = 2798;
+		rLoc = 2730;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 1267;
@@ -1255,7 +1255,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 28";
 		rLen = 0;
-		rLoc = 1503;
+		rLoc = 1583;
 		rType = 0;
 		vrLen = 1455;
 		vrLoc = 267;
@@ -1315,7 +1315,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 28";
 		rLen = 0;
-		rLoc = 1503;
+		rLoc = 1583;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 267;
@@ -1325,7 +1325,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 30";
 		rLen = 0;
-		rLoc = 790;
+		rLoc = 797;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 333;
@@ -1335,7 +1335,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 30";
 		rLen = 0;
-		rLoc = 790;
+		rLoc = 797;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 333;
@@ -1345,7 +1345,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 30";
 		rLen = 0;
-		rLoc = 790;
+		rLoc = 797;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 333;
@@ -1355,7 +1355,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 30";
 		rLen = 0;
-		rLoc = 790;
+		rLoc = 797;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 333;
@@ -1365,7 +1365,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 30";
 		rLen = 0;
-		rLoc = 790;
+		rLoc = 797;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 333;
@@ -1375,7 +1375,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 31";
 		rLen = 0;
-		rLoc = 824;
+		rLoc = 847;
 		rType = 0;
 		vrLen = 1163;
 		vrLoc = 333;
@@ -1385,7 +1385,7 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 31";
 		rLen = 0;
-		rLoc = 824;
+		rLoc = 847;
 		rType = 0;
 		vrLen = 1179;
 		vrLoc = 333;
@@ -1395,10 +1395,20 @@
 		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
 		name = "ObjectViewController.m: 80";
 		rLen = 0;
-		rLoc = 2507;
+		rLoc = 2454;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 947;
+	};
+	275F89581066B18D0038689B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 275ACB470FFEFDE200EEB366 /* ObjectViewController.m */;
+		name = "ObjectViewController.m: 203";
+		rLen = 0;
+		rLoc = 6282;
+		rType = 0;
+		vrLen = 1711;
+		vrLoc = 5855;
 	};
 	27687778105A0B7300E0655C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -3451,6 +3461,7 @@
 			275F89331066B0410038689B /* PBXTextBookmark */ = 275F89331066B0410038689B /* PBXTextBookmark */;
 			275F89361066B06D0038689B /* PBXTextBookmark */ = 275F89361066B06D0038689B /* PBXTextBookmark */;
 			275F893F1066B0CB0038689B /* PBXTextBookmark */ = 275F893F1066B0CB0038689B /* PBXTextBookmark */;
+			275F89581066B18D0038689B /* PBXTextBookmark */ = 275F89581066B18D0038689B /* PBXTextBookmark */;
 			27687778105A0B7300E0655C = 27687778105A0B7300E0655C /* PBXTextBookmark */;
 			2768777A105A0B7300E0655C = 2768777A105A0B7300E0655C /* PBXTextBookmark */;
 			276877FA105A12B600E0655C = 276877FA105A12B600E0655C /* PBXTextBookmark */;

@@ -25,11 +25,12 @@ NSUInteger emailFileRowIndex = -1;
 
 @synthesize cfObject, container;
 
-- (BOOL)fileIsAudio {
+- (BOOL)fileIsAudioOrVideo {
 	NSArray *audioContentTypes = [NSArray arrayWithObjects:@"application/octet-stream", nil];
 	NSArray *audioFileExtensions = [NSArray arrayWithObjects:@"m4a", @"mp3", @"wav", @"aiff", @"aac", @"aif", @"aifc", @"amr",
-									@"caf", @"m2a", @"m4p", nil];
+									@"caf", @"m2a", @"m4p", @"mov", @"mpg", nil];
 	BOOL isAudio = [self.cfObject.contentType rangeOfString:@"audio/"].location == 0;
+	BOOL isVideo = [self.cfObject.contentType rangeOfString:@"video/"].location == 0;
 	
 	BOOL hasAudioContentType = NO;
 	for (int i = 0; i < [audioContentTypes count]; i++) {
@@ -47,19 +48,14 @@ NSUInteger emailFileRowIndex = -1;
 		}
 	}
 	
-	return isAudio || hasAudioContentType || hasAudioFileExtension;
-}
-
-- (BOOL)fileIsVideo {
-	return NO;
+	return isAudio || isVideo || hasAudioContentType || hasAudioFileExtension;
 }
 
 - (BOOL)canPreviewFile {
 	
-	NSArray *previewableContentTypes = [NSArray arrayWithObjects:@"application/pdf", @"text/plain", @"application/octet-stream", nil];
-	NSArray *previewableFileExtensions = [NSArray arrayWithObjects:@"pdf", @"txt", @"jpg", @"gif", @"png", @"m4a", @"mp3", @"mov", @"mpg", nil];
+	NSArray *previewableContentTypes = [NSArray arrayWithObjects:@"application/pdf", @"text/plain", nil];
+	NSArray *previewableFileExtensions = [NSArray arrayWithObjects:@"pdf", @"txt", @"jpg", @"gif", @"png", nil];
 	BOOL isImage = [self.cfObject.contentType rangeOfString:@"image/"].location == 0;
-	BOOL isVideo = [self.cfObject.contentType rangeOfString:@"video/"].location == 0;
 	
 	BOOL hasPreviewableContentType = NO;
 	for (int i = 0; i < [previewableContentTypes count]; i++) {
@@ -77,7 +73,7 @@ NSUInteger emailFileRowIndex = -1;
 		}
 	}
 	
-	return isImage || [self fileIsAudio] || isVideo || hasPreviewableContentType || hasPreviewableFileExtension;
+	return [self fileIsAudioOrVideo] || isImage || hasPreviewableContentType || hasPreviewableFileExtension;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -204,9 +200,8 @@ NSUInteger emailFileRowIndex = -1;
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == kActions) {
-		if (indexPath.row == previewRowIndex) { // preview the file		
-			if ([self.cfObject.contentType isEqualToString:@"application/octet-stream"]
-					|| ((NSRange) [self.cfObject.contentType rangeOfString:@"video/"]).location == 0) {
+		if (indexPath.row == previewRowIndex) { // preview the file			
+			if ([self fileIsAudioOrVideo]) {
 				// let's assume it's audio or video... try and play it!
 				RackspaceAppDelegate *app = (RackspaceAppDelegate *) [[UIApplication sharedApplication] delegate];
 				NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
