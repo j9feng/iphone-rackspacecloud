@@ -12,37 +12,6 @@
 
 @implementation AddObjectViewController
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
 - (void) cancelButtonPressed:(id)sender {
 	[self dismissModalViewControllerAnimated:YES];
 }
@@ -54,7 +23,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 3;
+	NSInteger rows = 1;
+	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+		rows++;
+	}
+	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+		rows++;
+	}	
+	return rows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -71,10 +47,11 @@
 			cell.textLabel.text = @"Text File";
 			break;
 		case 1:
-			cell.textLabel.text = @"Image from Camera";
+			cell.textLabel.text = @"Image from Photo Library";
 			break;
 		case 2:
-			cell.textLabel.text = @"Image from Photo Library";
+			cell.textLabel.text = @"Image from Camera";
+			break;
 		default:
 			break;
 	}
@@ -90,6 +67,14 @@
 	if (indexPath.row == 0) {
 		
 	} else if (indexPath.row == 1) {
+		if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+			UIImagePickerController *camera = [[UIImagePickerController alloc] init];		
+			camera.delegate = self;
+			camera.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+			[self presentModalViewController:camera animated:YES];
+			[camera release];
+		}
+	} else if (indexPath.row == 2) {
 		if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 			UIImagePickerController *camera = [[UIImagePickerController alloc] init];		
 			camera.delegate = self;
@@ -97,12 +82,6 @@
 			[self presentModalViewController:camera animated:YES];
 			[camera release];
 		}
-	} else if (indexPath.row == 2) {
-		UIImagePickerController *camera = [[UIImagePickerController alloc] init];		
-		camera.delegate = self;
-		camera.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-		[self presentModalViewController:camera animated:YES];
-		[camera release];
 	}
 	
 	[aTableView deselectRowAtIndexPath:indexPath animated:NO];
@@ -125,7 +104,6 @@
 	NSData *imageData = UIImagePNGRepresentation(image);
 	
 	CloudFilesObject *co = [[CloudFilesObject alloc] init];
-	
 	
 	co.name = @"miketest.png";
 	co.contentType = @"image/png";

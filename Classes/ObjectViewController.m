@@ -21,7 +21,8 @@
 NSUInteger previewRowIndex = -1;
 NSUInteger emailLinkRowIndex = -1;
 NSUInteger emailFileRowIndex = -1;
-
+BOOL isLoadingAttachment = NO;
+SpinnerAccessoryCell *attachCell;
 
 @synthesize cfObject, container;
 
@@ -77,6 +78,9 @@ NSUInteger emailFileRowIndex = -1;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+	//isLoadingAttachment = NO;
+	[self.tableView reloadData]; // make sure the spinner's not spinning
+	
 	self.navigationItem.title = self.cfObject.name;
 	
 	if ([self canPreviewFile]) {
@@ -177,10 +181,11 @@ NSUInteger emailFileRowIndex = -1;
 		}
 		
 		static NSString *AttachCellIdentifier = @"AttachCell";
-		SpinnerAccessoryCell *attachCell = (SpinnerAccessoryCell *) [aTableView dequeueReusableCellWithIdentifier:AttachCellIdentifier];
+		attachCell = (SpinnerAccessoryCell *) [aTableView dequeueReusableCellWithIdentifier:AttachCellIdentifier];
 		if (attachCell == nil) {
-			attachCell = [[[SpinnerAccessoryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:AttachCellIdentifier] autorelease];
-			attachCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;			
+			//attachCell = [[[SpinnerAccessoryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:AttachCellIdentifier] autorelease];
+			attachCell = [[[SpinnerAccessoryCell alloc] initWithFrame:CGRectZero reuseIdentifier:AttachCellIdentifier] autorelease];
+			attachCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		}
 		
 		if (indexPath.row == previewRowIndex) {
@@ -189,6 +194,9 @@ NSUInteger emailFileRowIndex = -1;
 			cell.textLabel.text = @"Email Link to File";
 		} else if (indexPath.row == emailFileRowIndex) {
 			attachCell.textLabel.text = @"Email File as Attachment";
+//			if (isLoadingAttachment) {
+//				[attachCell.spinner startAnimating];
+//			}
 			return attachCell;
 		}
 		
@@ -227,17 +235,13 @@ NSUInteger emailFileRowIndex = -1;
 			
 		} else if (indexPath.row == emailFileRowIndex) { // email as attachment
 			
+			isLoadingAttachment = YES;			
 			[aTableView reloadData];
-			
+
 			MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
 			vc.mailComposeDelegate = self;
-			
 			[vc setSubject:self.cfObject.name];
 			
-			// Attach an image to the email
-			//		NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
-			//		NSData *myData = [NSData dataWithContentsOfFile:path];
-			//		[vc addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
 			NSString *urlString = [NSString stringWithFormat:@"%@/%@", self.container.cdnUrl, self.cfObject.name];
 			NSURL *url = [NSURL URLWithString:urlString];
 			NSData *attachmentData = [NSData dataWithContentsOfURL:url];
@@ -248,7 +252,7 @@ NSUInteger emailFileRowIndex = -1;
 			[vc setMessageBody:emailBody isHTML:NO];
 			
 			[self presentModalViewController:vc animated:YES];
-			[vc release];
+			[vc release];			
 		}
 	}
 }

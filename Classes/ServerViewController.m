@@ -116,8 +116,9 @@ NSString *initialFlavorId;
 		NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", protocol, [[server.addresses objectForKey:@"public"] objectAtIndex:0]]];
 		
 		UIApplication *app = [UIApplication sharedApplication];
+		BOOL sshEnabled = [defaults boolForKey:@"ssh_enabled_preference"];
 		
-		if ([app canOpenURL:url]) {
+		if (sshEnabled && [app canOpenURL:url]) {
 			return 3;
 		} else {
 			return 2; // hide the ssh row

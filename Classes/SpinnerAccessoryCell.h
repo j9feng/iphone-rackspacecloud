@@ -10,7 +10,9 @@
 
 
 @interface SpinnerAccessoryCell : UITableViewCell {
-
+	UIActivityIndicatorView *spinner;
 }
+
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
 
 @end

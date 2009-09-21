@@ -11,40 +11,23 @@
 
 @implementation SpinnerAccessoryCell
 
-//- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-//    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
-//        // Initialization code
-//    }
-//
-//    return self;
-//}
+@synthesize spinner;
 
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-	if (selected) {
+- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+        // Initialization code
 		self.accessoryType = UITableViewCellAccessoryNone;
-		UIActivityIndicatorView *spinner;
-		spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(253.0, 12.0, 20.0, 20.0)];
+		spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(283.0, 13.0, 20.0, 20.0)];
+		spinner.hidesWhenStopped = YES;
 		spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
-		spinner.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin |
-									UIViewAutoresizingFlexibleRightMargin |
-									UIViewAutoresizingFlexibleTopMargin |
-									UIViewAutoresizingFlexibleBottomMargin);	
-		[spinner startAnimating];
-		[self.contentView addSubview:spinner];
+		[self addSubview:spinner];
+    }
 
-	} else {
-		self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-	}	
-	self.accessoryType = UITableViewCellAccessoryNone;	
+    return self;
 }
 
-
 - (void)dealloc {
+	[spinner release];
     [super dealloc];
 }
 
